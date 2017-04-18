@@ -1,24 +1,30 @@
-/*body{
-  line-height: 25px;
-  font-family: 'Open Sans',sans-serif;
+b-page{
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-custom{
-	background: #fff;
-  line-height: 40px;
-  vertical-align: middle;
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  z-index: 20px;
 }
-.navbar-custom ul li a{
-	color: #0077b3 !important;
-  font-size: 18px;
+
+.navbar__list{
+  list-style: none;
 }
-/*.navbar-my ul li a:hover{
-	background: #333;
+
+.navbar__item{
+  float: left;
 }
-.navbar-my .navbar-brand{
-	color: #fff;
-}*/
+.navbar__item-link{
+  display: block;
+}
+
 /*
-.navbar-toggle{
-  float:left;
-}*/
+float
+
+Если у блочного элемента ширина фиксированна, 
+то ему можно дать просто margin слева и справа 
+чтобы отцентровать его
+*/
