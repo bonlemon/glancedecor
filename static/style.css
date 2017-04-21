@@ -6,11 +6,27 @@
   line-height: 25px;
 }
 
+img{
+  width: 80%;
+  height: 80%;
+}
+
+/* Блок навигации */
+
 .b-page__navbar {
+  text-align: center;
+  top: 0px;
   width: 100%;
-  z-index: 20px;
-  border: 1px solid black;
-  height: 63px;
+  position: fixed;
+  padding: 15px 0 10px 0;
+  z-index: 20;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+.navbar__icon{
+  display: inline-block;
+  background: url('images/main_sprite.png') no-repeat;  
 }
 
 .navbar__list{
@@ -18,16 +34,48 @@
   float: left;
 }
 
+.navbar__list:first-child{
+  padding-left: 15px;
+}
+
+.navbar__item{
+  float: left;
+  margin-left: 20px;
+}
+
+.navbar__text{
+  font-size: 16px;
+  color: #0077b3;
+}
+
+
+.navbar__icity{
+    background-position: -25px 0px;
+    width: 11px;
+    height: 16px;
+}
+
+.navbar__idown{
+    background-position: -11px -7px;
+    width: 9px;
+    height: 6px;
+}
+
+.navbar__imail{
+    background-position: -128px -87px;
+    width: 26px;
+    height: 20px;
+    margin: 0 30px 5px 0;
+}
+
+
+/* Блок навигации(правая часть) */
 .navbar__list_right{
   float:right;
   margin-right: 20px;
 }
 
-.navbar__icon{
-  padding-left:10px;
-  display: inline-block;
-  background: url('images/main_sprite.png') no-repeat;  
-}
+
 
 .navbar__icon-phone{
   width: 12px;
@@ -38,35 +86,43 @@
 .navbar__icon-clock{
   width: 16px;
   height: 16px;
-  background-position: -125px -51px;
+  background-position: -125px -51px ;
 }
 
-.navbar__item{
-  display: block;
-  float: left;
-  margin-left: 15px;
-  margin-top: 4px;
+
+/* Блок слайдера */
+.b-page__slider{ 
+  position:relative;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:347px;
+  overflow:hidden;
+  visibility:hidden;
 }
 
-.navbar__item:first-child{
-  margin: auto;
+.b-page__slide{
+  cursor:default;
+  position:relative;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:347px;
+  overflow:hidden;
 }
 
-.navbar__text{
-  font-size:19px;
-  color: #0077b3;
-}
 
-.navbar__item-link{
-  display: block;
-}
 
-/*.clear{
-    clear: both;
-}*/
+
+
+
+
+
+
+
+
 
 /*
-float
 
 Если у блочного элемента ширина фиксированна, 
 то ему можно дать просто margin слева и справа 
