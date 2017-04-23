@@ -1,0 +1,196 @@
+.b-page{
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans',sans-serif;
+  line-height: 25px;
+}
+
+.navbar__logo{
+  width: 80%;
+  height: 80%;
+}
+
+.b-page__line{
+  width: 100%;
+}
+
+/* Блок навигации */
+
+.b-page__navbar {
+  text-align: center;
+  top: 0px;
+  width: 100%;
+  position: fixed;
+  padding: 15px 0 10px 0;
+  z-index: 20;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+.navbar__icon{
+  display: inline-block;
+  background: url('images/main_sprite.png')  no-repeat;  
+
+}
+
+.navbar__list{
+  list-style: none;
+  float: left;
+}
+
+.navbar__list:first-child{
+  padding-left: 15px;
+}
+
+.navbar__item{
+  float: left;
+  margin-left: 20px;
+}
+
+.navbar__text{
+  font-size: 17px;
+  color: #0077b3;
+  margin-bottom: 5px;
+}
+
+
+.navbar__icity{
+    background-position: -25px 0px;
+    width: 11px;
+    height: 16px;
+}
+
+.navbar__idown{
+    background-position: -11px -7px;
+    width: 9px;
+    height: 6px;
+}
+
+.navbar__imail{
+    background-position: -128px -87px;
+    width: 26px;
+    height: 20px;
+    margin: 0 30px 5px 0;
+}
+
+
+/* Блок навигации(правая часть) */
+.navbar__list_right{
+  float:right;
+  margin-right: 20px;
+}
+
+
+
+.navbar__icon-phone{
+  width: 12px;
+  height: 17px;
+  background-position: -61px -23px;
+}
+
+.navbar__icon-clock{
+  width: 16px;
+  height: 16px;
+  background-position: -125px -51px ;
+}
+
+
+/* Блок слайдера */
+.b-slider{ 
+  position:relative;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:333px;
+  overflow:hidden;
+  visibility:hidden;
+}
+
+.b-page__slide{
+  cursor:default;
+  position:relative;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:333px;
+  overflow:hidden;
+}
+
+
+/* Menu */
+
+.b-menu{
+  width: 100%;
+  border-bottom: solid 1px #f0f0f0;
+  background-color: #fafafa;
+  color: #333;
+  text-align: center;
+
+}
+
+.b-menu__item{
+  display: inline-block;
+  width: 30%;
+}
+
+.b-element-menu{
+  margin: auto;
+}
+
+.b-element-menu__img{
+  background: url('images/main_block.png') no-repeat;
+  width: 76px;
+  height: 76px;
+}
+
+.b-element-menu__title{
+
+}
+.b-element-menu__content{
+
+}
+
+.b-element-menu__type-of-calculation{
+    background-position: 0 0;
+    width: 73px;
+}
+.b-element-menu__sales{
+    background-position: -73px 0;
+}
+.b-element-menu__technologies{
+    background-position: -154px 0;
+}
+.b-element-menu__reviews{
+    background-position: 0 -76px;
+}
+.b-element-menu__invoices{
+    background-position: -76px -78px;
+    width: 60px;
+}
+.b-element-menu__our-works{
+    background-position: -137px -78px;
+}
+
+
+/* Clearfix block */
+
+.b-clearfix:before,  
+.b-clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.b-clearfix:after {  
+    clear: both;  
+}  
+.b-clearfix {  
+    zoom: 1.0;  
+}  
+
+
+/*
+
+Если у блочного элемента ширина фиксированна, 
+то ему можно дать просто margin слева и справа 
+чтобы отцентровать его
+*/
