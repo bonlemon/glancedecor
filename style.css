@@ -2,12 +2,13 @@
 /* Общие стили */
 /***************/
 .b-page{
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans',sans-serif;
-  line-height: 25px;
-  font-size: 16px;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 25px;
 }
 
 .navbar__logo{

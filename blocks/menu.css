@@ -7,15 +7,16 @@
   background-color: #fafafa;
   color: #333;
   text-align: center;
-  padding: 46px 0;
+  padding-top: 46px;
 }
 
 .b-menu__item{
-  display: inline-block;
-  width: 25%;
-  cursor: pointer;
-  margin-right: 20px;
-  margin-bottom: 30px;
+    display: inline-block;
+    width: 22%;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    vertical-align: top;
 }
 
 .b-element-menu{
@@ -30,23 +31,32 @@
   float: left;
 }
 
-.b-element-menu__title{
+.b-element-menu__title,
+.b-element-menu__content{
     display: block;
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: -0.2px;
-    margin-left: 85px;
+    margin-left: 100px;
+    letter-spacing: -0.3px;
 }
 
-.b-element-menu__content,
-.b-element-menu__content:hover{
-    display: block;
-    margin-left: 85px;
+.b-element-menu__title{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.b-element-menu__content{
     color: #2387b5;
     text-decoration: none;
-    text-transform:lowercase;
-    letter-spacing: -0.2px; 
+    text-transform: lowercase;
+    min-height: 50px;
+    font-size: 15px;
 }
+
+.b-element-menu__content:hover{  
+    text-decoration: underline;
+}
+
+
+/* Choice img from sprite */
 
 .b-element-menu__type-of-calculation{
     background-position: 0 0;

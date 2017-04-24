@@ -1,0 +1,48 @@
+.b-examples{
+    padding: 38px 0px 42px 0;
+    text-align: center;
+}
+
+.b-examples__header{
+    color: #333;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 0 37px 0;
+    letter-spacing: -1px;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.b-examples__title{
+    margin: -10px 0 20px 0;
+}
+
+.b-examples__blocks{
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+    height: 280px;
+    background: #fff;
+    text-align: left;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    cursor: default;
+    border: 1px solid black;
+}
+
+.b-example-block__title,
+.b-example-block__amount{
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    text-align: left;
+}
+
+.b-example-block__title:hover{
+    cursor: auto;
+    color: #2387b5;
+    text-transform: underline;
+}
