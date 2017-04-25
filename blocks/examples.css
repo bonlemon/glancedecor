@@ -1,6 +1,7 @@
 .b-examples{
     padding: 38px 0px 42px 0;
     text-align: center;
+    background-color: #fafafa;
 }
 
 .b-examples__header{
@@ -22,14 +23,20 @@
 .b-examples__blocks{
     overflow: hidden;
     position: relative;
-    width: 40%;
+    display: inline-block;
+    margin: 0 5px 55px 0;
+    padding-left: 10px;
+
+    width: 42%;
     height: 280px;
     background: #fff;
     text-align: left;
-    display: inline-block;
-    margin: 0 10px 10px 0;
+    
     cursor: default;
-    border: 1px solid black;
+    
+    box-shadow: 0px 1px 2px #ccc;
+    -moz-box-shadow: 0px 1px 2px #ccc;
+    -webkit-box-shadow: 0px 1px 2px #ccc;
 }
 
 .b-example-block__title,
@@ -45,4 +52,22 @@
     cursor: auto;
     color: #2387b5;
     text-transform: underline;
+}
+
+.b-example-block__foto{
+    position: absolute;
+    display: table;
+    table-layout: fixed;
+    width: 370px;
+    height: 264px;
+    top: 6px;
+    right: 10px;
+    z-index: 4;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.b-example-block__foto-cell{
+    display: table-cell;
+    margin: 0 1px;
 }
