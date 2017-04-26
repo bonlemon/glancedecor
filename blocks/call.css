@@ -10,12 +10,9 @@
 }
 
 .b-call__title{
-    color: #333;
-    font-size: 25px;
-    line-height: 30px;
-    
 }
 
 .b-call__phone{
     display: block;
+    font-size: 20px;
 }

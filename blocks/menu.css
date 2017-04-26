@@ -2,12 +2,10 @@
 /* Menu */
 /********/
 .b-menu{
-  width: 100%;
-  border-bottom: solid 1px #f0f0f0;
-  background-color: #fafafa;
-  color: #333;
-  text-align: center;
-  padding-top: 46px;
+    border-bottom: solid 1px #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding-top: 25px;
 }
 
 .b-menu__item{

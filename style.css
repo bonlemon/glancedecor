@@ -2,22 +2,31 @@
 /* Общие стили */
 /***************/
 .b-page{
-    background-color: #fff;
-    margin: 0;
+    background-color: #fafafa;
+    
     padding: 0;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Neucha', sans-serif;
     color: #333;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 25px;
 }
 
-.navbar__logo{
-  width: 80%;
-  height: 80%;
+.b-page__line{
+    width: 100%;
+    margin: 0 auto;
 }
 
-.b-page__line{
-  width: 100%;
+.b-page__line-conteiner{
+    margin: 0 auto;
+    width: 100%;
+    min-width: 980px;
+    max-width: 1350px;
+}
+
+.header{
+    color: #333;
+    font-size: 35px;
+    line-height: 40px;
 }
 
 /* Clearfix block */
