@@ -1,6 +1,6 @@
-/***************/
-/* Общие стили */
-/***************/
+/*****************/
+/* Блок страницы */
+/*****************/
 .b-page{
     background-color: #fafafa;
     
@@ -14,11 +14,10 @@
 .b-page__line{
     width: 100%;
     margin: 0 auto;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
 }
 
 .b-page__line-conteiner{
-    margin: 0 auto;
-    width: 100%;
     min-width: 980px;
     max-width: 1350px;
 }
@@ -28,6 +27,26 @@
     font-size: 35px;
     line-height: 40px;
 }
+
+/***************/
+/* Общие стили */
+/***************/
+
+.submit{
+    height: 38px;
+    padding: 0px 50px;
+    border: solid 1px #2483b3;
+    cursor: pointer;
+    line-height: 38px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition: all 0.4s;
+    transition: all 0.2s;
+    color: #2483b3;
+    border-radius: 4px;
+}
+
+
 
 /* Clearfix block */
 

@@ -9,3 +9,7 @@
   overflow:hidden;
   visibility:hidden;
 }
+
+.b-page__line-slider{
+  box-shadow: none;
+}

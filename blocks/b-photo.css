@@ -1,0 +1,22 @@
+.b-photo{
+    padding: 38px 0px 42px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.b-examples__header{
+    margin: 0 0 37px 0;
+    letter-spacing: -1px;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.b-photo__list-item{
+    display: inline-block;
+    width: 22%;
+    cursor: pointer;
+    margin: 0 5px 5px 0;
+    vertical-align: top;
+}

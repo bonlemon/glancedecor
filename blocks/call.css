@@ -1,18 +1,35 @@
 .b-call{
-    width: 100%;
-    min-width: 1230px;
+    padding: 38px 0px 42px 0;
+    text-align: center;
 }
 
-.b-call__container{
-    width: 85%;;
-    margin-left: auto;
-    margin-right: auto;
+.b-call__title,
+.b-call__call-form{
+    display: inline-block;
+    width:40%;
+    line-height: 40px;
+    vertical-align: middle;
 }
 
 .b-call__title{
+    
 }
 
 .b-call__phone{
     display: block;
     font-size: 20px;
+}
+
+.b-call__get-phone{
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    line-height: 30px;
+    margin-right: 5%;
+}
+
+.b-call__call-submit{
+    background-color: #0077b3;
+    color: #fff;
+    padding: 0 35px;
 }
