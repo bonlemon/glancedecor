@@ -1,0 +1,30 @@
+// @import 'common.scss';
+
+.b-photo{
+    padding: 38px 0px 42px 0;
+    text-align: center;
+}
+
+.b-examples__header{
+    margin: 0 0 37px 0;
+    letter-spacing: -1px;
+}
+
+.b-photo__list-photos{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.b-photo__list-item{
+    display: inline-block;
+    width: 300px;
+    cursor: pointer;
+    margin: 20px;
+    vertical-align: top;
+
+
+}
+.b-photo__list-item img{
+    width: 100%;
+    border-radius: 3px;
+}

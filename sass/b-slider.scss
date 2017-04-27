@@ -1,0 +1,17 @@
+// @import 'common.scss';
+
+/*****************/
+/* Блок слайдера */
+/*****************/
+.b-slider{ 
+  position:relative;
+  top:0px;
+  left:0px;
+  height:330px;
+  overflow:hidden;
+  visibility:hidden;
+}
+
+.b-page__line-slider{
+  box-shadow: none;
+}

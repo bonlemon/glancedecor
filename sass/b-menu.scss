@@ -1,0 +1,80 @@
+// @import 'common.scss';
+
+/********/
+/* Menu */
+/********/
+.b-menu{
+    border-bottom: solid 1px #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.b-menu__item{
+    display: inline-block;
+    width: 22%;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    vertical-align: top;
+}
+
+.b-element-menu{
+  margin: auto;
+  text-align: left;
+}
+
+.b-element-menu__img{
+  background: url('images/main_block.png') no-repeat;
+  width: 76px;
+  height: 76px;
+  float: left;
+}
+
+.b-element-menu__title,
+.b-element-menu__content{
+    display: block;
+    margin-left: 100px;
+    letter-spacing: -0.3px;
+}
+
+.b-element-menu__title{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.b-element-menu__content{
+    color: #2387b5;
+    text-decoration: none;
+    text-transform: lowercase;
+    min-height: 50px;
+    font-size: 15px;
+}
+
+.b-element-menu__content:hover{  
+    text-decoration: underline;
+}
+
+
+/* Choice img from sprite */
+
+.b-element-menu__type-of-calculation{
+    background-position: 0 0;
+    width: 73px;
+}
+.b-element-menu__sales{
+    background-position: -73px 0;
+}
+.b-element-menu__technologies{
+    background-position: -154px 0;
+}
+.b-element-menu__reviews{
+    background-position: 0 -76px;
+}
+.b-element-menu__invoices{
+    background-position: -76px -78px;
+    width: 60px;
+}
+.b-element-menu__our-works{
+    background-position: -137px -78px;
+}

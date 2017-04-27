@@ -1,0 +1,35 @@
+// @import 'common.scss';
+
+.b-call{
+    padding: 38px 0px 42px 0;
+    text-align: center;
+}
+
+.b-call__title,
+.b-call__call-form{
+    display: inline-block;
+    width:40%;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+.b-call__phone{
+    display: block;
+    font-size: 20px;
+}
+
+.b-call__get-phone{
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    line-height: 30px;
+    margin-right: 5%;
+    box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+}
+
+.b-call__call-submit{
+    background-color: #0077b3;
+    color: #fff;
+    padding: 0 35px;
+    margin: 10px;
+}

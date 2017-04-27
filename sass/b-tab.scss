@@ -1,0 +1,98 @@
+// @import 'common.scss';
+
+/*----- Tabs -----*/
+.b-tab {
+    width:100%;
+    display:inline-block;
+}
+ 
+    /*----- Tab Links -----*/
+    .b-tab__links li {
+        margin:0px 5px;
+        display: inline-block;
+        list-style:none;
+    }
+ 
+        .b-tab__links a {
+            padding:9px 15px;
+            display:inline-block;
+            font-size:16px;
+            font-weight:600;
+            color:#4c4c4c;
+            text-decoration: none !important;
+        }
+
+ 
+    .b-tab__link_active a,
+    .b-tab__links a:hover{
+        color: #0077b3 !important;
+        cursor: default;
+        font-weight: 600;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .b-tab__content {
+        padding:15px;
+    }
+
+    .b-tab__tab-element{
+        display: inline-block;
+        width: 25%;
+        height: 310px;
+        margin-right: 2%;
+        border-radius:5px;
+        
+        background:#fff;
+        min-width: 300px;
+
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+    }
+
+    .b-tab__tab-element:last-child{
+        margin-right: auto;
+    }
+
+    .b-tab__img{
+        width: 90%;
+        height: 75%;
+        margin: 5%;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    
+    .b-tab__title{
+        margin-left: 5%;
+    }
+    
+    .b-tab__calculation,
+    .b-tab__cost{
+        display: inline-block;
+        width: 50%;
+    }
+
+    .b-tab__calculation{
+
+    }
+
+    .b-tab__cost{
+        font-weight: 600;
+        font-size: 20px;
+        background: #ffd941;
+        padding: 8px 13px;
+        color: #000;
+    }
+
+    .b-tab__cost_sale{
+        background: #ff4141;
+        color: #fff;
+    }
+
+
+
+        .b-tab__tab {
+            display:none;
+        }
+ 
+        .b-tab__tab_active {
+            display:block;
+        }

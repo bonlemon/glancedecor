@@ -1,0 +1,87 @@
+// @import 'common.scss';
+
+/******************/
+/* Блок навигации */
+/******************/
+.b-page__navbar {
+  text-align: center;
+  top: 0px;
+  width: 100%;
+  position: fixed;
+  padding: 15px 0 10px 0;
+  z-index: 20;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  min-width: 980px;
+  font-family: 'Kaushan Script', 'Neucha', sans-serif;
+}
+
+.navbar__logo{
+  width: 80%;
+  height: 80%;
+}
+
+.navbar__icon{
+  display: inline-block;
+  background: url('images/main_sprite.png')  no-repeat;  
+
+}
+
+.navbar__list{
+  list-style: none;
+  float: left;
+}
+
+.navbar__list:first-child{
+  padding-left: 15px;
+}
+
+.navbar__item{
+  float: left;
+  margin-left: 20px;
+}
+
+.navbar__text{
+  font-size: 17px;
+  color: #0077b3;
+  margin-bottom: 5px;
+}
+
+
+.navbar__icity{
+    background-position: -25px 0px;
+    width: 11px;
+    height: 16px;
+}
+
+.navbar__idown{
+    background-position: -11px -7px;
+    width: 9px;
+    height: 6px;
+}
+
+.navbar__imail{
+    background-position: -128px -87px;
+    width: 26px;
+    height: 20px;
+    margin: 0 30px 5px 0;
+}
+
+
+/* Блок навигации(правая часть) */
+.navbar__list_right{
+  float:right;
+  margin-right: 20px;
+}
+
+.navbar__icon-phone{
+  width: 12px;
+  height: 17px;
+  background-position: -61px -23px;
+}
+
+.navbar__icon-clock{
+  width: 16px;
+  height: 16px;
+  background-position: -125px -51px ;
+}
