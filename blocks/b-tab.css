@@ -63,7 +63,35 @@
     .b-tab__title{
         margin-left: 5%;
     }
- 
+    
+    .b-tab__calculation,
+    .b-tab__cost{
+        display: inline-block;
+        width: 50%;
+    }
+
+    .b-tab__calculation{
+
+    }
+
+    .b-tab__cost{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        background: #ffd941;
+        padding: 8px 13px;
+        color: #000;
+    }
+
+    .b-tab__cost_sale{
+        background: #ff4141;
+        color: #fff;
+    }
+
+
+
         .b-tab__tab {
             display:none;
         }

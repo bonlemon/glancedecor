@@ -11,7 +11,7 @@
     vertical-align: middle;
 }
 
-.b-call__title{
+.b-call__call-form{
     
 }
 
@@ -35,4 +35,5 @@
     background-color: #0077b3;
     color: #fff;
     padding: 0 35px;
+    margin: 10px;
 }
