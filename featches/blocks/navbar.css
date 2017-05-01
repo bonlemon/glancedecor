@@ -21,7 +21,7 @@
 
 .navbar__icon{
   display: inline-block;
-  background: url('../images/main_sprite.png')  no-repeat;  
+  background: url('images/icon/main_sprite.png')  no-repeat;  
 
 }
 

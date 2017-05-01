@@ -4,16 +4,16 @@
 .b-tab {
     width:100%;
     display:inline-block;
-}
+
  
     /*----- Tab Links -----*/
-    .b-tab__links li {
+    &__links li {
         margin:0px 5px;
         display: inline-block;
         list-style:none;
     }
  
-        .b-tab__links a {
+        &__links a {
             padding:9px 15px;
             display:inline-block;
             font-size:16px;
@@ -22,20 +22,19 @@
             text-decoration: none !important;
         }
 
- 
-    .b-tab__link_active a,
-    .b-tab__links a:hover{
+    &__link_active a,
+    &__links a:hover{
         color: #0077b3 !important;
         cursor: default;
         font-weight: 600;
     }
  
     /*----- Content of Tabs -----*/
-    .b-tab__content {
+    &__content {
         padding:15px;
     }
 
-    .b-tab__tab-element{
+    &__tab-element{
         display: inline-block;
         width: 25%;
         height: 310px;
@@ -46,13 +45,13 @@
         min-width: 300px;
 
         box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+
+        &:last-child{
+            margin-right: auto;
+        }
     }
 
-    .b-tab__tab-element:last-child{
-        margin-right: auto;
-    }
-
-    .b-tab__img{
+    &__img{
         width: 90%;
         height: 75%;
         margin: 5%;
@@ -60,21 +59,17 @@
         border-radius: 3px;
     }
     
-    .b-tab__title{
+    &__title{
         margin-left: 5%;
     }
     
-    .b-tab__calculation,
-    .b-tab__cost{
+    &__calculation,
+    &__cost{
         display: inline-block;
         width: 50%;
     }
 
-    .b-tab__calculation{
-
-    }
-
-    .b-tab__cost{
+    &__cost{
         font-weight: 600;
         font-size: 20px;
         background: #ffd941;
@@ -82,17 +77,16 @@
         color: #000;
     }
 
-    .b-tab__cost_sale{
+    &__cost_sale{
         background: #ff4141;
         color: #fff;
     }
 
+    &__tab {
+        display:none;
+    }
 
-
-        .b-tab__tab {
-            display:none;
-        }
- 
-        .b-tab__tab_active {
-            display:block;
-        }
+    &__tab_active {
+        display:block;
+    }
+}

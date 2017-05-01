@@ -1,3 +1,9 @@
+// Constants
+
+$pageMinWidth: 980px;
+$pageMaxWidth: 1330px;
+
+
 /*****************/
 /* Блок страницы */
 /*****************/
@@ -9,18 +15,20 @@
     color: #333;
     font-size: 20px;
     line-height: 25px;
+
+    &__line{
+        width: 100%;  
+        box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    }
+
+    &__line-conteiner{
+        min-width: $pageMinWidth;
+        max-width: $pageMaxWidth;
+        margin: 0 auto;
+    }
 }
 
-.b-page__line{
-    width: 100%;  
-    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
-}
 
-.b-page__line-conteiner{
-    min-width: 980px;
-    max-width: 1330px;
-    margin: 0 auto;
-}
 
 .header{
     color: #333;
@@ -45,18 +53,13 @@
     border-radius: 4px;
 }
 
-
-
 /* Clearfix block */
-
-.b-clearfix:before,  
-.b-clearfix:after {  
-    content: " ";  
-    display: table;  
-}  
-.b-clearfix:after {  
-    clear: both;  
-}  
 .b-clearfix {  
     zoom: 1.0;  
+
+    &:after {  
+        content: " ";  
+        display: table; 
+        clear: both; 
+    }  
 }
