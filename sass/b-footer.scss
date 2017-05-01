@@ -1,4 +1,6 @@
-// @import 'common.scss';
+/*
+    Footer block
+*/
 
 .b-footer{
     background: #6e767d;
@@ -6,21 +8,18 @@
     font-weight: 300;
 
     &__left{
-        margin: 30px;
+        margin: 70px;
         float: left;
     }
 
     &__right{
-        margin: 30px;
+        margin: 70px;
         float: right;
     }
 
-    &__contact{
+    &__contact span{
         font-size: 25px;
-    }
-
-    &__phone-title{
-        font-size: 20px;
+        display: block;
     }
 
     &__social{
@@ -36,6 +35,11 @@
     }
 }
 
+
+/* 
+    Base block for social icon in footer block 
+    TODO may be need unpdate to mixin
+*/
 %social-base{
     display: inline-block;
     background: url(images/icon/socials_sprite.png) no-repeat;
