@@ -1,0 +1,90 @@
+// TODO ?????
+
+.b-fixtures{
+    padding: 38px 0px 42px 0;
+    text-align: center;
+
+
+    &__list-photos{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__list-item{
+        display: inline-block;
+        width: 300px;
+        cursor: pointer;
+        margin: 20px;
+        vertical-align: top;
+
+
+    }
+    &__list-item img{
+        width: 100%;
+        border-radius: 3px;
+    }
+}
+
+
+
+/*----- Tabs -----*/
+.b-fixtures {
+     /*----- Content of Tabs -----*/
+
+    &__tab-element{
+        display: inline-block;
+        width: 25%;
+        min-width:250px;
+        height: 250px;
+        margin: 10px;
+        border-radius:5px;
+
+        position: relative;
+        
+        background:#fff;
+
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+
+        &:last-child{
+            margin-right: auto;
+        }
+    }
+
+    &__img{
+        width: 60%;
+        height: 85%;
+    
+        cursor: pointer;
+        border-radius: 3px;
+        float: left;
+    }
+    
+    &__title{
+        margin-left: 5%;
+
+        position: absolute;
+        top: 30px;
+        right: 15px;
+
+        text-align: right;
+    }
+    
+    &__cost{
+        display: inline-block;
+        
+        width: 20%;
+        padding-top: 5px;
+        border: 1px solid #ffd941;
+        border-radius: 5px;
+
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+
+        &:hover{
+            background: #ffd941;
+        }
+    }
+
+
+}
