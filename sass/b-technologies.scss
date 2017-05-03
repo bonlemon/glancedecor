@@ -1,5 +1,5 @@
 
-.b-fixtures {
+.b-technologies {
 
     padding: 38px 0px 42px 0;
     text-align: center;
@@ -17,8 +17,6 @@
      }
      
      &__tab-element{
-        position: relative;
-
         display: inline-block;
         width: 26%;
         min-width:280px;
@@ -35,39 +33,15 @@
     }
 
     &__img{
-        width: 60%;
-        height: 95%;
+        width: 90%;
+        height: 80%;
         
         border-radius: 3px;
         cursor: pointer;
-        float: left;
     }
     
     &__title{
-        position: absolute;
-        top: 12%;
-        right: 12%;
-
-        width: 40%;
         margin-left: 5%;    
-
-        text-align: right;
-    }
-    
-    &__cost{
-        position: absolute;
-        bottom: 12%;
-        right: 12%;
-
-        display: inline-block;
-        width: 20%;
-        padding-top: 5px;
-        border: 1px solid #ffd941;
-        border-radius: 5px;      
-
-        &:hover{
-            background: #ffd941;
-        }
     }
 
     &__button{

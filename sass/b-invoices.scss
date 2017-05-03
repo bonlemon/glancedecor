@@ -1,10 +1,9 @@
 // @import 'common.scss';
 
 /*----- Tabs -----*/
-.b-tab {
-    width:100%;
-    display:inline-block;
-
+.b-invoices {
+    text-align: center;
+    padding: 38px 0 48px 0;
  
     /*----- Tab Links -----*/
     &__links li {
@@ -61,6 +60,8 @@
     }
     
     &__title{
+        float: left;
+        text-align: left;
         margin-left: 5%;
     }
 
@@ -69,7 +70,7 @@
     }
 
     &__cost{
-        float: left;
+        float: right;
         padding: 5px 15px;
         min-width: 100px;
         border-radius: 5px;
@@ -78,27 +79,6 @@
         font-size: 16px;
         background: #ffd941;
         color: #000;
-        
-        &_sale{
-            background: #ff4141;
-            color: #fff;
-
-            span{
-                text-decoration: line-through;
-                vertical-align: super;
-                font-size: 12px;
-            }
-
-            &-top{
-                position: absolute;
-                top: 30px;
-                left: 30px;
-                opacity: 0.9;
-
-                background: #ff4141;
-                color: #fff;
-            }
-        }
     }
 
     &__calculation{

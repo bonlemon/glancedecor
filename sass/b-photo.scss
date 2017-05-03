@@ -1,12 +1,5 @@
 // @import 'common.scss';
 
-// TODO ?????
-
-.b-examples__header{
-    margin: 0 0 37px 0;
-    letter-spacing: -1px;
-}
-
 // ---
 
 .b-photo{
@@ -31,5 +24,9 @@
     &__list-item img{
         width: 100%;
         border-radius: 3px;
+    }
+
+    &__button{
+        margin-top: 40px
     }
 }

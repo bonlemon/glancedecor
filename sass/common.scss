@@ -3,6 +3,10 @@
 $pageMinWidth: 980px;
 $pageMaxWidth: 1330px;
 
+$textFontSize: 20px;
+$headerFontSize: 35px;
+
+$buttonColor: #2483b3; 
 
 /*****************/
 /* Блок страницы */
@@ -12,7 +16,7 @@ $pageMaxWidth: 1330px;
 
     font-family: 'Neucha', sans-serif;
     color: #333;
-    font-size: 20px;
+    font-size: $textFontSize;
     line-height: 25px;
 
     background-color: #fafafa;
@@ -32,8 +36,10 @@ $pageMaxWidth: 1330px;
 
 
 .b-header{
+    margin: 0 0 37px 0;
+
     color: #333;
-    font-size: 35px;
+    font-size: $headerFontSize;
     line-height: 40px;
     letter-spacing: -1px;
 }
@@ -45,15 +51,34 @@ $pageMaxWidth: 1330px;
 .submit{
     display: inline-block;
     padding: 0px 50px;
-    border: solid 1px #2483b3;
+    border: solid 1px $buttonColor;
     height: 38px;
     
     cursor: pointer;
     line-height: 38px;
     vertical-align: top;
     transition: all 0.2s;
-    color: #2483b3;
+    color: $buttonColor;
     border-radius: 4px;
+}
+
+
+.b-button{
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: solid 1px $buttonColor;
+
+    font-size: 16px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    color: $buttonColor;
+    cursor: pointer;
+
+    &:hover {
+        background: $buttonColor;
+        color: #fff;
+    }
 }
 
 /* Clearfix block */
