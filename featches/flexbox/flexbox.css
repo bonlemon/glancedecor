@@ -1,0 +1,28 @@
+.flex-container{
+    height: 200px;
+    display: flex;
+    flex-direction: row; /* row row-reverse column-reverse */
+    flex-wrap: wrap; /* wrap-reverse*/ 
+    justify-content: space-around; 
+    /*
+        flex-start | flex-end | center | 
+        space-between - первый и последний элементы по краям а другое пространство между ними.
+        space-around - отступ для 1 и n элемента половина расстояния между другими элементами
+    */
+
+} 
+
+.flex-element{
+    order:1;
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+.element-2{
+    order:2;
+    flex-grow: 10;
+}
+
+.element-6{
+    order:-1;
+}
