@@ -1,5 +1,3 @@
-// @import 'common.scss';
-
 /********/
 /* Menu */
 /********/
@@ -7,75 +5,66 @@
     border-bottom: solid 1px #f0f0f0;
     color: #333;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 20px;
 
     &__item{
-        display: inline-block;
-        width: 22%;
-        cursor: pointer;
-        margin-right: 40px;
-        margin-bottom: 60px;
-        vertical-align: top;
-    }
-}
+        padding: 20px;
+
+        text-align: left;
+
+        &-img {
+        background: url('img/icon/main_block.png') no-repeat;
+        width: 76px;
+        height: 76px;
+        float: left;
+        }
+
+        &__title,
+        &__content{
+            display: block;
+            margin-left: 100px;
+            letter-spacing: -0.3px;
+        }
+
+        &__title{
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        &__content{
+            color: #2387b5;
+            text-decoration: none;
+            text-transform: lowercase;
+            min-height: 50px;
+            font-size: 15px;
+        }
+
+        &__content:hover{  
+            text-decoration: underline;
+        }
 
 
-.b-element-menu{
-  margin: auto;
-  text-align: left;
+        /* Choice img from sprite */
 
-    &__img {
-    background: url('images/icon/main_block.png') no-repeat;
-    width: 76px;
-    height: 76px;
-    float: left;
-    }
-
-    &__title,
-    &__content{
-        display: block;
-        margin-left: 100px;
-        letter-spacing: -0.3px;
-    }
-
-    &__title{
-        font-size: 22px;
-        font-weight: 500;
-    }
-
-    &__content{
-        color: #2387b5;
-        text-decoration: none;
-        text-transform: lowercase;
-        min-height: 50px;
-        font-size: 15px;
-    }
-
-    &__content:hover{  
-        text-decoration: underline;
-    }
-
-
-    /* Choice img from sprite */
-
-    &__type-of-calculation{
-        background-position: 0 0;
-        width: 73px;
-    }
-    &__sales{
-        background-position: -73px 0;
-    }
-    &__technologies{
-        background-position: -154px 0;
-    }
-    &__reviews{
-        background-position: 0 -76px;
-    }
-    &__invoices{
-        background-position: -76px -78px;
-        width: 60px;
-    }
-    &__our-works{
-        background-position: -137px -78px;
+        &__type-of-calculation{
+            background-position: 0 0;
+            width: 73px;
+        }
+        &__sales{
+            background-position: -73px 0;
+        }
+        &__technologies{
+            background-position: -154px 0;
+        }
+        &__reviews{
+            background-position: 0 -76px;
+        }
+        &__invoices{
+            background-position: -76px -78px;
+            width: 60px;
+        }
+        &__our-works{
+            background-position: -137px -78px;
+        }
     }
 }

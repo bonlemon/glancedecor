@@ -3,7 +3,7 @@
 /******************/
 /* Блок навигации */
 /******************/
-.b-page__navbar {
+.b-pg__navbar {
   text-align: center;
   top: 0px;
   width: 100%;
@@ -12,8 +12,7 @@
   z-index: 20;
   background-color: #fff;
   box-shadow: 0 2px 2px rgba(0,0,0,0.3);
-  min-width: $pageMinWidth;
-  font-family: 'Kaushan Script', 'Neucha', sans-serif;
+  font-family: "NautilusPompiliusRegular";
 }
 
 .navbar {
@@ -26,7 +25,7 @@
 
   &__icon{
     display: inline-block;
-    background: url('images/icon/main_sprite.png')  no-repeat;  
+    background: url('img/icon/main_sprite.png')  no-repeat;  
 
   }
 

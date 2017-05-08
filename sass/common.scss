@@ -1,25 +1,30 @@
 // Constants
 
-$pageMinWidth: 980px;
-$pageMaxWidth: 1330px;
+$maxWidth: 1280px;
 
-$textFontSize: 20px;
+// Fonts
+$dscFontSize: 16px;
+$mblFontSize: 13px;
 $headerFontSize: 35px;
 
+// Colors
 $buttonColor: #2483b3; 
 
 /*****************/
 /* Блок страницы */
 /*****************/
-.b-page{
+.b-pg{
     padding: 0;
+	margin: 0 auto;
 
-    font-family: 'Neucha', sans-serif;
+	max-width: $maxWidth;
+	line-height: 25px;
+
+	background-color: #fafafa;
+
+    font-family: "RobotoCondensedRegular";
+	font-size: $dscFontSize;
     color: #333;
-    font-size: $textFontSize;
-    line-height: 25px;
-
-    background-color: #fafafa;
 
     &__line{
         width: 100%;  
@@ -27,9 +32,7 @@ $buttonColor: #2483b3;
     }
 
     &__line-conteiner{
-        margin: 0 auto;
-        min-width: $pageMinWidth;
-        max-width: $pageMaxWidth;
+        margin: 0 auto; 
     }
 }
 
@@ -90,4 +93,235 @@ $buttonColor: #2483b3;
         display: table; 
         clear: both; 
     }  
+}
+
+
+
+
+
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	border: red 3px solid;
+}
+body input:required:valid,
+body textarea:required:valid {
+	border: green 3px solid;
+}
+
+.auth_buttons,
+.main_menu_button{
+	border: none;
+    background-color: transparent;
+    font-size: 26px;
+}
+
+.main_menu_button{
+	color: #fff;
+	padding: 8px 15px 0 ;
+}
+
+.header_topline{
+	background-color: #43484C;
+	padding: 15px 0;
+	color: #fff;
+}
+
+.header_topline a{
+	color: #fff;
+}
+
+.top_header{
+	background-color: #4AAAD2;
+}
+
+.top_links{
+	display: inline-block;
+	vertical-align: middle;
+}
+.top_links a{
+	text-decoration: underline;;
+}
+.top_links a:hover{
+	text-decoration: none;
+}
+.soc_buttons{
+	float: right;
+}
+.soc_buttons > a{
+	font-size: 26px;
+	margin-left: 8px;
+}
+
+.logo{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: "NautilusPompiliusRegular";
+	font-size: 30px;
+	text-align: center;
+}
+
+.main_menu{
+	background-color: #3797bf;
+	color: #fff;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.main_menu a{
+	display: block;
+	padding: 15px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.main_menu a:hover,
+.main_menu .top_contacts:hover{
+	background-color: #2787af;
+	border-radius: 5px;
+	
+}
+.main_menu ul{
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: no
+}
+.main_menu ul li{
+	display: inline-block;
+}
+.main_menu .top_contacts{
+	float: right;
+	font-size: 32px;
+	padding: 0 15px;
+	line-height: 53px;
+}
+.main_menu .top_contacts i{
+	padding-right: 10px;
+}
+
+h1{
+	font-family: "RobotoCondensedLight";
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.slider_container{
+	position: relative;
+	text-align: center;
+}
+.slider_container img{
+	max-width: 100%;
+}
+
+.prev_button,
+.next_button{
+	position: absolute;
+	z-index: 10;
+	cursor: pointer;
+	top: 40%;
+
+	font-size: 26px;
+	color: #fff;
+}
+
+.prev_button{
+	left: 1%;
+}
+.next_button{
+	right: 1%;
+}
+
+.slide_item img{
+	display: block;
+}
+
+
+/* Section - order*/
+section.order{
+	background-color: #eee;
+	padding: 25px 0;
+}
+.sell_descr{
+	font-size: 22px;
+}
+.sell_right .button{
+	float: right;
+}
+
+.button{
+	border: medium none;
+	display: block;
+	background-color: #2BC6A4;
+	color: #fff;
+	padding: 5px 20px;
+	border-radius: 5px;
+	text-align: center;
+}
+.button:hover{
+	background-color: #4feac8;
+}
+
+.hidden{
+	display: none;
+}
+
+.pop-form h3{
+	margin: 10px auto;
+	text-align: auto;
+	font-family: "RobotoCondensedBold";
+}
+
+.pop-form input[type=text]{
+	display: block;
+	width: 90%;
+	margin: 0 auto 10px;
+	line-height: 24px;
+	border-radius: 5px;
+	border: #999 3px solid;
+}
+
+.pop-form .button{
+	margin: auto;
+}
+
+.blog-item img{
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+.blog-item h3{
+	text-transform: uppercase;
+	
+}
+
+.blog-item p{
+	margin-top: 0px;
+}
+
+aside.right_aside{
+	padding:15px 20px;
+	border-radius: 5px;
+	background: #ccc;
+	margin-top: 30px;
+}
+aside.right_aside{
+	
 }

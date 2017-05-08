@@ -7,13 +7,17 @@
     color: #fff;
     font-weight: 300;
 
-    &__left{
+    &__left,
+    &__right{
         margin: 70px;
+    }
+    &__left{
+        margin-right: 10px;
         float: left;
     }
 
     &__right{
-        margin: 70px;
+        margin-left: 10px;
         float: right;
     }
 
@@ -42,7 +46,7 @@
 */
 %social-base{
     display: inline-block;
-    background: url(images/icon/socials_sprite.png) no-repeat;
+    background: url(img/icon/socials_sprite.png) no-repeat;
     width: 25px;
     height: 25px;
     margin-left: 5px;
