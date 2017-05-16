@@ -1,20 +1,24 @@
-// @import 'common.scss';
 
 .b-call{
     padding: 38px 0px 42px 0;
     text-align: center;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
 
     &__title,
     &__call-form{
         display: inline-block;
-        width:40%;
         line-height: 60px;
         vertical-align: middle;
+
+        div{
+            line-height: 30px;
+        }
     }
 
+    &__title,
     &__phone{
         display: block;
-        font-size: 20px;
+        font-size: 25px;
     }
 
     &__get-phone{
@@ -27,9 +31,10 @@
     }
 
     &__call-submit{
+        display: inline-block;
         background-color: #0077b3;
         color: #fff;
         padding: 0 35px;
-        margin: 10px;
+        margin: 10px 10px 0;
     }
 }
