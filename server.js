@@ -1,11 +1,12 @@
 // подключаем express
 var express = require("express");
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // создаем объект приложения
 var app = express()
 
 app.use(express.static('./'));
+app.use(express.static('./img'));
 
 // обработчик для маршрута '/'
 app.get("/", function(request, response){
@@ -17,5 +18,5 @@ app.get("/", function(request, response){
 
 // listen port 3000
 app.listen(PORT, function(){
-    console.log(`Start - OK! Listening port ${PORT}!`)
+    console.log(`Start - OK! Listening port ${PORT}! %s mode`, app.settings.env)
 });
