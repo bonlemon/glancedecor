@@ -97,6 +97,8 @@ $(document).ready(function() {
 
 	$('.b-sld').slick({
 		autoplay: true,
+		dots: true,
+		arrows: true,
   		autoplaySpeed: 2000,
 	});
 

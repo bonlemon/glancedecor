@@ -4,12 +4,15 @@
 /* Блок навигации */
 /******************/
 .b-pg__navbar {
-  text-align: center;
-  top: 0px;
-  width: 100%;
   position: fixed;
-  padding: 15px 0 10px 0;
+  top: 0px;
+  left: 0.5%;
   z-index: 20;
+  
+  padding: 15px 0 10px 0;
+  width: 99%;
+  text-align: center;
+
   background-color: #fff;
   box-shadow: 0 2px 2px rgba(0,0,0,0.3);
   font-family: "NautilusPompiliusRegular";
