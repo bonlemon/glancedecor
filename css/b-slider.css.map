@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAKA,SAAS,CACP,QAAQ,CAAC,QAAQ,CACjB,GAAG,CAAC,GAAG,CACP,IAAI,CAAC,GAAG,CACR,MAAM,CAAC,KAAK,CACZ,QAAQ,CAAC,MAAM,CACf,UAAU,CAAC,MAAM,CAGnB,kBAAkB,CAChB,UAAU,CAAE,IAAI",
+"sources": ["../sass/b-slider.scss"],
+"names": [],
+"file": "b-slider.css"
+}

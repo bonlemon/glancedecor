@@ -21,14 +21,13 @@
 .navbar {
   
   &__logo{
-  width: 80%;
-  height: 80%;
+    width: 50px;
+    height: 40px;
   }
-
 
   &__icon{
     display: inline-block;
-    background: url('img/icon/main_sprite.png')  no-repeat;  
+    background: url('img/icon/main_sprite.png') no-repeat;  
 
   }
 

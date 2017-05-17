@@ -5,8 +5,8 @@ const PORT = process.env.PORT || 5000;
 // создаем объект приложения
 var app = express()
 
-app.use(express.static('./'));
-app.use(express.static('./img'));
+app.use(express.static(__dirname));
+app.use("/img", express.static(__dirname + "/img"));
 
 // обработчик для маршрута '/'
 app.get("/", function(request, response){
