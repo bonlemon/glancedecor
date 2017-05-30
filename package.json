@@ -2,13 +2,16 @@
   "name": "vipceiling",
   "version": "1.0.0",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "sass": "sass --watch sass/main.scss:style.css",
+    "slick": "sass libs/slick/slick.scss libs/slick/slick.css"
   },
   "main": "server.js",
   "repository": "git@github.com:bonlemon/vipceiling.git",
   "author": "bon_lemon <you@example.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "node-sass": "^4.5.3"
   }
 }
