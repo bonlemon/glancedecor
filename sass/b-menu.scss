@@ -9,14 +9,17 @@
     box-shadow: 0 0 2px rgba(0,0,0,0.3);
 
     &__item{
+        position: relative;
         padding: 20px;
-
         text-align: left;
+        min-height: 140px;
 
         &-img {
-            background: url('img/icon/main_block.png') no-repeat;
-            width: 76px;
-            height: 76px;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 70px;
+            height: 86px;
             float: left;
         }
 
@@ -48,24 +51,28 @@
         /* Choice img from sprite */
 
         &__type-of-calculation{
-            background-position: 0 0;
-            width: 73px;
-        }
-        &__sales{
-            background-position: -73px 0;
-        }
-        &__technologies{
-            background-position: -154px 0;
+            background: url('img/b-menu/calculations.png') no-repeat;
+            background-size: 70px 80px;
         }
         &__reviews{
-            background-position: 0 -76px;
+            background: url('img/b-menu/review.png') no-repeat;
+            background-size: 70px 80px;
+        }
+        &__sales{
+            background: url('img/b-menu/sales.png') no-repeat;
+            background-size: 65px 76px;
+        }
+        &__examples{
+            background: url('img/b-menu/examples.png') no-repeat;
+            background-size: 70px 65px;
+        }
+        &__technologies{
+            background: url('img/b-menu/technologies.png') no-repeat;
+            background-size: 70px 70px;
         }
         &__invoices{
-            background-position: -76px -78px;
-            width: 60px;
-        }
-        &__our-works{
-            background-position: -137px -78px;
+            background: url('img/b-menu/invoices.png') no-repeat;
+            background-size: 70px 86px;
         }
     }
 }
