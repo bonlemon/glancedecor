@@ -55,27 +55,27 @@
 .submit {
   display: inline-block;
   padding: 0px 50px;
-  border: solid 1px #2483b3;
+  border: solid 1px #116A96;
   height: 38px;
   cursor: pointer;
   line-height: 38px;
   vertical-align: top;
   transition: all 0.2s;
-  color: #2483b3;
+  color: #01314A;
   border-radius: 4px; }
 
 .b-button {
   box-sizing: border-box;
   padding: 10px 20px;
-  border: solid 1px #2483b3;
+  border: solid 1px #01314A;
   font-size: 16px;
   background: #fff;
   border-radius: 5px;
   text-align: center;
-  color: #2483b3;
+  color: #01314A;
   cursor: pointer; }
   .b-button:hover {
-    background: #2483b3;
+    background: #01314A;
     color: #fff; }
 
 /* Clearfix block */
@@ -107,27 +107,26 @@
 .b-call {
   padding: 38px 0px 42px 0;
   text-align: center;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  background-color: #BBE3F0; }
   .b-call__title, .b-call__call-form {
-    display: inline-block;
     line-height: 60px;
     vertical-align: middle; }
     .b-call__title div, .b-call__call-form div {
       line-height: 30px; }
   .b-call__title, .b-call__phone {
-    display: block;
     font-size: 25px; }
+  .b-call__get-phone, .b-call__call-submit {
+    width: 30%;
+    display: inline-block; }
   .b-call__get-phone {
     border-radius: 5px;
     padding-left: 10px;
     padding-top: 5px;
     line-height: 30px;
-    margin-right: 5%;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15); }
   .b-call__call-submit {
-    display: inline-block;
     background-color: #0077b3;
-    color: #fff;
     padding: 0 35px;
     margin: 10px 10px 0; }
 
@@ -264,27 +263,27 @@
 .submit {
   display: inline-block;
   padding: 0px 50px;
-  border: solid 1px #2483b3;
+  border: solid 1px #116A96;
   height: 38px;
   cursor: pointer;
   line-height: 38px;
   vertical-align: top;
   transition: all 0.2s;
-  color: #2483b3;
+  color: #01314A;
   border-radius: 4px; }
 
 .b-button {
   box-sizing: border-box;
   padding: 10px 20px;
-  border: solid 1px #2483b3;
+  border: solid 1px #01314A;
   font-size: 16px;
   background: #fff;
   border-radius: 5px;
   text-align: center;
-  color: #2483b3;
+  color: #01314A;
   cursor: pointer; }
   .b-button:hover {
-    background: #2483b3;
+    background: #01314A;
     color: #fff; }
 
 /* Clearfix block */

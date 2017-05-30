@@ -4,7 +4,7 @@
   "scripts": {
     "start": "node server.js",
     "sass": "sass --watch sass/main.scss:style.css",
-    "slick": "sass libs/slick/slick.scss libs/slick/slick.css"
+    "slick": "sass --watch libs/slick:libs/slick"
   },
   "main": "server.js",
   "repository": "git@github.com:bonlemon/vipceiling.git",

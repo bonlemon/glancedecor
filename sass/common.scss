@@ -9,7 +9,8 @@ $mblFontSize: 13px;
 $headerFontSize: 35px;
 
 // Colors
-$buttonColor: #2483b3; 
+$buttonColor: #01314A;
+$buttonBorderColor: #116A96;
 
 /*****************/
 /* Блок страницы */
@@ -55,7 +56,7 @@ $buttonColor: #2483b3;
 .submit{
     display: inline-block;
     padding: 0px 50px;
-    border: solid 1px $buttonColor;
+    border: solid 1px $buttonBorderColor;
     height: 38px;
     
     cursor: pointer;

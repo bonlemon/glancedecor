@@ -3,10 +3,10 @@
     padding: 38px 0px 42px 0;
     text-align: center;
     box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    background-color: #BBE3F0;
 
     &__title,
     &__call-form{
-        display: inline-block;
         line-height: 60px;
         vertical-align: middle;
 
@@ -17,8 +17,13 @@
 
     &__title,
     &__phone{
-        display: block;
         font-size: 25px;
+    }
+
+    &__get-phone,
+    &__call-submit{
+        width: 30%;
+        display: inline-block;
     }
 
     &__get-phone{
@@ -26,14 +31,11 @@
         padding-left: 10px;
         padding-top: 5px;
         line-height: 30px;
-        margin-right: 5%;
         box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
     }
 
     &__call-submit{
-        display: inline-block;
         background-color: #0077b3;
-        color: #fff;
         padding: 0 35px;
         margin: 10px 10px 0;
     }
