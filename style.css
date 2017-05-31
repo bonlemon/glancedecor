@@ -661,13 +661,14 @@
 /* Custom, iPhone Retina */
 @media all and (min-width: 320px) {
   .b-pg__navbar, .b-pg__line {
-    width: 320px; }
+    width: 270px; }
 
   .navbar__text {
     font-size: 13px; }
-
-  .navbar__item:last-child {
-    display: none; }
+    .navbar__text__list_right, .navbar__text__item {
+      display: none; }
+    .navbar__text__item:first-child {
+      display: block; }
 
   /* Slider*/
   .b-sld-dsc {
@@ -682,14 +683,14 @@
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
   .b-pg__navbar, .b-pg__line {
-    width: 480px; }
+    width: 430px; }
 
   .navbar__text {
     font-size: 16px; } }
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
   .b-pg__navbar, .b-pg__line {
-    width: 768px; }
+    width: 710px; }
 
   .navbar__item:last-child {
     display: inline-block; }

@@ -33,14 +33,20 @@
     .b-pg{
         &__navbar,
         &__line{
-            width: 320px;
+            width: 270px;
         }
     }
     .navbar__text{
-            font-size: $mblFontSize;
+        font-size: $mblFontSize;
+        
+        &__list_right,
+        &__item{
+            display: none;
         }
-    .navbar__item:last-child{
-        display: none;
+
+        &__item:first-child{
+            display: block;
+        }
     }
 
     /* Slider*/
@@ -62,7 +68,7 @@
     .b-pg{
         &__navbar,
         &__line{
-            width: 480px;
+            width: 430px;
         }
     }
     .navbar__text{
@@ -75,7 +81,7 @@
     .b-pg{
         &__navbar,
         &__line{
-            width: 768px;
+            width: 710px;
         }
     }
     .navbar__item:last-child{
