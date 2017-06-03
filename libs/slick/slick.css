@@ -38,7 +38,7 @@
   left: 0;
   top: 0;
   display: block;
-  height: 430px; }
+  height: 375px; }
   .slick-track:before, .slick-track:after {
     content: "";
     display: table; }
@@ -55,7 +55,8 @@
   [dir="rtl"] .slick-slide {
     float: right; }
   .slick-slide img {
-    display: block; }
+    display: block;
+    height: 100%; }
   .slick-slide.slick-loading img {
     display: none; }
   .slick-slide.dragging img {

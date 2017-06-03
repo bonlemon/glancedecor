@@ -33,7 +33,7 @@
     .b-pg{
         &__navbar,
         &__line{
-            width: 270px;
+            width: 200px;
         }
     }
     .navbar__text{
@@ -61,6 +61,7 @@
             max-height: 30em;
         }
     }
+
 }
 
 /* Extra Small Devices, Phones */
@@ -74,6 +75,7 @@
     .navbar__text{
         font-size: $dscFontSize;
     }
+
 }
 
 /* Small Devices, Tablets */
@@ -100,16 +102,19 @@
     .b-sld-mbl{
         display: none;
     }
+
 }
 
 /* Medium Devices, Desktops */
 @media all and (min-width : 992px) {
+    $navbarHeight: 65px;
     .b-pg{
         &__navbar,
         &__line{
             width: 768px;
         }
     }
+
 }
 
  /* Large Devices, Wide Screens */
