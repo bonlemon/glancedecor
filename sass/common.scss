@@ -15,10 +15,13 @@ $buttonBorderColor: #116A96;
 /*****************/
 /* Блок страницы */
 /*****************/
-.b-pg{
-    padding: 0;
-	margin: 0 auto;
 
+body{
+    padding: 0;
+	margin: 0;
+}
+
+.b-pg{
 	max-width: $maxWidth;
 	line-height: 25px;
 
@@ -29,14 +32,14 @@ $buttonBorderColor: #116A96;
     color: #333;
 
     &__line{
+
+        box-sizing: border-box;
+        
         margin: 0 auto;
         box-shadow: 0 2px 2px rgba(0,0,0,0.3);
         background-color: #fafafa;
     }
 
-    &__line-conteiner{
-        margin: 0 auto; 
-    }
 }
 
 

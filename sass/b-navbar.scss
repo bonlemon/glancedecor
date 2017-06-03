@@ -6,6 +6,7 @@
 .b-pg__navbar {
   position: fixed;
   top: 0px;
+  // Выравнивание по середине фиксированного блока
   left:50%;
   transform: translateX(-50%);
   z-index: 20;
