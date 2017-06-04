@@ -67,6 +67,24 @@
         }
     }
 
+    .b-photo{
+        .slick-prev,
+        .slick-next,
+        .slick-dots,
+        .b-photo__list-photos{
+            display: none;
+        }
+        .b-sld-mbl{
+            display: block;
+            
+            .slick-prev,
+            .slick-next,
+            .slick-dots{
+                display: none !important;
+            }
+        }
+    }
+
     .b-footer{
         &__left,
         &__right{
@@ -105,6 +123,16 @@
     }
     .b-sld-mbl{
         display: none;
+    }
+
+    .b-photo{
+        .b-photo__list-photos{
+            display: block;
+        }
+        .b-sld-mbl{
+            display: none;
+            
+        }
     }
 
 }
