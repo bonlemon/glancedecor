@@ -145,7 +145,7 @@ body {
     display: inline-block;
     padding: 20px;
     margin: 5px;
-    width: 460px;
+    width: 100%;
     height: 330px;
     background: #fff;
     text-align: left;
@@ -734,8 +734,12 @@ body {
     display: none; } }
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
+  .b-examples__blocks {
+    width: 45% !important; }
+
   .b-pg__navbar, .b-pg__line {
-    width: 768px; } }
+    width: 968px;
+    margin: auto; } }
 /* Large Devices, Wide Screens */
 @media all and (min-width: 1200px) {
   .b-pg__navbar, .b-pg__line {
