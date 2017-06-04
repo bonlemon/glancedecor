@@ -39,8 +39,10 @@
             padding-right: -15px;
         }
     }
-    .navbar__text{
-        font-size: $mblFontSize;
+    .navbar{
+        &__text{
+            font-size: $mblFontSize;
+        }
         
         &__list_right,
         &__item{
@@ -69,6 +71,8 @@
         &__left,
         &__right{
             margin: 0;
+            padding-left: -15px;
+            padding-right: -15px;
         }
     }
     
@@ -77,37 +81,15 @@
      
 /* Extra Small Devices, Phones */
 @media all and (min-width : 480px) {
-    .b-pg{
-        &__navbar,
-        &__line{
-            width: 100%;
-            padding-left: -15px;
-            padding-right: -15px;
-        }
-    }
+
     .navbar__text{
         font-size: $dscFontSize;
     }
-
-    .b-footer{
-        &__left,
-        &__right{
-            margin: 0;
-            padding-left: -15px;
-            padding-right: -15px;
-        }
-    }
-
 }
 
 /* Small Devices, Tablets */
 @media all and (min-width : 768px) {
-    .b-pg{
-        &__navbar,
-        &__line{
-            width: 710px;
-        }
-    }
+
     .navbar__item:last-child{
         display: inline-block;
     }
@@ -136,7 +118,6 @@
             width: 768px;
         }
     }
-
 }
 
  /* Large Devices, Wide Screens */
