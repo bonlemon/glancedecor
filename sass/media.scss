@@ -33,6 +33,14 @@
             padding-right: -15px;
         }
     }
+    .b-call{
+        &__get-phone,
+        &__call-submit{
+            width: 70%;
+            display: block;
+            margin: 10px auto;
+        }
+    }
     .navbar{
         &__text{
             font-size: $mblFontSize;
@@ -108,6 +116,14 @@
     }
     .b-sld-mbl{
         display: none;
+    }
+    .b-call{
+        &__get-phone,
+        &__call-submit{
+            width: 30%;
+            display: inline-block;
+            margin: 10px;
+        }
     }
     .b-photo{
         .b-photo__list-photos{

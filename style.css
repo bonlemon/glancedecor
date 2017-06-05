@@ -674,6 +674,11 @@ body {
     padding-left: -15px;
     padding-right: -15px; }
 
+  .b-call__get-phone, .b-call__call-submit {
+    width: 70%;
+    display: block;
+    margin: 10px auto; }
+
   .navbar__text {
     font-size: 13px; }
   .navbar__list_right, .navbar__item {
@@ -727,6 +732,11 @@ body {
 
   .b-sld-mbl {
     display: none; }
+
+  .b-call__get-phone, .b-call__call-submit {
+    width: 30%;
+    display: inline-block;
+    margin: 10px; }
 
   .b-photo .b-photo__list-photos {
     display: block; }
