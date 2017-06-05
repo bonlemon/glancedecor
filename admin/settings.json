@@ -1,0 +1,2168 @@
+{
+    "city": {
+        "slug": "city",
+        "table": {
+            "name": "city",
+            "pk": "id",
+            "verbose": "city"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "address": {
+        "slug": "address",
+        "table": {
+            "name": "address",
+            "pk": "id",
+            "verbose": "address"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "number",
+                "verbose": "number",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "housing",
+                "verbose": "housing",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "building",
+                "verbose": "building",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "entrance",
+                "verbose": "entrance",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "street_name",
+                "verbose": "street_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "street_city_id",
+                "verbose": "street_city_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "celling": {
+        "slug": "celling",
+        "table": {
+            "name": "celling",
+            "pk": "id",
+            "verbose": "celling"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "width",
+                "verbose": "width",
+                "control": {
+                    "text": true
+                },
+                "type": "float",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "technology_id",
+                "verbose": "technology_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "facture_id",
+                "verbose": "facture_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "celling_producer_id",
+                "verbose": "celling_producer_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "celling_price": {
+        "slug": "celling_price",
+        "table": {
+            "name": "celling_price",
+            "pk": "id",
+            "verbose": "celling_price"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "date_time",
+                "verbose": "date_time",
+                "control": {
+                    "text": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "price",
+                "verbose": "price",
+                "control": {
+                    "text": true
+                },
+                "type": "decimal(10,0)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "is_active",
+                "verbose": "is_active",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": false,
+                "defaultValue": "1",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "is_discount",
+                "verbose": "is_discount",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": false,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "celling_id",
+                "verbose": "celling_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "celling_producer": {
+        "slug": "celling_producer",
+        "table": {
+            "name": "celling_producer",
+            "pk": "id",
+            "verbose": "celling_producer"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(127)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "logo",
+                "verbose": "logo",
+                "control": {
+                    "text": true
+                },
+                "type": "mediumblob",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "producer_country_id",
+                "verbose": "producer_country_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "comment": {
+        "slug": "comment",
+        "table": {
+            "name": "comment",
+            "pk": "id",
+            "verbose": "comment"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "comment",
+                "verbose": "comment",
+                "control": {
+                    "text": true
+                },
+                "type": "mediumtext",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "date_time",
+                "verbose": "date_time",
+                "control": {
+                    "text": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "room_order_order_id",
+                "verbose": "room_order_order_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "room_order_room_type_id",
+                "verbose": "room_order_room_type_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "customer": {
+        "slug": "customer",
+        "table": {
+            "name": "customer",
+            "pk": "id",
+            "verbose": "customer"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "first_name",
+                "verbose": "first_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "last_name",
+                "verbose": "last_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "middle_name",
+                "verbose": "middle_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": true,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "email",
+                "verbose": "email",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": true,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "phone_number",
+                "verbose": "phone_number",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(17)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "address_id",
+                "verbose": "address_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "facture": {
+        "slug": "facture",
+        "table": {
+            "name": "facture",
+            "pk": "id",
+            "verbose": "facture"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "lamp": {
+        "slug": "lamp",
+        "table": {
+            "name": "lamp",
+            "pk": "id",
+            "verbose": "lamp"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "frequency",
+                "verbose": "frequency",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "power",
+                "verbose": "power",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "voltage",
+                "verbose": "voltage",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "picture",
+                "verbose": "picture",
+                "control": {
+                    "text": true
+                },
+                "type": "mediumblob",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "description",
+                "verbose": "description",
+                "control": {
+                    "text": true
+                },
+                "type": "mediumtext",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "lamp_producer_id",
+                "verbose": "lamp_producer_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "lamp_price": {
+        "slug": "lamp_price",
+        "table": {
+            "name": "lamp_price",
+            "pk": "id",
+            "verbose": "lamp_price"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "date_time",
+                "verbose": "date_time",
+                "control": {
+                    "text": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "is_active",
+                "verbose": "is_active",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": false,
+                "defaultValue": "1",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "is_discount",
+                "verbose": "is_discount",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": false,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "lamp_id",
+                "verbose": "lamp_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "lamp_producer": {
+        "slug": "lamp_producer",
+        "table": {
+            "name": "lamp_producer",
+            "pk": "id",
+            "verbose": "lamp_producer"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(127)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "logo",
+                "verbose": "logo",
+                "control": {
+                    "text": true
+                },
+                "type": "mediumblob",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "producer_country_id",
+                "verbose": "producer_country_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "news": {
+        "slug": "news",
+        "table": {
+            "name": "news",
+            "pk": "id",
+            "verbose": "news"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "text",
+                "verbose": "text",
+                "control": {
+                    "text": true
+                },
+                "type": "mediumtext",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "added_at",
+                "verbose": "added_at",
+                "control": {
+                    "text": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "city_id",
+                "verbose": "city_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "office": {
+        "slug": "office",
+        "table": {
+            "name": "office",
+            "pk": "id",
+            "verbose": "office"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "is_prime",
+                "verbose": "is_prime",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": false,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "timetable",
+                "verbose": "timetable",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "phone_number",
+                "verbose": "phone_number",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(17)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "address_id",
+                "verbose": "address_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "order": {
+        "slug": "order",
+        "table": {
+            "name": "order",
+            "pk": "id",
+            "verbose": "order"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "office_id",
+                "verbose": "office_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "customer_id",
+                "verbose": "customer_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "agreement_number",
+                "verbose": "agreement_number",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(125)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "agreement_date",
+                "verbose": "agreement_date",
+                "control": {
+                    "text": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "phone": {
+        "slug": "phone",
+        "table": {
+            "name": "phone",
+            "pk": "number",
+            "verbose": "phone"
+        },
+        "columns": [
+            {
+                "name": "number",
+                "verbose": "number",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(17)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "producer_country": {
+        "slug": "producer_country",
+        "table": {
+            "name": "producer_country",
+            "pk": "id",
+            "verbose": "producer_country"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "room_order": {
+        "slug": "room_order",
+        "table": {
+            "name": "room_order",
+            "pk": [
+                "order_id",
+                "room_type_id"
+            ],
+            "verbose": "room_order"
+        },
+        "columns": [
+            {
+                "name": "order_id",
+                "verbose": "order_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "room_type_id",
+                "verbose": "room_type_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "corners_amount",
+                "verbose": "corners_amount",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": true,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "pipes_amount",
+                "verbose": "pipes_amount",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": true,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "profiles_amount",
+                "verbose": "profiles_amount",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": true,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "holes_amount",
+                "verbose": "holes_amount",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": true,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "stripes_amount",
+                "verbose": "stripes_amount",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": true,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "square_meters",
+                "verbose": "square_meters",
+                "control": {
+                    "text": true
+                },
+                "type": "float",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "work_price_id",
+                "verbose": "work_price_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "celling_price_id",
+                "verbose": "celling_price_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "room_order_has_lamp_price": {
+        "slug": "room_order_has_lamp_price",
+        "table": {
+            "name": "room_order_has_lamp_price",
+            "pk": [
+                "room_order_order_id",
+                "room_order_room_type_id",
+                "lamp_price_id"
+            ],
+            "verbose": "room_order_has_lamp_price"
+        },
+        "columns": [
+            {
+                "name": "room_order_order_id",
+                "verbose": "room_order_order_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "room_order_room_type_id",
+                "verbose": "room_order_room_type_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "lamp_price_id",
+                "verbose": "lamp_price_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "color",
+                "verbose": "color",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "room_type": {
+        "slug": "room_type",
+        "table": {
+            "name": "room_type",
+            "pk": "id",
+            "verbose": "room_type"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(125)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "screen": {
+        "slug": "screen",
+        "table": {
+            "name": "screen",
+            "pk": "id",
+            "verbose": "screen"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "screen",
+                "verbose": "screen",
+                "control": {
+                    "text": true
+                },
+                "type": "mediumblob",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "room_order_room_type_id",
+                "verbose": "room_order_room_type_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "room_order_order_id",
+                "verbose": "room_order_order_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "room_order_order_id1",
+                "verbose": "room_order_order_id1",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "room_order_room_type_id1",
+                "verbose": "room_order_room_type_id1",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "street": {
+        "slug": "street",
+        "table": {
+            "name": "street",
+            "pk": [
+                "name",
+                "city_id"
+            ],
+            "verbose": "street"
+        },
+        "columns": [
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "city_id",
+                "verbose": "city_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "technology": {
+        "slug": "technology",
+        "table": {
+            "name": "technology",
+            "pk": "id",
+            "verbose": "technology"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(45)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "work_price": {
+        "slug": "work_price",
+        "table": {
+            "name": "work_price",
+            "pk": "id",
+            "verbose": "work_price"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "date_time",
+                "verbose": "date_time",
+                "control": {
+                    "text": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "corner_price",
+                "verbose": "corner_price",
+                "control": {
+                    "text": true
+                },
+                "type": "decimal(10,0)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "pipe_price",
+                "verbose": "pipe_price",
+                "control": {
+                    "text": true
+                },
+                "type": "decimal(10,0)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "profile_price",
+                "verbose": "profile_price",
+                "control": {
+                    "text": true
+                },
+                "type": "decimal(10,0)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "hole_price",
+                "verbose": "hole_price",
+                "control": {
+                    "text": true
+                },
+                "type": "decimal(10,0)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "stripe_price",
+                "verbose": "stripe_price",
+                "control": {
+                    "text": true
+                },
+                "type": "decimal(10,0)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "is_active",
+                "verbose": "is_active",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": false,
+                "defaultValue": "1",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "is_discount",
+                "verbose": "is_discount",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": false,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    }
+}
