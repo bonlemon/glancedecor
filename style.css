@@ -789,6 +789,7 @@ body {
 /* Large Devices, Wide Screens */
 @media all and (min-width: 1200px) {
   .b-pg__navbar, .b-pg__line {
-    width: 1100px; } }
+    width: 1100px;
+    margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */
