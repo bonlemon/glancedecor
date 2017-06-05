@@ -10,13 +10,13 @@
 
     &__item{
         position: relative;
-        padding: 20px;
+        padding: 15px;
         text-align: left;
-        min-height: 140px;
+        height: 110px;
 
         &-img {
             position: absolute;
-            top: 5%;
+            top: 15%;
             left: 5%;
             width: 70px;
             height: 86px;

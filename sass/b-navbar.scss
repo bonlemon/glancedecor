@@ -39,6 +39,10 @@
 
   &__list{
     float: left;
+
+    .fa-bars{
+      color: #0077b3;
+    }
   }
 
   &__list:first-child{

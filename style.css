@@ -189,13 +189,13 @@ body {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); }
   .b-menu__item {
     position: relative;
-    padding: 20px;
+    padding: 15px;
     text-align: left;
-    min-height: 140px;
+    height: 110px;
     /* Choice img from sprite */ }
     .b-menu__item-img {
       position: absolute;
-      top: 5%;
+      top: 15%;
       left: 5%;
       width: 70px;
       height: 86px;
@@ -331,6 +331,8 @@ body {
     background: url("img/icon/main_sprite.png") no-repeat; }
   .navbar__list {
     float: left; }
+    .navbar__list .fa-bars {
+      color: #0077b3; }
   .navbar__list:first-child {
     padding-left: 15px; }
   .navbar__item {
@@ -577,6 +579,40 @@ body {
     display: none; }
   .b-invoices__tab_active {
     display: block; }
+
+.b-review {
+  box-sizing: border-box;
+  padding: 38px 0px 42px 0;
+  text-align: center;
+  /*----- Content of Tabs -----*/ }
+  .b-review__header {
+    margin-bottom: 20px; }
+  .b-review__content-title {
+    margin: 1% 10%;
+    text-align: center;
+    font-size: 16px; }
+  .b-review__tab-element {
+    display: inline-block;
+    width: 27%;
+    min-width: 250px;
+    min-height: 250px;
+    margin: 10px;
+    margin-right: 0px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+    vertical-align: top; }
+    .b-review__tab-element:last-child {
+      margin-right: auto; }
+  .b-review__img {
+    width: 80%;
+    height: 80%;
+    border-radius: 3px;
+    cursor: pointer; }
+  .b-review__title {
+    margin-left: 5%; }
+  .b-review__button {
+    margin-top: 25px; }
 
 .b-technologies {
   box-sizing: border-box;
