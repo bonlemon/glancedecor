@@ -1,40 +1,33 @@
-
-.b-call{
+.b-call {
     padding: 38px 0px 42px 0;
     text-align: center;
-    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     background-color: #BBE3F0;
-
     &__title,
-    &__call-form{
+    &__call-form {
         line-height: 60px;
         vertical-align: middle;
-
-        div{
+        div {
             line-height: 30px;
         }
     }
-
     &__title,
-    &__phone{
+    &__phone {
         font-size: 25px;
     }
-
     &__get-phone,
-    &__call-submit{
+    &__call-submit {
         width: 30%;
         display: inline-block;
     }
-
-    &__get-phone{
+    &__get-phone {
         border-radius: 5px;
         padding-left: 10px;
         padding-top: 5px;
         line-height: 30px;
-        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
     }
-
-    &__call-submit{
+    &__call-submit {
         background-color: #0077b3;
         padding: 0 35px;
         margin: 10px 10px 0;

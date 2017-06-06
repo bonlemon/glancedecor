@@ -2,35 +2,29 @@
     Footer block
 */
 
-.b-footer{
+.b-footer {
     background: #6e767d;
     color: #fff;
     font-weight: 300;
-
     &__left,
-    &__right{
+    &__right {
         margin: 70px;
     }
-    &__left{
+    &__left {
         margin-right: 10px;
         float: left;
     }
-
-    &__right{
+    &__right {
         margin-left: 10px;
         float: right;
     }
-
-    &__contact span{
+    &__contact span {
         font-size: 25px;
         display: block;
     }
-
-    &__social{
-
+    &__social {
         margin-bottom: 30px;
-
-        span{
+        span {
             font-size: 20px;
             display: block;
             float: left;
@@ -44,7 +38,8 @@
     Base block for social icon in footer block 
     TODO may be need unpdate to mixin
 */
-%social-base{
+
+%social-base {
     display: inline-block;
     background: url(img/icon/socials_sprite.png) no-repeat;
     width: 25px;
@@ -52,25 +47,23 @@
     margin-left: 5px;
 }
 
-.b-social{
+.b-social {
     display: inline;
     margin-left: 20px;
-
-    &__vk{
+    &__vk {
         @extend %social-base;
         background-position: -26px 0;
     }
-    &__instagram{
+    &__instagram {
         @extend %social-base;
         background-position: -130px 0;
     }
-    &__facebook{
+    &__facebook {
         @extend %social-base;
         background-position: -52px 0;
     }
-    &__twitter{
+    &__twitter {
         @extend %social-base;
         background-position: -78px 0;
     }
 }
-    

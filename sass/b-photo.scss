@@ -1,34 +1,26 @@
 // @import 'common.scss';
-
 // ---
-
-.b-photo{
+.b-photo {
     padding: 38px 0px 42px 0;
     text-align: center;
-
-
-    &__list-photos{
+    &__list-photos {
         margin: 0 auto;
         text-align: center;
     }
-
-    &__list-item{
+    &__list-item {
         display: inline-block;
         width: 300px;
         height: 200px;
         cursor: pointer;
         margin: 20px;
         vertical-align: top;
-
-
-        img{
+        img {
             width: 100%;
             height: 100%;
             border-radius: 3px;
         }
     }
-
-    &__button{
+    &__button {
         margin-top: 40px
     }
 }

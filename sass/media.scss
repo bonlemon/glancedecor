@@ -1,64 +1,70 @@
 /*==========  Desktop First Method  ==========*/
 
+
 /* Large Devices, Wide Screens */
-@media all and (max-width : 1200px) {
-}
+
+@media all and (max-width: 1200px) {}
+
 
 /* Medium Devices, Desktops */
-@media all and (max-width : 992px) {
-}
+
+@media all and (max-width: 992px) {}
+
 
 /* Small Devices, Tablets */
-@media all and (max-width : 768px) {
-}
+
+@media all and (max-width: 768px) {}
+
 
 /* Extra Small Devices, Phones */
-@media all and (max-width : 480px) {
-}
+
+@media all and (max-width: 480px) {}
+
 
 /* Custom, iPhone Retina */
-@media all and (max-width : 320px) {
-}
+
+@media all and (max-width: 320px) {}
 
 
 /*==========  Mobile First Method  ==========*/
 
+
 /* Custom, iPhone Retina */
-@media all and (min-width : 320px) {
-    .b-pg{
+
+@media all and (min-width: 320px) {
+    .b-pg {
         &__navbar,
-        &__line{
+        &__line {
             width: 100%;
             padding-left: -15px;
             padding-right: -15px;
         }
     }
-    .b-call{
+    .b-call {
         &__get-phone,
-        &__call-submit{
+        &__call-submit {
             width: 70%;
             display: block;
             margin: 10px auto;
         }
     }
-    .navbar{
-        &__text{
+    .navbar {
+        &__text {
             font-size: $mblFontSize;
         }
         &__list_right,
-        &__item{
+        &__item {
             display: none;
         }
-        &__item:first-child{
+        &__item:first-child {
             display: block;
         }
     }
-
     /* Slider*/
-    .b-sld-dsc{
+    .b-sld-dsc {
         display: none;
     }
-    .b-sld-mbl{
+    .b-sld-mbl {
         display: block;
         margin-top: 75px;
         img {
@@ -66,96 +72,103 @@
             max-height: 30em;
         }
     }
-    .b-photo{
+    .b-photo {
         .slick-prev,
         .slick-next,
         .slick-dots,
-        .b-photo__list-photos{
+        .b-photo__list-photos {
             display: none;
         }
-        .b-sld-mbl{
+        .b-sld-mbl {
             display: block;
-            
             .slick-prev,
             .slick-next,
-            .slick-dots{
+            .slick-dots {
                 display: none !important;
             }
         }
     }
-    .b-footer{
+    .b-footer {
         &__left,
-        &__right{
+        &__right {
             margin: 0;
             padding-left: -15px;
             padding-right: -15px;
         }
     }
 }
-     
+
+
 /* Extra Small Devices, Phones */
-@media all and (min-width : 480px) {
-    .navbar__text{
+
+@media all and (min-width: 480px) {
+    .navbar__text {
         font-size: $dscFontSize;
     }
 }
 
+
 /* Small Devices, Tablets */
-@media all and (min-width : 768px) {
-    .navbar__item:last-child{
+
+@media all and (min-width: 768px) {
+    .navbar__item:last-child {
         display: inline-block;
     }
     /* Slider */
-    .b-sld-dsc{
+    .b-sld-dsc {
         display: block;
         margin-top: 75px;
-        img{
+        img {
             width: 100%;
             min-height: 18em;
         }
     }
-    .b-sld-mbl{
+    .b-sld-mbl {
         display: none;
     }
-    .b-call{
+    .b-call {
         &__get-phone,
-        &__call-submit{
+        &__call-submit {
             width: 30%;
             display: inline-block;
             margin: 10px;
         }
     }
-    .b-photo{
-        .b-photo__list-photos{
+    .b-photo {
+        .b-photo__list-photos {
             display: block;
         }
-        .b-sld-mbl{
+        .b-sld-mbl {
             display: none;
         }
     }
 }
 
+
 /* Medium Devices, Desktops */
-@media all and (min-width : 992px) {
-    .b-examples{
-        &__blocks{
+
+@media all and (min-width: 992px) {
+    .b-examples {
+        &__blocks {
             width: 45% !important;
         }
     }
-    .b-pg{
+    .b-pg {
         &__navbar,
-        &__line{
+        &__line {
             width: 968px;
             margin: auto;
         }
     }
 }
 
- /* Large Devices, Wide Screens */
-@media all and (min-width : 1200px) {
-    .b-pg{
+
+/* Large Devices, Wide Screens */
+
+@media all and (min-width: 1200px) {
+    .b-pg {
         &__navbar,
-        &__line{
+        &__line {
             width: 1100px;
             margin: auto;
         }

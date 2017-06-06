@@ -1,12 +1,13 @@
 // подключаем express
 var express = require("express"),
+    nodemailer = require('nodemailer'),
     xAdmin = require("express-admin"),
     config = {
         dpath: './admin',
-	config: require('./admin/config.json'),
-	settings: require('./admin/settings.json'),
-	custom: require('./admin/custom.json'),
-	users: require('./admin/users.json')
+        config: require('./admin/config.json'),
+        settings: require('./admin/settings.json'),
+        custom: require('./admin/custom.json'),
+        users: require('./admin/users.json')
     };
 
 const PORT = process.env.PORT || 5001;
@@ -22,8 +23,12 @@ xAdmin.init(config, function (err, admin) {
     app.get('/', function (req, res) {
         res.send('Hello World');
     });
+    app.get('/mail', function (req, res) {
+        console.log('req', req)
+
+    });
     // site server
-    app.listen(PORT, function(){
+    app.listen(PORT, function () {
         console.log(`Start - OK! Listening port ${PORT}! %s mode`, app.settings.env)
     });
 });

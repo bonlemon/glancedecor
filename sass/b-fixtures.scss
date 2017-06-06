@@ -1,79 +1,60 @@
-
 .b-fixtures {
     box-sizing: border-box;
     padding: 38px 0px 42px 0;
     text-align: center;
-
-     /*----- Content of Tabs -----*/
-     &__header{
+    /*----- Content of Tabs -----*/
+    &__header {
         margin-bottom: 20px;
-     }
-
-     &__content-title{
+    }
+    &__content-title {
         margin: 1% 10%;
-        
         text-align: center;
         font-size: 16px;
-     }
-     
-     &__tab-element{
+    }
+    &__tab-element {
         position: relative;
-
         display: inline-block;
         width: 26%;
-        min-width:280px;
+        min-width: 280px;
         height: 200px;
         margin: 10px;
         margin-right: 0px;
-
-        border-radius:5px;       
-        background:#fff;
-        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
-
-        &:last-child{
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+        &:last-child {
             margin-right: auto;
         }
     }
-
-    &__img{
+    &__img {
         width: 60%;
         height: 95%;
-        
         border-radius: 3px;
         cursor: pointer;
         float: left;
     }
-    
-    &__title{
+    &__title {
         position: absolute;
         top: 12%;
         right: 12%;
-
         width: 40%;
-        margin-left: 5%;    
-
+        margin-left: 5%;
         text-align: right;
     }
-    
-    &__cost{
+    &__cost {
         position: absolute;
         bottom: 12%;
         right: 12%;
-
         display: inline-block;
         width: 20%;
         padding-top: 5px;
         border: 1px solid #ffd941;
-        border-radius: 5px;      
-
-        &:hover{
+        border-radius: 5px;
+        &:hover {
             background: #ffd941;
         }
     }
-
-    &__button{
+    &__button {
         margin-top: 25px;
     }
-
-
 }

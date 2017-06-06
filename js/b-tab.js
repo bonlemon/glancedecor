@@ -1,10 +1,10 @@
 // Checking whether document is ready
-$(document).ready(function() {
-    
+$(document).ready(function () {
+
     // Handle click on link
-    $(".b-tab__link").on('click', function(event){
+    $(".b-tab__link").on('click', function (event) {
         var linkUrl = $(this).children('a').attr('href');
-      
+
         // Show/Hide tabs
         // .siblings() - находит соседей элемента и скрывает их
         $(".b-tab " + linkUrl).show().siblings().hide();

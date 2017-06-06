@@ -1,102 +1,89 @@
 @import 'common.scss';
 
 /******************/
-/* Блок навигации */
-/******************/
-.b-pg__navbar {
-  position: fixed;
-  top: 0px;
-  // Выравнивание по середине фиксированного блока
-  left:50%;
-  transform: translateX(-50%);
-  z-index: 20;
-  
-  padding: 10px 0 ;
-  text-align: center;
 
-  background-color: #fff;
-  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
-  font-family: "NautilusPompiliusRegular";
-  font-size: $dscFontSizeHeader;
+
+/* Блок навигации */
+
+
+/******************/
+
+.b-pg__navbar {
+	position: fixed;
+	top: 0px; // Выравнивание по середине фиксированного блока
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 20;
+	padding: 10px 0;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+	font-family: "NautilusPompiliusRegular";
+	font-size: $dscFontSizeHeader;
 }
 
 .navbar {
-  list-style: none;
-  vertical-align: middle;
-
-  &__logo{
-    display: inline-block;
-    background: url('img/main/logo.png') no-repeat;
-    background-size: 100% 100%;
-    width: 150px;
-    height: 40px;
-  }
-
-  &__icon{
-    display: inline-block;
-    background: url('img/icon/main_sprite.png') no-repeat;
-  }
-
-  &__list{
-    float: left;
-
-    .fa-bars{
-      color: #0077b3;
-    }
-  }
-
-  &__list:first-child{
-    padding-left: 15px;
-  }
-
-  &__item{
-    display: inline-block;
-    padding-left: 15px;
-  }
-
-  &__text{
-    color: #0077b3;
-    margin-bottom: 5px;
-  }
-
-
-  &__icity{
-      background-position: -25px 0px;
-      width: 14px;
-      height: 16px;
-  }
-
-  &__idown{
-      background-position: -11px -7px;
-      width: 9px;
-      height: 6px;
-  }
-
-  &__imail{
-      background-position: -128px -87px;
-      width: 26px;
-      height: 20px;
-      margin: 0 30px 5px 0;
-  }
-
-
-  /********************************/
-  /* Блок навигации(правая часть) */
-  /********************************/
-  &__list_right{
-    float:right;
-    margin-right: 20px;
-  }
-
-  &__icon-phone{
-    width: 12px;
-    height: 17px;
-    background-position: -61px -23px;
-  }
-
-  &__icon-clock{
-    width: 16px;
-    height: 16px;
-    background-position: -125px -51px ;
-  }
+	list-style: none;
+	vertical-align: middle;
+	&__logo {
+		display: inline-block;
+		background: url('img/main/logo.png') no-repeat;
+		background-size: 100% 100%;
+		width: 150px;
+		height: 40px;
+	}
+	&__icon {
+		display: inline-block;
+		background: url('img/icon/main_sprite.png') no-repeat;
+	}
+	&__list {
+		float: left;
+		.fa-bars {
+			color: #0077b3;
+		}
+	}
+	&__list:first-child {
+		padding-left: 15px;
+	}
+	&__item {
+		display: inline-block;
+		padding-left: 15px;
+	}
+	&__text {
+		color: #0077b3;
+		margin-bottom: 5px;
+	}
+	&__icity {
+		background-position: -25px 0px;
+		width: 14px;
+		height: 16px;
+	}
+	&__idown {
+		background-position: -11px -7px;
+		width: 9px;
+		height: 6px;
+	}
+	&__imail {
+		background-position: -128px -87px;
+		width: 26px;
+		height: 20px;
+		margin: 0 30px 5px 0;
+	}
+	/********************************/
+	/* Блок навигации(правая часть) */
+	/********************************/
+	&__list_right {
+		float: right;
+		margin-right: 20px;
+	}
+	&__icon-phone {
+		width: 12px;
+		height: 17px;
+		background-position: -61px -23px;
+	}
+	&__icon-clock {
+		width: 16px;
+		height: 16px;
+		background-position: -125px -51px;
+	}
 }

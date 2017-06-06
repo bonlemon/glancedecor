@@ -1,20 +1,16 @@
 // @import 'common.scss';
-
-.b-amount{
+.b-amount {
     box-sizing: border-box;
     padding: 38px 0px 42px 0;
     text-align: center;
 }
 
-.amount-tab__header-item{
+.amount-tab__header-item {
     display: inline-block;
-    
     list-style: none;
     text-decoration: none;
     color: #0077b3;
-
     z-index: 2;
-
     transition: all 0.2s;
     position: relative;
     line-height: 38px;
