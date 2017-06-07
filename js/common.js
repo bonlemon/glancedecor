@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
 	// $('.auth_buttons').click(function(){
 	// 	$(this).next().slideToggle();  
@@ -77,7 +77,7 @@ $(document).ready(function() {
 	// 	}, 800);
 	// 	return false;
 	// });
-	
+
 	// //Аякс отправка форм
 	// //Документация: http://api.jquery.com/jquery.ajax/
 	// $("#callback").submit(function() {
@@ -99,7 +99,7 @@ $(document).ready(function() {
 		autoplay: true,
 		dots: true,
 		arrows: true,
-  		autoplaySpeed: 2000,
+		autoplaySpeed: 2000,
 	});
 
 });

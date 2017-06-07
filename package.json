@@ -4,7 +4,7 @@
   "scripts": {
     "start": "node server.js",
     "sass": "sass --watch sass/main.scss:style.css",
-    "slick": "sass libs/slick/slick.scss libs/slick/slick.css"
+    "slick": "sass --watch libs/slick:libs/slick"
   },
   "main": "server.js",
   "repository": "git@github.com:bonlemon/vipceiling.git",
@@ -12,6 +12,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.15.2",
-    "node-sass": "^4.5.3"
+    "express-admin": "^1.3.0",
+    "node-sass": "^4.5.3",
+    "nodemailer": "^4.0.1"
   }
 }

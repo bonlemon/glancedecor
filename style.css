@@ -26,9 +26,11 @@
 /*****************/
 /* Блок страницы */
 /*****************/
-.b-pg {
+body {
   padding: 0;
-  margin: 0 auto;
+  margin: 0; }
+
+.b-pg {
   max-width: 1280px;
   line-height: 25px;
   background-color: #fafafa;
@@ -36,11 +38,10 @@
   font-size: 16px;
   color: #333; }
   .b-pg__line {
+    box-sizing: border-box;
     margin: 0 auto;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     background-color: #fafafa; }
-  .b-pg__line-conteiner {
-    margin: 0 auto; }
 
 .b-header {
   margin: 0 0 37px 0;
@@ -55,27 +56,27 @@
 .submit {
   display: inline-block;
   padding: 0px 50px;
-  border: solid 1px #2483b3;
+  border: solid 1px #116A96;
   height: 38px;
   cursor: pointer;
   line-height: 38px;
   vertical-align: top;
   transition: all 0.2s;
-  color: #2483b3;
+  color: #01314A;
   border-radius: 4px; }
 
 .b-button {
   box-sizing: border-box;
   padding: 10px 20px;
-  border: solid 1px #2483b3;
+  border: solid 1px #01314A;
   font-size: 16px;
   background: #fff;
   border-radius: 5px;
   text-align: center;
-  color: #2483b3;
+  color: #01314A;
   cursor: pointer; }
   .b-button:hover {
-    background: #2483b3;
+    background: #01314A;
     color: #fff; }
 
 /* Clearfix block */
@@ -87,6 +88,7 @@
     clear: both; }
 
 .b-amount {
+  box-sizing: border-box;
   padding: 38px 0px 42px 0;
   text-align: center; }
 
@@ -107,31 +109,31 @@
 .b-call {
   padding: 38px 0px 42px 0;
   text-align: center;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  background-color: #BBE3F0; }
   .b-call__title, .b-call__call-form {
-    display: inline-block;
     line-height: 60px;
     vertical-align: middle; }
     .b-call__title div, .b-call__call-form div {
       line-height: 30px; }
   .b-call__title, .b-call__phone {
-    display: block;
     font-size: 25px; }
+  .b-call__get-phone, .b-call__call-submit {
+    width: 30%;
+    display: inline-block; }
   .b-call__get-phone {
     border-radius: 5px;
     padding-left: 10px;
     padding-top: 5px;
     line-height: 30px;
-    margin-right: 5%;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15); }
   .b-call__call-submit {
-    display: inline-block;
     background-color: #0077b3;
-    color: #fff;
     padding: 0 35px;
     margin: 10px 10px 0; }
 
 .b-examples {
+  box-sizing: border-box;
   padding: 38px 0px 42px 0;
   text-align: center;
   background-color: #fafafa; }
@@ -143,7 +145,7 @@
     display: inline-block;
     padding: 20px;
     margin: 5px;
-    width: 460px;
+    width: 100%;
     height: 330px;
     background: #fff;
     text-align: left;
@@ -187,13 +189,13 @@
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); }
   .b-menu__item {
     position: relative;
-    padding: 20px;
+    padding: 15px;
     text-align: left;
-    min-height: 140px;
+    height: 110px;
     /* Choice img from sprite */ }
     .b-menu__item-img {
       position: absolute;
-      top: 5%;
+      top: 15%;
       left: 5%;
       width: 70px;
       height: 86px;
@@ -235,9 +237,11 @@
 /*****************/
 /* Блок страницы */
 /*****************/
-.b-pg {
+body {
   padding: 0;
-  margin: 0 auto;
+  margin: 0; }
+
+.b-pg {
   max-width: 1280px;
   line-height: 25px;
   background-color: #fafafa;
@@ -245,11 +249,10 @@
   font-size: 16px;
   color: #333; }
   .b-pg__line {
+    box-sizing: border-box;
     margin: 0 auto;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     background-color: #fafafa; }
-  .b-pg__line-conteiner {
-    margin: 0 auto; }
 
 .b-header {
   margin: 0 0 37px 0;
@@ -264,27 +267,27 @@
 .submit {
   display: inline-block;
   padding: 0px 50px;
-  border: solid 1px #2483b3;
+  border: solid 1px #116A96;
   height: 38px;
   cursor: pointer;
   line-height: 38px;
   vertical-align: top;
   transition: all 0.2s;
-  color: #2483b3;
+  color: #01314A;
   border-radius: 4px; }
 
 .b-button {
   box-sizing: border-box;
   padding: 10px 20px;
-  border: solid 1px #2483b3;
+  border: solid 1px #01314A;
   font-size: 16px;
   background: #fff;
   border-radius: 5px;
   text-align: center;
-  color: #2483b3;
+  color: #01314A;
   cursor: pointer; }
   .b-button:hover {
-    background: #2483b3;
+    background: #01314A;
     color: #fff; }
 
 /* Clearfix block */
@@ -328,6 +331,8 @@
     background: url("img/icon/main_sprite.png") no-repeat; }
   .navbar__list {
     float: left; }
+    .navbar__list .fa-bars {
+      color: #0077b3; }
   .navbar__list:first-child {
     padding-left: 15px; }
   .navbar__item {
@@ -370,12 +375,14 @@
   .b-photo__list-item {
     display: inline-block;
     width: 300px;
+    height: 200px;
     cursor: pointer;
     margin: 20px;
     vertical-align: top; }
-  .b-photo__list-item img {
-    width: 100%;
-    border-radius: 3px; }
+    .b-photo__list-item img {
+      width: 100%;
+      height: 100%;
+      border-radius: 3px; }
   .b-photo__button {
     margin-top: 40px; }
 
@@ -457,6 +464,7 @@
     display: block; }
 
 .b-fixtures {
+  box-sizing: border-box;
   padding: 38px 0px 42px 0;
   text-align: center;
   /*----- Content of Tabs -----*/ }
@@ -508,6 +516,7 @@
 
 /*----- Tabs -----*/
 .b-invoices {
+  box-sizing: border-box;
   text-align: center;
   padding: 38px 0 48px 0;
   /*----- Tab Links -----*/
@@ -571,7 +580,42 @@
   .b-invoices__tab_active {
     display: block; }
 
+.b-review {
+  box-sizing: border-box;
+  padding: 38px 0px 42px 0;
+  text-align: center;
+  /*----- Content of Tabs -----*/ }
+  .b-review__header {
+    margin-bottom: 20px; }
+  .b-review__content-title {
+    margin: 1% 10%;
+    text-align: center;
+    font-size: 16px; }
+  .b-review__tab-element {
+    display: inline-block;
+    width: 27%;
+    min-width: 250px;
+    min-height: 250px;
+    margin: 10px;
+    margin-right: 0px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+    vertical-align: top; }
+    .b-review__tab-element:last-child {
+      margin-right: auto; }
+  .b-review__img {
+    width: 80%;
+    height: 80%;
+    border-radius: 3px;
+    cursor: pointer; }
+  .b-review__title {
+    margin-left: 5%; }
+  .b-review__button {
+    margin-top: 25px; }
+
 .b-technologies {
+  box-sizing: border-box;
   padding: 38px 0px 42px 0;
   text-align: center;
   /*----- Content of Tabs -----*/ }
@@ -662,13 +706,21 @@
 /* Custom, iPhone Retina */
 @media all and (min-width: 320px) {
   .b-pg__navbar, .b-pg__line {
-    width: 320px; }
+    width: 100%;
+    padding-left: -15px;
+    padding-right: -15px; }
+
+  .b-call__get-phone, .b-call__call-submit {
+    width: 70%;
+    display: block;
+    margin: 10px auto; }
 
   .navbar__text {
     font-size: 13px; }
-
-  .navbar__item:last-child {
+  .navbar__list_right, .navbar__item {
     display: none; }
+  .navbar__item:first-child {
+    display: block; }
 
   /* Slider*/
   .b-sld-dsc {
@@ -679,19 +731,30 @@
     margin-top: 75px; }
     .b-sld-mbl img {
       width: 100%;
-      max-height: 30em; } }
+      max-height: 30em; }
+
+  .b-photo .slick-prev,
+  .b-photo .slick-next,
+  .b-photo .slick-dots,
+  .b-photo .b-photo__list-photos {
+    display: none; }
+  .b-photo .b-sld-mbl {
+    display: block; }
+    .b-photo .b-sld-mbl .slick-prev,
+    .b-photo .b-sld-mbl .slick-next,
+    .b-photo .b-sld-mbl .slick-dots {
+      display: none !important; }
+
+  .b-footer__left, .b-footer__right {
+    margin: 0;
+    padding-left: -15px;
+    padding-right: -15px; } }
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
-  .b-pg__navbar, .b-pg__line {
-    width: 480px; }
-
   .navbar__text {
     font-size: 16px; } }
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
-  .b-pg__navbar, .b-pg__line {
-    width: 768px; }
-
   .navbar__item:last-child {
     display: inline-block; }
 
@@ -704,14 +767,29 @@
       min-height: 18em; }
 
   .b-sld-mbl {
+    display: none; }
+
+  .b-call__get-phone, .b-call__call-submit {
+    width: 30%;
+    display: inline-block;
+    margin: 10px; }
+
+  .b-photo .b-photo__list-photos {
+    display: block; }
+  .b-photo .b-sld-mbl {
     display: none; } }
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
+  .b-examples__blocks {
+    width: 45% !important; }
+
   .b-pg__navbar, .b-pg__line {
-    width: 768px; } }
+    width: 968px;
+    margin: auto; } }
 /* Large Devices, Wide Screens */
 @media all and (min-width: 1200px) {
   .b-pg__navbar, .b-pg__line {
-    width: 1200px; } }
+    width: 1100px;
+    margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */

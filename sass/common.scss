@@ -1,63 +1,64 @@
 // Constants
-
 $maxWidth: 1280px;
-
 // Fonts
 $dscFontSize: 16px;
 $dscFontSizeHeader: 22px;
 $mblFontSize: 13px;
 $headerFontSize: 35px;
-
 // Colors
-$buttonColor: #2483b3; 
+$buttonColor: #01314A;
+$buttonBorderColor: #116A96;
 
 /*****************/
+
+
 /* Блок страницы */
+
+
 /*****************/
-.b-pg{
+
+body {
     padding: 0;
-	margin: 0 auto;
+    margin: 0;
+}
 
-	max-width: $maxWidth;
-	line-height: 25px;
-
-	background-color: #fafafa;
-
+.b-pg {
+    max-width: $maxWidth;
+    line-height: 25px;
+    background-color: #fafafa;
     font-family: "RobotoCondensedRegular";
-	font-size: $dscFontSize;
+    font-size: $dscFontSize;
     color: #333;
-
-    &__line{
+    &__line {
+        box-sizing: border-box;
         margin: 0 auto;
-        box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
         background-color: #fafafa;
-    }
-
-    &__line-conteiner{
-        margin: 0 auto; 
     }
 }
 
-
-.b-header{
+.b-header {
     margin: 0 0 37px 0;
-
     color: #333;
     font-size: $headerFontSize;
     line-height: 40px;
     letter-spacing: -1px;
 }
 
-/***************/
-/* Общие стили */
+
 /***************/
 
-.submit{
+
+/* Общие стили */
+
+
+/***************/
+
+.submit {
     display: inline-block;
     padding: 0px 50px;
-    border: solid 1px $buttonColor;
+    border: solid 1px $buttonBorderColor;
     height: 38px;
-    
     cursor: pointer;
     line-height: 38px;
     vertical-align: top;
@@ -66,32 +67,30 @@ $buttonColor: #2483b3;
     border-radius: 4px;
 }
 
-
-.b-button{
+.b-button {
     box-sizing: border-box;
     padding: 10px 20px;
     border: solid 1px $buttonColor;
-
     font-size: 16px;
     background: #fff;
     border-radius: 5px;
     text-align: center;
     color: $buttonColor;
     cursor: pointer;
-
     &:hover {
         background: $buttonColor;
         color: #fff;
     }
 }
 
-/* Clearfix block */
-.b-clearfix {  
-    zoom: 1.0;  
 
-    &:after {  
-        content: " ";  
-        display: table; 
-        clear: both; 
-    }  
+/* Clearfix block */
+
+.b-clearfix {
+    zoom: 1.0;
+    &:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
 }

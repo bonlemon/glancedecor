@@ -1,76 +1,72 @@
 /********/
+
+
 /* Menu */
+
+
 /********/
-.b-menu{
+
+.b-menu {
     border-bottom: solid 1px #f0f0f0;
     color: #333;
     text-align: center;
     padding-top: 20px;
-    box-shadow: 0 0 2px rgba(0,0,0,0.3);
-
-    &__item{
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    &__item {
         position: relative;
-        padding: 20px;
+        padding: 15px;
         text-align: left;
-        min-height: 140px;
-
+        height: 110px;
         &-img {
             position: absolute;
-            top: 5%;
+            top: 15%;
             left: 5%;
             width: 70px;
             height: 86px;
             float: left;
         }
-
         &__title,
-        &__content{
+        &__content {
             display: block;
             margin-left: 100px;
             letter-spacing: -0.3px;
         }
-
-        &__title{
+        &__title {
             font-size: 22px;
             font-weight: 500;
         }
-
-        &__content{
+        &__content {
             color: #2387b5;
             text-decoration: none;
             text-transform: lowercase;
             min-height: 50px;
             font-size: 15px;
         }
-
-        &__content:hover{  
+        &__content:hover {
             text-decoration: underline;
         }
-
-
         /* Choice img from sprite */
-
-        &__type-of-calculation{
+        &__type-of-calculation {
             background: url('img/b-menu/calculations.png') no-repeat;
             background-size: 70px 70px;
         }
-        &__reviews{
+        &__reviews {
             background: url('img/b-menu/review.png') no-repeat;
             background-size: 70px 80px;
         }
-        &__sales{
+        &__sales {
             background: url('img/b-menu/sales.png') no-repeat;
             background-size: 65px 76px;
         }
-        &__examples{
+        &__examples {
             background: url('img/b-menu/examples.png') no-repeat;
             background-size: 70px 50px;
         }
-        &__technologies{
+        &__technologies {
             background: url('img/b-menu/technologies.png') no-repeat;
             background-size: 70px 70px;
         }
-        &__invoices{
+        &__invoices {
             background: url('img/b-menu/invoices.png') no-repeat;
             background-size: 70px 80px;
         }

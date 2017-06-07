@@ -1,0 +1,4 @@
+1) mysql -u root -p
+	- grant all on mydb.* to root@localhost;
+2) cd ~/project
+   mysql -p --user=root < admin/fixtures/schema.sql

@@ -1,118 +1,97 @@
 // @import 'common.scss';
 
 /*----- Tabs -----*/
-.b-tab {
-    width:100%;
-    display:inline-block;
 
- 
+.b-tab {
+    width: 100%;
+    display: inline-block;
     /*----- Tab Links -----*/
     &__links li {
-        margin:0px 5px;
+        margin: 0px 5px;
         display: inline-block;
-        list-style:none;
+        list-style: none;
     }
- 
-        &__links a {
-            padding:9px 15px;
-            display:inline-block;
-            font-size:16px;
-            font-weight:600;
-            color:#4c4c4c;
-            text-decoration: none !important;
-        }
-
+    &__links a {
+        padding: 9px 15px;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        color: #4c4c4c;
+        text-decoration: none !important;
+    }
     &__link_active a,
-    &__links a:hover{
+    &__links a:hover {
         color: #0077b3 !important;
         cursor: default;
         font-weight: 600;
     }
- 
     /*----- Content of Tabs -----*/
     &__content {
         padding: 10px;
     }
-
-    &__tab-element{
+    &__tab-element {
         position: relative;
-
         display: inline-block;
         width: 27%;
         margin-right: 2%;
-        border-radius:5px;
-        
-        background:#fff;
+        border-radius: 5px;
+        background: #fff;
         min-width: 300px;
-
-        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
-
-        &:last-child{
+        box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+        &:last-child {
             margin-right: auto;
         }
     }
-
-    &__img{
+    &__img {
         width: 90%;
         height: 200px;
         margin: 5%;
         cursor: pointer;
         border-radius: 3px;
     }
-    
-    &__title{
+    &__title {
         margin-left: 5%;
     }
-
-    &__wrapper{
+    &__wrapper {
         margin: 10px;
     }
-
-    &__cost{
+    &__cost {
         float: left;
         padding: 5px 15px;
         min-width: 100px;
         border-radius: 5px;
-
         font-weight: 600;
         font-size: 16px;
         background: #ffd941;
         color: #000;
-        
-        &_sale{
+        &_sale {
             background: #ff4141;
             color: #fff;
-
-            span{
+            span {
                 text-decoration: line-through;
                 vertical-align: super;
                 font-size: 12px;
             }
-
-            &-top{
+            &-top {
                 position: absolute;
                 top: 30px;
                 left: 30px;
                 opacity: 0.9;
-
                 background: #ff4141;
                 color: #fff;
             }
         }
     }
-
-    &__calculation{
+    &__calculation {
         margin: 0px;
         float: right;
         padding: 5px 10px;
     }
-
     &__tab {
         margin: 0px;
-        display:none;
+        display: none;
     }
-
     &__tab_active {
-        display:block;
+        display: block;
     }
 }

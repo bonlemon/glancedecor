@@ -1,0 +1,6 @@
+sudo apt-get update
+sudo apt-get install mysql-server
+ - enter root password 'root123'
+
+[required to see and edit mwb schema]
+sudo apt-get install mysql-workbench
