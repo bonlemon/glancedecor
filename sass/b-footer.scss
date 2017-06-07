@@ -3,13 +3,20 @@
 */
 
 .b-footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
     background: #6e767d;
     color: #fff;
     font-weight: 300;
-    &__left,
-    &__right {
-        margin: 70px;
+
+    &__contant{
+        display: block;
+        margin: auto;
+        height: 200px;
+        padding: 5%;
     }
+    
     &__left {
         margin-right: 10px;
         float: left;

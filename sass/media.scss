@@ -39,6 +39,11 @@
             padding-right: -15px;
         }
     }
+    .b-footer{
+        &__contant{
+            width: 100%;
+        }
+    }
     .b-call {
         &__get-phone,
         &__call-submit {
@@ -85,14 +90,6 @@
             .slick-dots {
                 display: none !important;
             }
-        }
-    }
-    .b-footer {
-        &__left,
-        &__right {
-            margin: 0;
-            padding-left: -15px;
-            padding-right: -15px;
         }
     }
 }
@@ -155,13 +152,17 @@
             width: 45% !important;
         }
     }
+    .b-footer__contant {
+        width: 968px;
+    }
 }
 
 
 /* Large Devices, Wide Screens */
 
 @media all and (min-width: 1200px) {
-    .b-pg {
+    .b-pg, 
+    .b-footer__contant{
         width: 1100px;
     }
 }
