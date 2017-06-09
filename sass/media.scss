@@ -92,6 +92,21 @@
             }
         }
     }
+    .b-review{
+        width:100%;
+        &__tab-element {
+            display: block;
+            width:100%
+        }
+        &__img {
+            width: 25%;
+            height: 25%;
+            float: left;
+        }
+        &__title {
+            float: left;
+        }
+    }
 }
 
 

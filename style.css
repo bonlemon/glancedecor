@@ -744,7 +744,19 @@ body {
     .b-photo .b-sld-mbl .slick-prev,
     .b-photo .b-sld-mbl .slick-next,
     .b-photo .b-sld-mbl .slick-dots {
-      display: none !important; } }
+      display: none !important; }
+
+  .b-review {
+    width: 100%; }
+    .b-review__tab-element {
+      display: block;
+      width: 100%; }
+    .b-review__img {
+      width: 25%;
+      height: 25%;
+      float: left; }
+    .b-review__title {
+      float: left; } }
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
   .navbar__text {
