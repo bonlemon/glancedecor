@@ -33,11 +33,15 @@
 
 @media all and (min-width: 320px) {
     .b-pg {
-        &__navbar,
-        &__line {
+        &__navbar {
             width: 100%;
             padding-left: -15px;
             padding-right: -15px;
+        }
+    }
+    .b-footer{
+        &__contant{
+            width: 100%;
         }
     }
     .b-call {
@@ -88,12 +92,19 @@
             }
         }
     }
-    .b-footer {
-        &__left,
-        &__right {
-            margin: 0;
-            padding-left: -15px;
-            padding-right: -15px;
+    .b-review{
+        width:100%;
+        &__tab-element {
+            display: block;
+            width:100%
+        }
+        &__img {
+            width: 25%;
+            height: 25%;
+            float: left;
+        }
+        &__title {
+            float: left;
         }
     }
 }
@@ -148,17 +159,16 @@
 /* Medium Devices, Desktops */
 
 @media all and (min-width: 992px) {
+    .b-pg {
+        width: 968px;
+    }
     .b-examples {
         &__blocks {
             width: 45% !important;
         }
     }
-    .b-pg {
-        &__navbar,
-        &__line {
-            width: 968px;
-            margin: auto;
-        }
+    .b-footer__contant {
+        width: 968px;
     }
 }
 
@@ -166,11 +176,8 @@
 /* Large Devices, Wide Screens */
 
 @media all and (min-width: 1200px) {
-    .b-pg {
-        &__navbar,
-        &__line {
-            width: 1100px;
-            margin: auto;
-        }
+    .b-pg, 
+    .b-footer__contant{
+        width: 1100px;
     }
 }
