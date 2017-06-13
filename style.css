@@ -588,8 +588,8 @@ body {
     width: 27%;
     min-width: 250px;
     min-height: 250px;
-    margin: 10px;
-    margin-right: 0px;
+    padding: 20px;
+    margin-bottom: 15px;
     border-radius: 5px;
     background: #fff;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
@@ -597,6 +597,8 @@ body {
     .b-review__tab-element:last-child {
       margin-right: auto; }
   .b-review__img {
+    margin-right: 20px;
+    margin-bottom: 20px;
     width: 80%;
     height: 80%;
     border-radius: 3px;
@@ -754,8 +756,6 @@ body {
     .b-review__img {
       width: 25%;
       height: 25%;
-      float: left; }
-    .b-review__title {
       float: left; } }
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
