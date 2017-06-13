@@ -1,10 +1,11 @@
-@font-face {
-	font-family: "NautilusPompiliusRegular";
-	src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot");
-	src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.woff") format("woff"), url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
+//  TODO
+// @font-face {
+// 	font-family: "NautilusPompiliusRegular";
+// 	src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot");
+// 	src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.woff") format("woff"), url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.ttf") format("truetype");
+// 	font-style: normal;
+// 	font-weight: normal;
+// }
 
 @font-face {
 	font-family: "RobotoCondensedRegular";
@@ -29,3 +30,13 @@
 	font-style: normal;
 	font-weight: normal;
 }
+
+@font-face {
+			font-family: "RobotoRegular";
+			src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+			src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+			url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}

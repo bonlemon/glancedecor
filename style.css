@@ -1,11 +1,5 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "NautilusPompiliusRegular";
-  src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot");
-  src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.woff") format("woff"), url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-@font-face {
   font-family: "RobotoCondensedRegular";
   src: url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot");
   src: url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.woff") format("woff"), url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.ttf") format("truetype");
@@ -23,6 +17,12 @@
   src: url("../fonts/RobotoCondensedBold/RobotoCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensedBold/RobotoCondensedBold.woff") format("woff"), url("../fonts/RobotoCondensedBold/RobotoCondensedBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 /*****************/
 /* Блок страницы */
 /*****************/
@@ -35,7 +35,7 @@ body {
   width: 100%;
   margin: auto;
   line-height: 25px;
-  font-family: "RobotoCondensedRegular";
+  font-family: "RobotoCRobotoRegularondensedRegular";
   font-size: 16px;
   color: #333; }
 
@@ -242,7 +242,7 @@ body {
   width: 100%;
   margin: auto;
   line-height: 25px;
-  font-family: "RobotoCondensedRegular";
+  font-family: "RobotoCRobotoRegularondensedRegular";
   font-size: 16px;
   color: #333; }
 
@@ -303,7 +303,7 @@ body {
   text-align: center;
   background-color: #fff;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-  font-family: "NautilusPompiliusRegular";
+  font-family: "RobotoRegular";
   font-size: 22px; }
 
 .navbar {

@@ -78,22 +78,22 @@ $(document).ready(function () {
 	// 	return false;
 	// });
 
-	// //Аякс отправка форм
-	// //Документация: http://api.jquery.com/jquery.ajax/
-	// $("#callback").submit(function() {
-	// 	$.ajax({
-	// 		type: "GET",
-	// 		url: "http://127.0.0.1:3000/",
-	// 		data: $("#callback").serialize()
-	// 	}).done(function() {
-	// 		alert('Мы вам перезвоним! :)')
-	// 		setTimeout(function() {
-	// 			$('#callback input[type=text]').val('');
-	// 			$.fancybox.close();
-	// 		}, 1000);
-	// 	});
-	// 	return false;
-	// });
+	//Аякс отправка форм
+	//Документация: http://api.jquery.com/jquery.ajax/
+	$(".b-call__call-form").submit(function() {
+		$.ajax({
+			type: "GET",
+			url: "/mail",
+			data: $("#callback").serialize()
+		}).done(function() {
+			alert('Мы вам перезвоним! :)')
+			setTimeout(function() {
+				$('#callback input[type=text]').val('');
+				$.fancybox.close();
+			}, 1000);
+		});
+		return false;
+	});
 
 	$('.b-sld').slick({
 		autoplay: true,
