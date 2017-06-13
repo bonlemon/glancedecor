@@ -175,7 +175,11 @@
 
 @media all and (min-width: 1200px) {
     .b-pg, 
-    .b-footer__contant{
+    .b-footer__contant, 
+    .b-call{
         width: 1100px;
+    }
+    .b-call{
+        margin-left: -15px;
     }
 }

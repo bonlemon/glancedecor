@@ -106,7 +106,7 @@ body {
   padding: 38px 0px 42px 0;
   text-align: center;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-  background-color: #BBE3F0; }
+  background-color: #90C3D4; }
   .b-call__title, .b-call__call-form {
     line-height: 60px;
     vertical-align: middle; }
@@ -799,7 +799,11 @@ body {
 /* Large Devices, Wide Screens */
 @media all and (min-width: 1200px) {
   .b-pg,
-  .b-footer__contant {
-    width: 1100px; } }
+  .b-footer__contant,
+  .b-call {
+    width: 1100px; }
+
+  .b-call {
+    margin-left: -15px; } }
 
 /*# sourceMappingURL=style.css.map */
