@@ -162,7 +162,24 @@
     }
     .b-examples {
         &__blocks {
-            width: 45% !important;
+            width: 47% !important;
+        }
+    }
+    .b-photo{
+        &__blocks {
+            width: 47% ;
+        }
+    }
+    .b-review{
+        &__tab-element {
+            width: 32%;
+            min-height: 490px;
+        }
+
+        &__img {
+            width: 40%;
+            height: 40%;
+            margin-bottom: 20px;
         }
     }
     .b-footer__contant {

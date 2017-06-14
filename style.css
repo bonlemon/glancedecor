@@ -139,7 +139,7 @@ body {
     overflow: hidden;
     position: relative;
     float: left;
-    width: 32%;
+    width: 42%;
     min-width: 250px;
     margin: 0 2% 20px 0;
     padding: 20px;
@@ -149,6 +149,8 @@ body {
     border-radius: 5px;
     cursor: default;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15); }
+  .b-examples b-examples__blocks:nth-child(3n) {
+    margin-right: 0; }
   .b-examples__button {
     margin-top: 40px; }
 
@@ -588,23 +590,22 @@ body {
     text-align: center;
     font-size: 16px; }
   .b-review__tab-element {
-    display: inline-block;
-    width: 30%;
+    float: left;
+    width: 100%;
     min-width: 250px;
-    min-height: 250px;
+    min-height: 150px;
     padding: 20px;
-    margin-bottom: 15px;
+    margin: 0 2% 20px 0;
     border-radius: 5px;
     background: #fff;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
     vertical-align: top; }
     .b-review__tab-element:last-child {
-      margin-right: auto; }
+      margin-right: 0; }
   .b-review__img {
     margin-right: 20px;
-    margin-bottom: 20px;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     border-radius: 3px;
     cursor: pointer; }
   .b-review__title {
@@ -796,7 +797,18 @@ body {
     width: 968px; }
 
   .b-examples__blocks {
-    width: 45% !important; }
+    width: 47% !important; }
+
+  .b-photo__blocks {
+    width: 47%; }
+
+  .b-review__tab-element {
+    width: 32%;
+    min-height: 490px; }
+  .b-review__img {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 20px; }
 
   .b-footer__contant {
     width: 968px; } }
