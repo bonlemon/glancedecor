@@ -80,16 +80,16 @@ $(document).ready(function () {
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$(".b-call__call-form").submit(function() {
+	$(".b-call__call-form").on('submit', function() {
 		$.ajax({
 			type: "GET",
 			url: "/mail",
-			data: $("#callback").serialize()
+			data: $(".b-call__call-form").serialize()
 		}).done(function() {
 			alert('Мы вам перезвоним! :)')
 			setTimeout(function() {
 				$('#callback input[type=text]').val('');
-				$.fancybox.close();
+				// $.fancybox.close();
 			}, 1000);
 		});
 		return false;
@@ -102,4 +102,4 @@ $(document).ready(function () {
 		autoplaySpeed: 2000,
 	});
 
-});
+}); 
