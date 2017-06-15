@@ -103,17 +103,18 @@ body {
   color: #999; }
 
 .b-call {
-  padding: 38px 0px 42px 0;
+  padding: 20px 0px;
   text-align: center;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-  background-color: #90C3D4; }
+  background-color: #90C3D4;
+  min-height: 230px; }
   .b-call__title, .b-call__call-form {
     line-height: 60px;
     vertical-align: middle; }
     .b-call__title div, .b-call__call-form div {
       line-height: 30px; }
   .b-call__title, .b-call__phone {
-    font-size: 25px; }
+    font-size: 30px; }
   .b-call__get-phone, .b-call__call-submit {
     width: 30%;
     display: inline-block; }
@@ -135,7 +136,7 @@ body {
   background-color: #fafafa; }
   .b-examples__title {
     margin: -10px 0 20px 0; }
-  .b-examples .b-examples__blocks {
+  .b-examples__blocks {
     overflow: hidden;
     position: relative;
     float: left;
@@ -149,7 +150,7 @@ body {
     border-radius: 5px;
     cursor: default;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15); }
-  .b-examples b-examples__blocks:nth-child(3n) {
+  .b-examples__blocks:nth-child(2n) {
     margin-right: 0; }
   .b-examples__button {
     margin-top: 40px; }
@@ -184,7 +185,6 @@ body {
   border-bottom: solid 1px #f0f0f0;
   color: #333;
   text-align: center;
-  padding-top: 20px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); }
   .b-menu__item {
     position: relative;
@@ -226,8 +226,8 @@ body {
     .b-menu__item__examples {
       background: url("img/main/b-menu/examples.png") no-repeat;
       background-size: 70px 50px; }
-    .b-menu__item__technologies {
-      background: url("img/main/b-menu/technologies.png") no-repeat;
+    .b-menu__item__types {
+      background: url("img/main/b-menu/types.png") no-repeat;
       background-size: 70px 70px; }
     .b-menu__item__invoices {
       background: url("img/main/b-menu/invoices.png") no-repeat;
@@ -613,18 +613,18 @@ body {
   .b-review__button {
     margin-top: 25px; }
 
-.b-technologies {
+.b-types {
   box-sizing: border-box;
   padding: 38px 0px 42px 0;
   text-align: center;
   /*----- Content of Tabs -----*/ }
-  .b-technologies__header {
+  .b-types__header {
     margin-bottom: 20px; }
-  .b-technologies__content-title {
+  .b-types__content-title {
     margin: 1% 10%;
     text-align: center;
     font-size: 16px; }
-  .b-technologies__tab-element {
+  .b-types__tab-element {
     display: inline-block;
     width: 26%;
     min-width: 280px;
@@ -634,16 +634,16 @@ body {
     border-radius: 5px;
     background: #fff;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15); }
-    .b-technologies__tab-element:last-child {
+    .b-types__tab-element:last-child {
       margin-right: auto; }
-  .b-technologies__img {
+  .b-types__img {
     width: 90%;
     height: 80%;
     border-radius: 3px;
     cursor: pointer; }
-  .b-technologies__title {
+  .b-types__title {
     margin-left: 5%; }
-  .b-technologies__button {
+  .b-types__button {
     margin-top: 25px; }
 
 /*
@@ -797,7 +797,7 @@ body {
     width: 968px; }
 
   .b-examples__blocks {
-    width: 47% !important; }
+    width: 49% !important; }
 
   .b-photo__blocks {
     width: 47%; }
@@ -824,6 +824,10 @@ body {
     width: 1100px; }
 
   .b-call {
-    margin-left: -15px; } }
+    min-height: 190px; }
+
+  .b-menu__item {
+    padding: 30px 15px;
+    height: 150px; } }
 
 /*# sourceMappingURL=style.css.map */

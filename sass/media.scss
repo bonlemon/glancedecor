@@ -162,7 +162,7 @@
     }
     .b-examples {
         &__blocks {
-            width: 47% !important;
+            width: 49% !important;
         }
     }
     .b-photo{
@@ -200,7 +200,15 @@
     .b-review{
         width: 1100px;
     }
+
     .b-call{
-        margin-left: -15px;
+        min-height: 190px;
+    }
+    
+    .b-menu {
+        &__item {
+            padding: 30px 15px;
+            height: 150px;
+        }
     }
 }

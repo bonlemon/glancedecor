@@ -1,8 +1,9 @@
 .b-call {
-    padding: 38px 0px 42px 0;
+    padding: 20px 0px;
     text-align: center;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     background-color: #90C3D4;
+    min-height: 230px;
     &__title,
     &__call-form {
         line-height: 60px;
@@ -13,7 +14,7 @@
     }
     &__title,
     &__phone {
-        font-size: 25px;
+        font-size: 30px;
     }
     &__get-phone,
     &__call-submit {

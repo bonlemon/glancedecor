@@ -7,7 +7,7 @@
     &__title {
         margin: -10px 0 20px 0;
     }
-    .b-examples__blocks {
+    &__blocks {
         overflow: hidden;
         position: relative;
         float: left;
@@ -23,7 +23,7 @@
         box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
     }
 
-    b-examples__blocks:nth-child(3n){
+    &__blocks:nth-child(2n){
         margin-right: 0;
     }
     &__button {

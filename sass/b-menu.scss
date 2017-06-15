@@ -10,7 +10,6 @@
     border-bottom: solid 1px #f0f0f0;
     color: #333;
     text-align: center;
-    padding-top: 20px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     &__item {
         position: relative;
@@ -62,8 +61,8 @@
             background: url('img/main/b-menu/examples.png') no-repeat;
             background-size: 70px 50px;
         }
-        &__technologies {
-            background: url('img/main/b-menu/technologies.png') no-repeat;
+        &__types {
+            background: url('img/main/b-menu/types.png') no-repeat;
             background-size: 70px 70px;
         }
         &__invoices {
