@@ -129,6 +129,14 @@
     .navbar__item:last-child {
         display: inline-block;
     }
+    .b-examples {
+        &__blocks {
+            width: 49% !important;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+        }
+    }
     /* Slider */
     .b-sld-dsc {
         display: block;
@@ -142,6 +150,7 @@
         display: none;
     }
     .b-call {
+        min-height: 200px;
         &__get-phone,
         &__call-submit {
             width: 30%;
@@ -170,14 +179,6 @@
         border-bottom: solid 1px #f0f0f0;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
         margin-bottom: auto;
-    }
-    .b-examples {
-        &__blocks {
-            width: 49% !important;
-            border-radius: 5px;
-            background: #fff;
-            box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
-        }
     }
     .b-photo {
         &__blocks {
