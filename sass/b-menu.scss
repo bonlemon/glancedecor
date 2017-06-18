@@ -7,10 +7,9 @@
 /********/
 
 .b-menu {
-    border-bottom: solid 1px #f0f0f0;
     color: #333;
     text-align: center;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
     &__item {
         position: relative;
         padding: 15px;

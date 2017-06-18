@@ -39,8 +39,8 @@
             padding-right: -15px;
         }
     }
-    .b-footer{
-        &__contant{
+    .b-footer {
+        &__contant {
             width: 100%;
         }
     }
@@ -92,18 +92,17 @@
             }
         }
     }
-    .b-review{
-        width:100%;
+    .b-review {
+        width: 100%;
         &__tab-element {
             display: block;
-            width:100%
+            width: 100%
         }
         &__img {
             width: 25%;
             height: 25%;
             float: left;
         }
-
     }
 }
 
@@ -113,6 +112,13 @@
 @media all and (min-width: 480px) {
     .navbar__text {
         font-size: $dscFontSize;
+    }
+    .b-types {
+        &__tab-element {
+            width: 45%;
+            min-width: 300px;
+            height: 100%;
+        }
     }
 }
 
@@ -160,22 +166,29 @@
     .b-pg {
         width: 968px;
     }
+    .b-menu {
+        border-bottom: solid 1px #f0f0f0;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+        margin-bottom: auto;
+    }
     .b-examples {
         &__blocks {
             width: 49% !important;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
         }
     }
-    .b-photo{
+    .b-photo {
         &__blocks {
-            width: 47% ;
+            width: 47%;
         }
     }
-    .b-review{
+    .b-review {
         &__tab-element {
             width: 32%;
             min-height: 490px;
         }
-
         &__img {
             width: 40%;
             height: 40%;
@@ -185,26 +198,45 @@
     .b-footer__contant {
         width: 968px;
     }
+    .b-types {
+        &__tab-element {
+            width: 32%;
+            min-width: 280px;
+            height: 200px;
+        }
+        &__img {
+            width: 90%;
+            height: 80%;
+        }
+    }
+    .b-footer {
+        &__left {
+            margin-right: 10px;
+            float: left;
+        }
+        &__right {
+            margin-left: 10px;
+            float: right;
+        }
+    }
 }
 
 
 /* Large Devices, Wide Screens */
 
 @media all and (min-width: 1200px) {
-    .b-pg, 
-    .b-footer__contant, 
+    .b-pg,
+    .b-footer__contant,
     .b-call,
     .b-examples,
     .b-amount,
     .b-photo,
-    .b-review{
+    .b-review {
         width: 1100px;
     }
-
-    .b-call{
+    .b-call {
         min-height: 190px;
     }
-    
     .b-menu {
         &__item {
             padding: 30px 15px;

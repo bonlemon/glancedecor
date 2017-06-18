@@ -16,18 +16,15 @@
         margin: 0 2% 20px 0;
         padding: 20px;
         height: 330px;
-        background: #fff;
         text-align: left;
-        border-radius: 5px;
         cursor: default;
-        box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
     }
 
     &__blocks:nth-child(2n){
         margin-right: 0;
     }
     &__button {
-        margin-top: 40px;
+        margin-top: 25px;
     }
 }
 

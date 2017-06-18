@@ -13,23 +13,15 @@
     &__contant{
         display: block;
         margin: auto;
-        height: 200px;
+        min-height: 200px;
         padding: 5%;
-    }
-    
-    &__left {
-        margin-right: 10px;
-        float: left;
-    }
-    &__right {
-        margin-left: 10px;
-        float: right;
     }
     &__contact span {
         font-size: 25px;
         display: block;
     }
     &__social {
+        float: left;
         margin-bottom: 30px;
         span {
             font-size: 20px;
@@ -37,6 +29,9 @@
             float: left;
             margin: 4px 50px 0 0;
         }
+    }
+    &__adress{
+
     }
 }
 
