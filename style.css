@@ -107,7 +107,7 @@ body {
   text-align: center;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
   background-color: #90C3D4;
-  min-height: 230px; }
+  min-height: 260px; }
   .b-call__title, .b-call__call-form {
     line-height: 60px;
     vertical-align: middle; }
@@ -140,7 +140,7 @@ body {
     overflow: hidden;
     position: relative;
     float: left;
-    width: 42%;
+    width: 100%;
     min-width: 250px;
     margin: 0 2% 20px 0;
     padding: 20px;
