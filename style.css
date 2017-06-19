@@ -187,8 +187,7 @@ body {
     position: relative;
     padding: 15px;
     text-align: left;
-    height: 110px;
-    margin-bottom: 20px;
+    min-height: 110px;
     /* Choice img from sprite */ }
     .b-menu__item-img {
       position: absolute;
@@ -225,7 +224,7 @@ body {
       background: url("img/main/b-menu/examples.png") no-repeat;
       background-size: 70px 50px; }
     .b-menu__item__types {
-      background: url("img/main/b-menu/types.png") no-repeat;
+      background: url("img/main/b-menu/technologies.png") no-repeat;
       background-size: 70px 70px; }
     .b-menu__item__invoices {
       background: url("img/main/b-menu/invoices.png") no-repeat;

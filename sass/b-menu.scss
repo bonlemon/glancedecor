@@ -14,8 +14,7 @@
         position: relative;
         padding: 15px;
         text-align: left;
-        height: 110px;
-        margin-bottom: 20px;
+        min-height: 110px;
         &-img {
             position: absolute;
             top: 15%;
@@ -62,7 +61,7 @@
             background-size: 70px 50px;
         }
         &__types {
-            background: url('img/main/b-menu/types.png') no-repeat;
+            background: url('img/main/b-menu/technologies.png') no-repeat;
             background-size: 70px 70px;
         }
         &__invoices {
