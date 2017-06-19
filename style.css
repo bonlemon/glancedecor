@@ -84,24 +84,25 @@ body {
     clear: both; }
 
 .b-amount {
+  box-sizing: border-box;
   padding: 38px 0px 42px 0;
   text-align: center; }
-  .b-amount__list-items {
-    margin: 0 auto;
-    text-align: center; }
-  .b-amount__list-item {
-    width: 100%;
-    min-width: 250px;
-    height: 250px;
-    cursor: pointer;
-    margin: 0 2% 20px 0;
-    vertical-align: top; }
-    .b-amount__list-item img {
-      width: 100%;
-      height: 100%;
-      border-radius: 3px; }
   .b-amount__button {
     margin-top: 40px; }
+
+.amount-tab__header-item {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  color: #0077b3;
+  z-index: 2;
+  transition: all 0.2s;
+  position: relative;
+  line-height: 38px;
+  padding: 0 20px;
+  cursor: pointer;
+  margin-left: -1px;
+  color: #999; }
 
 .b-call {
   padding: 20px 0px;
@@ -584,7 +585,7 @@ body {
     margin-bottom: 20px; }
   .b-review__content-title {
     margin: 1% 10%;
-    text-align: center;
+    text-align: left;
     font-size: 16px; }
   .b-review__tab-element {
     float: left;
@@ -711,13 +712,6 @@ body {
     display: block;
     margin: 10px auto; }
 
-  .navbar__text {
-    font-size: 13px; }
-  .navbar__list_right, .navbar__item {
-    display: none; }
-  .navbar__item:first-child {
-    display: block; }
-
   /* Slider*/
   .b-sld-dsc {
     display: none; }
@@ -755,6 +749,13 @@ body {
     width: 100%; } }
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
+  .navbar__text {
+    font-size: 13px; }
+  .navbar__list_right, .navbar__item {
+    display: none; }
+  .navbar__item:first-child {
+    display: block; }
+
   .navbar__text {
     font-size: 16px; }
 

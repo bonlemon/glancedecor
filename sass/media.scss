@@ -48,18 +48,7 @@
             margin: 10px auto;
         }
     }
-    .navbar {
-        &__text {
-            font-size: $mblFontSize;
-        }
-        &__list_right,
-        &__item {
-            display: none;
-        }
-        &__item:first-child {
-            display: block;
-        }
-    }
+    
     /* Slider*/
     .b-sld-dsc {
         display: none;
@@ -111,6 +100,18 @@
 /* Extra Small Devices, Phones */
 
 @media all and (min-width: 480px) {
+    .navbar {
+        &__text {
+            font-size: $mblFontSize;
+        }
+        &__list_right,
+        &__item {
+            display: none;
+        }
+        &__item:first-child {
+            display: block;
+        }
+    }
     .navbar__text {
         font-size: $dscFontSize;
     }
