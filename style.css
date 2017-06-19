@@ -188,6 +188,7 @@ body {
     padding: 15px;
     text-align: left;
     height: 110px;
+    margin-bottom: 20px;
     /* Choice img from sprite */ }
     .b-menu__item-img {
       position: absolute;
@@ -706,9 +707,6 @@ body {
     padding-left: -15px;
     padding-right: -15px; }
 
-  .b-footer__contant {
-    width: 100%; }
-
   .b-call__get-phone, .b-call__call-submit {
     width: 70%;
     display: block;
@@ -752,7 +750,10 @@ body {
     .b-review__img {
       width: 25%;
       height: 25%;
-      float: left; } }
+      float: left; }
+
+  .b-footer__contant {
+    width: 100%; } }
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
   .navbar__text {
