@@ -17,8 +17,10 @@ $(".b-example-block__foto-cell")
   .mouseover(function () {
     $imgUrl = $(this).attr('href');
     $(this).parent().css('background-image', 'url(' + $imgUrl + ')');
+    $(this).parent().css('background-size', '100% 100%');
   })
   .mouseout(function () {
     $imgUrl = $(this).parent().children().attr('href');
     $(this).parent().css('background-image', 'url(' + $imgUrl + ')');
+    $(this).parent().css('background-size', '100% 100%');
   });

@@ -135,8 +135,8 @@
         &__blocks {
             width: 49% !important;
             border-radius: 5px;
-            background: #fff;
-            box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+            box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2),
+                    1px 1px 3px rgba(0, 0, 0, 0.2);
         }
     }
     /* Slider */
@@ -216,10 +216,9 @@
             height: 200px;
         }
         &__img {
-            width: 90%;
-            
-        }height: 80%;
-        }
+            height: 90%;
+        }    
+    }
     .b-footer {
         &__contant {
             width: 968px;

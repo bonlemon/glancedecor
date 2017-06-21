@@ -36,9 +36,9 @@
         width: 27%;
         margin-right: 2%;
         border-radius: 5px;
-        background: #fff;
         min-width: 300px;
-        box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+        box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2),
+                    1px 1px 3px rgba(0, 0, 0, 0.2);
         &:last-child {
             margin-right: auto;
         }
