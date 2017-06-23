@@ -21,15 +21,25 @@ body {
     padding: 0;
     margin: 0;
     background-color: #fafafa;
+    
 }
 
 .b-pg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
     width:100%;
     margin: auto;
     line-height: 25px;
     font-family: "RobotoCRobotoRegularondensedRegular";
     font-size: $dscFontSize;
     color: #333;
+
+    &__line{
+        width: 100%
+    }
 }
 
 .b-header {
