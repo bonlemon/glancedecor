@@ -32,20 +32,20 @@ body {
   width: 100%;
   background-color: #fafafa; }
 
-.b-main {
+.b-pg {
   width: 100%;
   margin: auto;
   line-height: 25px;
   font-family: "RobotoCRobotoRegularondensedRegular";
   font-size: 16px;
   color: #333; }
-  .b-main__main {
+  .b-pg__main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-grow: 1; }
-  .b-main__line {
+  .b-pg__line {
     margin: 50px auto; }
 
 /***************/
@@ -249,20 +249,20 @@ body {
   width: 100%;
   background-color: #fafafa; }
 
-.b-main {
+.b-pg {
   width: 100%;
   margin: auto;
   line-height: 25px;
   font-family: "RobotoCRobotoRegularondensedRegular";
   font-size: 16px;
   color: #333; }
-  .b-main__main {
+  .b-pg__main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-grow: 1; }
-  .b-main__line {
+  .b-pg__line {
     margin: 50px auto; }
 
 /***************/
@@ -312,7 +312,7 @@ body {
 /******************/
 /* Блок навигации */
 /******************/
-.b-main__navbar {
+.b-pg__navbar {
   position: fixed;
   top: 0px;
   left: 50%;
@@ -616,7 +616,7 @@ body {
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 @media all and (min-width: 320px) {
-  .b-main__navbar {
+  .b-pg__navbar {
     width: 100%;
     padding-left: -15px;
     padding-right: -15px; }
@@ -717,7 +717,7 @@ body {
     display: none; } }
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
-  .b-main {
+  .b-pg {
     width: 968px; }
 
   .b-menu {
@@ -753,7 +753,7 @@ body {
     float: right; } }
 /* Large Devices, Wide Screens */
 @media all and (min-width: 1200px) {
-  .b-main,
+  .b-pg,
   .b-footer__contant,
   .b-call,
   .b-examples,

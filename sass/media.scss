@@ -32,7 +32,7 @@
 /* Custom, iPhone Retina */
 
 @media all and (min-width: 320px) {
-    .b-main {
+    .b-pg {
         &__navbar {
             width: 100%;
             padding-left: -15px;
@@ -183,7 +183,7 @@
 /* Medium Devices, Desktops */
 
 @media all and (min-width: 992px) {
-    .b-main {
+    .b-pg {
         width: 968px;
     }
     .b-menu {
@@ -238,7 +238,7 @@
 /* Large Devices, Wide Screens */
 
 @media all and (min-width: 1200px) {
-    .b-main,
+    .b-pg,
     .b-footer__contant,
     .b-call,
     .b-examples,
