@@ -32,16 +32,18 @@ body {
   background-color: #fafafa; }
 
 .b-pg {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   margin: auto;
   line-height: 25px;
   font-family: "RobotoCRobotoRegularondensedRegular";
   font-size: 16px;
   color: #333; }
+  .b-pg__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1; }
   .b-pg__line {
     width: 100%; }
 
@@ -246,16 +248,18 @@ body {
   background-color: #fafafa; }
 
 .b-pg {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   margin: auto;
   line-height: 25px;
   font-family: "RobotoCRobotoRegularondensedRegular";
   font-size: 16px;
   color: #333; }
+  .b-pg__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1; }
   .b-pg__line {
     width: 100%; }
 
