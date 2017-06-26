@@ -29,24 +29,28 @@
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
   background-color: #fafafa; }
 
-.b-pg {
+.b-main {
   width: 100%;
   margin: auto;
   line-height: 25px;
   font-family: "RobotoCRobotoRegularondensedRegular";
   font-size: 16px;
   color: #333; }
-  .b-pg__main {
+  .b-main__main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-grow: 1; }
-  .b-pg__line {
-    width: 100%; }
+  .b-main__line {
+    margin: 50px auto; }
 
+/***************/
+/* Общие стили */
+/***************/
 .b-header {
   margin: 0 0 37px 0;
   color: #333;
@@ -54,9 +58,6 @@ body {
   line-height: 40px;
   letter-spacing: -1px; }
 
-/***************/
-/* Общие стили */
-/***************/
 .submit {
   display: inline-block;
   padding: 0px 50px;
@@ -245,24 +246,28 @@ body {
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
   background-color: #fafafa; }
 
-.b-pg {
+.b-main {
   width: 100%;
   margin: auto;
   line-height: 25px;
   font-family: "RobotoCRobotoRegularondensedRegular";
   font-size: 16px;
   color: #333; }
-  .b-pg__main {
+  .b-main__main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-grow: 1; }
-  .b-pg__line {
-    width: 100%; }
+  .b-main__line {
+    margin: 50px auto; }
 
+/***************/
+/* Общие стили */
+/***************/
 .b-header {
   margin: 0 0 37px 0;
   color: #333;
@@ -270,9 +275,6 @@ body {
   line-height: 40px;
   letter-spacing: -1px; }
 
-/***************/
-/* Общие стили */
-/***************/
 .submit {
   display: inline-block;
   padding: 0px 50px;
@@ -310,7 +312,7 @@ body {
 /******************/
 /* Блок навигации */
 /******************/
-.b-pg__navbar {
+.b-main__navbar {
   position: fixed;
   top: 0px;
   left: 50%;
@@ -614,7 +616,7 @@ body {
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 @media all and (min-width: 320px) {
-  .b-pg__navbar {
+  .b-main__navbar {
     width: 100%;
     padding-left: -15px;
     padding-right: -15px; }
@@ -715,7 +717,7 @@ body {
     display: none; } }
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
-  .b-pg {
+  .b-main {
     width: 968px; }
 
   .b-menu {
@@ -751,7 +753,7 @@ body {
     float: right; } }
 /* Large Devices, Wide Screens */
 @media all and (min-width: 1200px) {
-  .b-pg,
+  .b-main,
   .b-footer__contant,
   .b-call,
   .b-examples,
