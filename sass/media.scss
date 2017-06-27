@@ -32,11 +32,29 @@
 /* Custom, iPhone Retina */
 
 @media all and (min-width: 320px) {
+    .b-pg,
+    .b-sld{
+        width: 320px;
+    }
     .b-pg {
+        max-width:320px;
         &__navbar {
             width: 100%;
             padding-left: -15px;
             padding-right: -15px;
+        }
+    }
+    .navbar {
+        &__text {
+            font-size: $mblFontSize;
+        }
+        &__list_right,
+        &__item {
+            display: none;
+        }
+        &__item:first-child {
+            display: block;
+            float: right;
         }
     }
     
@@ -100,6 +118,10 @@
 /* Extra Small Devices, Phones */
 
 @media all and (min-width: 480px) {
+    .b-pg,
+    .b-sld{
+        width:480px;
+    }
     .navbar {
         &__text {
             font-size: $mblFontSize;
@@ -128,6 +150,7 @@
 /* Small Devices, Tablets */
 
 @media all and (min-width: 768px) {
+
     .navbar__item:last-child {
         display: inline-block;
     }
@@ -183,7 +206,8 @@
 /* Medium Devices, Desktops */
 
 @media all and (min-width: 992px) {
-    .b-pg {
+    .b-pg,
+    .b-sld {
         width: 968px;
     }
     .b-menu {
@@ -239,12 +263,8 @@
 
 @media all and (min-width: 1200px) {
     .b-pg,
-    .b-footer__contant,
-    .b-call,
-    .b-examples,
-    .b-amount,
-    .b-block-img,
-    .b-review {
+    .b-sld,
+    .b-footer__contant{
         width: 1100px;
     }
     .b-call {
