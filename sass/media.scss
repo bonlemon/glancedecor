@@ -43,20 +43,24 @@
             padding-left: -15px;
             padding-right: -15px;
         }
-    }
-    .navbar {
-        &__text {
-            font-size: $mblFontSize;
-        }
-        &__list_right,
-        &__item {
-            display: none;
-        }
-        &__item:first-child {
-            display: block;
-            float: right;
+
+        &__line{
+            margin: auto;
         }
     }
+    // .navbar {
+    //     &__text {
+    //         font-size: $mblFontSize;
+    //     }
+    //     &__list_right,
+    //     &__item {
+    //         display: none;
+    //     }
+    //     &__item:first-child {
+    //         display: block;
+    //         float: right;
+    //     }
+    // }
     
     .b-call {
         &__get-phone,
@@ -122,21 +126,21 @@
     .b-sld{
         width:480px;
     }
-    .navbar {
-        &__text {
-            font-size: $mblFontSize;
-        }
-        &__list_right,
-        &__item {
-            display: none;
-        }
-        &__item:first-child {
-            display: block;
-        }
-    }
-    .navbar__text {
-        font-size: $dscFontSize;
-    }
+    // .navbar {
+    //     &__text {
+    //         font-size: $mblFontSize;
+    //     }
+    //     &__list_right,
+    //     &__item {
+    //         display: none;
+    //     }
+    //     &__item:first-child {
+    //         display: block;
+    //     }
+    //     &__text {
+    //         font-size: $dscFontSize;
+    //     }
+    // }
     .b-block-img {
         &__tab-element {
             width: 45%;

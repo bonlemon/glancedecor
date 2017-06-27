@@ -324,8 +324,9 @@ body {
   font-size: 22px; }
 
 .navbar {
-  list-style: none;
-  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   /********************************/
   /* Блок навигации(правая часть) */
   /********************************/ }
@@ -624,14 +625,8 @@ body {
       width: 100%;
       padding-left: -15px;
       padding-right: -15px; }
-
-  .navbar__text {
-    font-size: 13px; }
-  .navbar__list_right, .navbar__item {
-    display: none; }
-  .navbar__item:first-child {
-    display: block;
-    float: right; }
+    .b-pg__line {
+      margin: auto; }
 
   .b-call__get-phone, .b-call__call-submit {
     width: 70%;
@@ -678,16 +673,6 @@ body {
   .b-pg,
   .b-sld {
     width: 480px; }
-
-  .navbar__text {
-    font-size: 13px; }
-  .navbar__list_right, .navbar__item {
-    display: none; }
-  .navbar__item:first-child {
-    display: block; }
-
-  .navbar__text {
-    font-size: 16px; }
 
   .b-block-img__tab-element {
     width: 45%;

@@ -23,8 +23,11 @@
 }
 
 .navbar {
-	list-style: none;
-	vertical-align: middle;
+		display: flex;
+	justify-content: space-between;
+	align-items: center;
+	// list-style: none;
+	// vertical-align: middle;
 	&__logo {
 		display: inline-block;
 		background: url('img/main/logo.png') no-repeat;
