@@ -8,26 +8,15 @@
 
 /******************/
 
-.b-pg__navbar {
-	position: fixed;
-	top: 0px; // Выравнивание по середине фиксированного блока
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 20;
-	padding: 10px 0;
-	text-align: center;
-	background-color: #fff;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-	font-family: "RobotoRegular";
-	font-size: $dscFontSizeHeader;
-}
 
-.navbar {
-		display: flex;
+.b-navbar {
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	// list-style: none;
-	// vertical-align: middle;
+	flex-flow: row nowrap;
+	color: #0077b3;
+	margin: auto;
+
 	&__logo {
 		display: inline-block;
 		background: url('img/main/logo.png') no-repeat;
@@ -38,23 +27,6 @@
 	&__icon {
 		display: inline-block;
 		background: url('img/icon/main_sprite.png') no-repeat;
-	}
-	&__list {
-		float: left;
-		.fa-bars {
-			color: #0077b3;
-		}
-	}
-	&__list:first-child {
-		padding-left: 15px;
-	}
-	&__item {
-		display: inline-block;
-		padding-left: 15px;
-	}
-	&__text {
-		color: #0077b3;
-		margin-bottom: 5px;
 	}
 	&__icity {
 		background-position: -25px 0px;

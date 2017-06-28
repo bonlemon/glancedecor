@@ -1,8 +1,6 @@
-// Constants
-$maxWidth: 1280px;
 // Fonts
-$dscFontSize: 16px;
-$dscFontSizeHeader: 22px;
+$dscFontSize: 14px;
+$dscFontSizeHeader: 18px;
 $mblFontSize: 13px;
 $headerFontSize: 35px;
 // Colors
@@ -10,16 +8,13 @@ $buttonColor: #01314A;
 $buttonBorderColor: #116A96;
 
 /*****************/
-
-
 /* Блок страницы */
-
-
 /*****************/
 
 body {
     padding: 0;
     margin: 0;
+
     width:100%;
 
     background-color: #fafafa;
@@ -43,14 +38,25 @@ body {
     &__line{
         margin: 50px auto;
     }
+
+    &__navbar {
+        width:100%;
+        position: fixed;
+        top: 0px; // Выравнивание по середине фиксированного блока
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+        background-color: #fff;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+        font-family: "RobotoRegular";
+        font-size: $dscFontSizeHeader;
+    }
 }
 
 
 
 /***************/
-
 /* Общие стили */
-
 /***************/
 
 .b-header {
