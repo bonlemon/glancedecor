@@ -31,4 +31,14 @@
         }
     }
 
+
+
+
+    &__content-tab{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 20px auto;
+    }
+
 }

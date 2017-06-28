@@ -138,6 +138,13 @@
 
 @media all and (min-width: 480px) {
 
+    .b-menu{
+        &__item{
+            width: 45%;
+            height: auto;
+        }
+    }
+
     .b-block-img {
         &__list-item {
             width: 45%;
@@ -153,10 +160,13 @@
             display: flex;
         }
     }
-    .b-menu{
-        &__item{
+    
+    .b-tab{
+        &__tab-element{
             width: 45%;
-            height: auto;
+        }
+        &__img {
+            height: 250px;
         }
     }
 }
