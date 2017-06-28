@@ -33,23 +33,36 @@
 
 @media all and (min-width: 320px) {
     .b-pg,
-    .b-sld,
-    .b-navbar{
-        width: 320px;
+    .b-slider,
+    .b-navbar,
+    .b-menu,
+    .b-call,
+    .b-examples,
+    .b-block-img,
+    .b-review,
+    .b-footer__contant{
+        width: 100%;
     }
-    .b-pg {
-        max-width:320px;
 
-        &__line{
-            margin: auto;
-        }
-    }
     .b-navbar {
+        padding-right: 20px;
+        padding-left: 20px;
         &__text {
             font-size: $mblFontSize;
         }
+
+        &__item{
+            display: none;
+        }
     }
     
+    .b-menu{
+        &__item{
+            width: 100%;
+            height: 100px;
+        }
+    }
+
     .b-call {
         &__get-phone,
         &__call-submit {
@@ -65,17 +78,20 @@
     }
     .b-sld-mbl {
         display: block;
-        margin-top: 75px;
         img {
             width: 100%;
             max-height: 30em;
         }
     }
     .b-block-img {
+
+        &__content{
+            display:none;
+        }
+        
         .slick-prev,
         .slick-next,
-        .slick-dots,
-        .b-block-img__list-photos {
+        .slick-dots{
             display: none;
         }
         .b-sld-mbl {
@@ -85,6 +101,17 @@
             .slick-dots {
                 display: none !important;
             }
+        }
+    }
+    .b-tab{
+        &__tab-element{
+            display: block;
+            margin: auto;
+            float: none;
+            width:80%;
+        }
+        &__img {
+            height: 250px;
         }
     }
     .b-review {
@@ -110,21 +137,26 @@
 /* Extra Small Devices, Phones */
 
 @media all and (min-width: 480px) {
-    .b-pg,
-    .b-sld,
-    .b-navbar{
-        width:480px;
-    }
-    .b-navbar {
-        &__text {
-            font-size: $mblFontSize;
-        }
-    }
+
     .b-block-img {
-        &__tab-element {
+        &__list-item {
             width: 45%;
             min-width: 300px;
             height: 100%;
+        }
+
+        .b-sld-mbl {
+            display: none;
+        }
+
+        &__content{
+            display: flex;
+        }
+    }
+    .b-menu{
+        &__item{
+            width: 45%;
+            height: auto;
         }
     }
 }
@@ -134,13 +166,15 @@
 
 @media all and (min-width: 768px) {
     .b-pg,
-    .b-sld,
-    .b-navbar{
-        width:700px;
-    }
-
-    .b-navbar{
-        width:700px;
+    .b-slider,
+    .b-navbar,
+    .b-menu,
+    .b-call,
+    .b-examples,
+    .b-block-img,
+    .b-review,
+    .b-footer__contant{
+        width: 700px;
     }
 
     .b-examples {
@@ -154,7 +188,6 @@
     /* Slider */
     .b-sld-dsc {
         display: block;
-        margin-top: 75px;
         img {
             width: 100%;
             min-height: 18em;
@@ -181,14 +214,6 @@
             margin-right: 0;
         }
     }
-    .b-block-img {
-        .b-block-img__list-photos {
-            display: block;
-        }
-        .b-sld-mbl {
-            display: none;
-        }
-    }
 }
 
 
@@ -196,14 +221,29 @@
 
 @media all and (min-width: 992px) {
     .b-pg,
-    .b-sld,
-    .b-navbar {
+    .b-slider,
+    .b-navbar,
+    .b-menu,
+    .b-call,
+    .b-examples,
+    .b-block-img,
+    .b-review,
+    .b-footer__contant{
         width: 968px;
     }
+    .b-navbar {
+        &__item{
+            display: block;
+        }
+    }
     .b-menu {
-        border-bottom: solid 1px #f0f0f0;
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-        margin-bottom: auto;
+        // border-bottom: solid 1px #f0f0f0;
+        // box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+        // margin-bottom: auto;
+
+        &__item{
+            width: 32%;
+        }
     }
     .b-block-img {
         &__blocks {
@@ -224,7 +264,7 @@
     
     
     .b-block-img {
-        &__tab-element {
+        &__list-item {
             width: 32%;
             min-width: 280px;
             height: 200px;
@@ -253,8 +293,13 @@
 
 @media all and (min-width: 1200px) {
     .b-pg,
-    .b-sld,
+    .b-slider,
     .b-navbar,
+    .b-menu,
+    .b-call,
+    .b-examples,
+    .b-block-img,
+    .b-review,
     .b-footer__contant{
         width: 1100px;
     }

@@ -1,6 +1,5 @@
 // Fonts
-$dscFontSize: 14px;
-$dscFontSizeHeader: 18px;
+$dscFontSize: 16px;
 $mblFontSize: 13px;
 $headerFontSize: 35px;
 // Colors
@@ -28,6 +27,7 @@ body {
     color: #333;
 
     &__main{
+        margin-top: 21px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -40,16 +40,19 @@ body {
     }
 
     &__navbar {
+        display: flex;
         width:100%;
+        height: 70px;
+        // Позиционирование
         position: fixed;
         top: 0px; // Выравнивание по середине фиксированного блока
         left: 50%;
         transform: translateX(-50%);
         z-index: 20;
+        // Оформление
         background-color: #fff;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
         font-family: "RobotoRegular";
-        font-size: $dscFontSizeHeader;
     }
 }
 
