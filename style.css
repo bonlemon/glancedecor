@@ -556,8 +556,6 @@ body {
   background: #6e767d;
   color: #fff;
   font-weight: 300; }
-  .b-footer div {
-    display: inline-block; }
   .b-footer__contant {
     display: inline-block;
     margin: auto;
@@ -567,13 +565,12 @@ body {
     font-size: 25px;
     display: block; }
   .b-footer__social {
-    float: left;
-    margin-bottom: 30px; }
-    .b-footer__social span {
-      font-size: 20px;
-      display: block;
-      float: left;
-      margin: 4px 50px 0 0; }
+    font-size: 20px;
+    flex: 1; }
+  .b-footer__rb {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 /* 
     Base block for social icon in footer block 
@@ -584,11 +581,10 @@ body {
   background: url(img/icon/socials_sprite.png) no-repeat;
   width: 25px;
   height: 25px;
-  margin-left: 5px; }
+  margin: 0 5px; }
 
 .b-social {
-  display: inline;
-  margin-left: 20px; }
+  display: inline; }
   .b-social__vk {
     background-position: -26px 0; }
   .b-social__instagram {
@@ -677,7 +673,17 @@ body {
       float: left; }
 
   .b-footer__contant {
-    width: 100%; } }
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; }
+    .b-footer__contant div {
+      padding-bottom: 10px;
+      padding-top: 10px; }
+  .b-footer__rb {
+    flex-direction: row; }
+  .b-footer__adress {
+    flex: 2; } }
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
   .b-menu__item {

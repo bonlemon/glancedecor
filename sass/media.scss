@@ -127,8 +127,22 @@
         }
     }
     .b-footer {
+
         &__contant {
-            width: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            div{
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+        }
+        &__rb{
+            flex-direction: row;
+        }
+        &__adress{
+            flex: 2;
         }
     }
 }

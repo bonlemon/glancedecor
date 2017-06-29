@@ -15,9 +15,6 @@
     background: #6e767d;
     color: #fff;
     font-weight: 300;
-    div{
-        display: inline-block;
-    }
 
     &__contant{
         display: inline-block;
@@ -30,17 +27,13 @@
         display: block;
     }
     &__social {
-        float: left;
-        margin-bottom: 30px;
-        span {
-            font-size: 20px;
-            display: block;
-            float: left;
-            margin: 4px 50px 0 0;
-        }
+        font-size: 20px;
+        flex: 1;
     }
-    &__adress{
-
+    &__rb{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -55,12 +48,11 @@
     background: url(img/icon/socials_sprite.png) no-repeat;
     width: 25px;
     height: 25px;
-    margin-left: 5px;
+    margin: 0 5px;
 }
 
 .b-social {
     display: inline;
-    margin-left: 20px;
     &__vk {
         @extend %social-base;
         background-position: -26px 0;
