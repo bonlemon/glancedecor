@@ -6,12 +6,21 @@
     position: absolute;
     left: 0;
     width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-self: stretch;
+
     background: #6e767d;
     color: #fff;
     font-weight: 300;
+    div{
+        display: inline-block;
+    }
 
     &__contant{
-        display: block;
+        display: inline-block;
         margin: auto;
         min-height: 200px;
         padding: 5%;

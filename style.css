@@ -549,11 +549,17 @@ body {
   position: absolute;
   left: 0;
   width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-self: stretch;
   background: #6e767d;
   color: #fff;
   font-weight: 300; }
+  .b-footer div {
+    display: inline-block; }
   .b-footer__contant {
-    display: block;
+    display: inline-block;
     margin: auto;
     min-height: 200px;
     padding: 5%; }
@@ -769,13 +775,7 @@ body {
     height: 90%; }
 
   .b-footer__contant {
-    width: 968px; }
-  .b-footer__left {
-    margin-right: 10px;
-    float: left; }
-  .b-footer__right {
-    margin-left: 10px;
-    float: right; } }
+    width: 968px; } }
 /* Large Devices, Wide Screens */
 @media all and (min-width: 1200px) {
   .b-pg,
