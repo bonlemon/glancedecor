@@ -27,46 +27,19 @@
         display: block;
     }
     &__social {
-        font-size: 20px;
         flex: 1;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .fa {
+            font-size: 25px;
+            flex: 1;
+        }
     }
     &__rb{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-}
-
-
-/* 
-    Base block for social icon in footer block 
-    TODO may be need unpdate to mixin
-*/
-
-%social-base {
-    display: inline-block;
-    background: url(img/icon/socials_sprite.png) no-repeat;
-    width: 25px;
-    height: 25px;
-    margin: 0 5px;
-}
-
-.b-social {
-    display: inline;
-    &__vk {
-        @extend %social-base;
-        background-position: -26px 0;
-    }
-    &__instagram {
-        @extend %social-base;
-        background-position: -130px 0;
-    }
-    &__facebook {
-        @extend %social-base;
-        background-position: -52px 0;
-    }
-    &__twitter {
-        @extend %social-base;
-        background-position: -78px 0;
     }
 }
