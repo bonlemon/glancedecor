@@ -1,6 +1,6 @@
 .b-fixtures {
     box-sizing: border-box;
-    padding: 38px 0px 42px 0;
+    
     text-align: center;
     /*----- Content of Tabs -----*/
     &__header {
@@ -15,7 +15,7 @@
         position: relative;
         display: inline-block;
         width: 26%;
-        min-width: 280px;
+        // min-width: 280px;
         height: 200px;
         margin: 10px;
         margin-right: 0px;

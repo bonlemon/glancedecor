@@ -133,7 +133,6 @@ body {
 
 .b-examples {
   box-sizing: border-box;
-  padding: 38px 0px 42px 0;
   text-align: center;
   background-color: #fafafa; }
   .b-examples__title {
@@ -143,7 +142,6 @@ body {
     position: relative;
     float: left;
     width: 100%;
-    min-width: 250px;
     margin: 0 2% 20px 0;
     padding: 20px;
     height: 330px;
@@ -373,7 +371,6 @@ body {
     margin: 20px auto; }
   .b-block-img__list-item {
     width: 32%;
-    min-width: 250px;
     margin: 10px 0; }
     .b-block-img__list-item img {
       width: 100%;
@@ -411,7 +408,6 @@ body {
     float: left;
     width: 31%;
     margin-right: 2%;
-    min-width: 300px;
     border-radius: 5px;
     box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2), 1px 1px 3px rgba(0, 0, 0, 0.2); }
     .b-tab__tab-element:last-child {
@@ -460,7 +456,6 @@ body {
 
 .b-fixtures {
   box-sizing: border-box;
-  padding: 38px 0px 42px 0;
   text-align: center;
   /*----- Content of Tabs -----*/ }
   .b-fixtures__header {
@@ -473,7 +468,6 @@ body {
     position: relative;
     display: inline-block;
     width: 26%;
-    min-width: 280px;
     height: 200px;
     margin: 10px;
     margin-right: 0px;
@@ -509,8 +503,6 @@ body {
     margin-top: 25px; }
 
 .b-review {
-  box-sizing: border-box;
-  padding: 38px 0px 42px 0;
   text-align: center;
   /*----- Content of Tabs -----*/ }
   .b-review__header {
@@ -593,7 +585,8 @@ body {
   .b-examples,
   .b-block-img,
   .b-review,
-  .b-footer__contant {
+  .b-footer {
+    box-sizing: border-box;
     width: 100%; }
 
   .b-navbar {
@@ -644,15 +637,13 @@ body {
   .b-tab__img {
     height: 250px; }
 
-  .b-review {
-    width: 100%; }
-    .b-review__tab-element {
-      display: block;
-      width: 100%; }
-    .b-review__img {
-      width: 25%;
-      height: 25%;
-      float: left; }
+  .b-review__tab-element {
+    display: block;
+    box-sizing: border-box; }
+  .b-review__img {
+    width: 25%;
+    height: 25%;
+    float: left; }
 
   .b-footer__contant {
     flex-direction: column;
@@ -718,13 +709,7 @@ body {
     .b-call__get-phone, .b-call__call-submit {
       width: 30%;
       display: inline-block;
-      margin: 10px; }
-
-  .b-amount__list-item {
-    float: left;
-    width: 47%; }
-  .b-amount__list-item:nth-child(2n) {
-    margin-right: 0; } }
+      margin: 10px; } }
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
   .b-pg,
