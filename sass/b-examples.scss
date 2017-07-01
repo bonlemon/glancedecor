@@ -56,3 +56,60 @@
         height: 280px;
     }
 }
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media all and (min-width: 320px) {
+
+    .b-examples{
+        box-sizing: border-box;
+        width: 100%;
+    }
+ 
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media all and (min-width: 480px) {
+
+}
+
+
+/* Small Devices, Tablets */
+
+@media all and (min-width: 768px) {
+
+    .b-examples {
+        width: 700px;
+        &__blocks {
+            width: 49% !important;
+            border-radius: 5px;
+            box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2),
+                    1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media all and (min-width: 992px) {
+
+    .b-examples {
+        width: 968px;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media all and (min-width: 1200px) {
+    .b-examples{
+        width: 1100px;
+    }
+}
