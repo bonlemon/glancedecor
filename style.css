@@ -327,7 +327,7 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
+@media all and (max-width: 320px) {
   .b-menu {
     box-sizing: border-box;
     width: 100%; }
@@ -337,7 +337,7 @@ body {
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
   .b-menu__item {
-    width: 45%;
+    width: 40%;
     height: auto; } }
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
@@ -348,14 +348,12 @@ body {
   .b-menu {
     width: 968px; }
     .b-menu__item {
-      width: 32%; } }
+      width: 30%;
+      height: 150px; } }
 /* Large Devices, Wide Screens */
 @media all and (min-width: 1200px) {
   .b-menu {
-    width: 1100px; }
-    .b-menu__item {
-      padding: 30px 15px;
-      height: 150px; } }
+    width: 1100px; } }
 /*****************/
 /* Блок страницы */
 /*****************/
@@ -618,16 +616,16 @@ body {
     width: 968px; }
     .b-block-img__blocks {
       width: 47%; }
-    .b-block-img__list-item {
-      width: 32%;
-      min-width: 280px;
-      height: 200px; }
     .b-block-img__img {
       height: 90%; } }
 /* Large Devices, Wide Screens */
 @media all and (min-width: 1200px) {
   .b-block-img {
-    width: 1100px; } }
+    width: 1100px; }
+    .b-block-img__list-item {
+      width: 32%;
+      min-width: 280px;
+      height: 200px; } }
 /*----- Tabs -----*/
 .b-tab {
   /*----- Tab Links -----*/
