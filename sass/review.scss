@@ -1,14 +1,20 @@
 .b-review {
     
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
     /*----- Content of Tabs -----*/
     &__header {
         margin-bottom: 20px;
     }
-    &__content-title {
-        margin: 1% 10%;
-        text-align: left;
-        font-size: 16px;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     &__tab-element {
         float:left;        
@@ -75,6 +81,11 @@
 
     .b-review {
         width: 700px;
+
+        &__content {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 }
 

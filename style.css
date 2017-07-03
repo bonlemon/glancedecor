@@ -562,6 +562,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: center;
     margin: 20px auto; }
   .b-block-img__list-item {
     width: 32%;
@@ -771,13 +772,17 @@ body {
 /* Large Devices, Wide Screens */
 .b-review {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   /*----- Content of Tabs -----*/ }
   .b-review__header {
     margin-bottom: 20px; }
-  .b-review__content-title {
-    margin: 1% 10%;
-    text-align: left;
-    font-size: 16px; }
+  .b-review__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
   .b-review__tab-element {
     float: left;
     width: 100%;
@@ -818,7 +823,10 @@ body {
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
   .b-review {
-    width: 700px; } }
+    width: 700px; }
+    .b-review__content {
+      flex-direction: row;
+      justify-content: space-between; } }
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
   .b-review {
