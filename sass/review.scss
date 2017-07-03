@@ -19,8 +19,6 @@
     &__tab-element {
         float:left;        
         width: 100%;
-        min-width: 250px;
-        min-height: 150px;
         padding: 20px;
         margin: 0 2% 20px 0;
         border-radius: 5px;
@@ -86,6 +84,13 @@
             flex-direction: row;
             justify-content: space-between;
         }
+
+        
+        &__img {
+            margin-bottom: 20px;
+            width: 150px;
+            height: 150px;
+        }
     }
 }
 
@@ -97,11 +102,6 @@
         &__tab-element {
             width: 32%;
             min-height: 490px;
-        }
-        &__img {
-            width: 40%;
-            height: 40%;
-            margin-bottom: 20px;
         }
     }
 }
