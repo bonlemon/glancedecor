@@ -15,8 +15,7 @@
 
     &__list-item {
         width: 32%;
-        // min-width: 250px;
-        margin: 35px 0;
+        margin: 10px 0;
 
         img {
             width: 100%;
@@ -72,19 +71,7 @@
 @media all and (min-width: 480px) {
 
     .b-block-img {
-        &__list-item {
-            width: 45%;
-            min-width: 300px;
-            height: 100%;
-        }
-
-        .b-sld-mbl {
-            display: none;
-        }
-
-        &__content{
-            display: flex;
-        }
+        
     }
 }
 
@@ -95,6 +82,24 @@
     
     .b-block-img{
         width: 700px;
+
+        &__list-item {
+            width: 45%;
+            min-width: 300px;
+            height: 100%;
+
+            img {
+                height: 270px;
+            }
+        }
+
+        .b-sld-mbl {
+            display: none;
+        }
+
+        &__content{
+            display: flex;
+        }
     }
 
 }
@@ -123,7 +128,10 @@
         &__list-item {
             width: 32%;
             min-width: 280px;
-            height: 200px;
+
+            img {
+                height: 220px;
+            }
         }
     }
 

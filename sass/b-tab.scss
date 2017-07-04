@@ -28,16 +28,12 @@
 
     &__tab-element {
         position: relative;
-        float: left;
-        width: 31%;
-        margin-right: 2%;
-        // min-width: 300px;
+        
         border-radius: 5px;
         box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2),
                     1px 1px 3px rgba(0, 0, 0, 0.2);
-        &:last-child {
-            margin-right: auto;
-        }
+
+        margin-bottom: 10px;
     }
     &__img {
         width: 100%;
@@ -49,7 +45,8 @@
         margin-left: 5%;
     }
     &__wrapper {
-        margin: 10px;
+        margin: 0 10px;
+        padding: 5px;
     }
     &__cost {
         float: left;
@@ -84,7 +81,6 @@
         padding: 5px 10px;
     }
     &__tab {
-        margin: 0px;
         display: none;
     }
     &__tab_active {
@@ -116,15 +112,6 @@
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
 
-    .b-tab{
-        &__tab-element{
-            width: 45%;
-        }
-        &__img {
-            height: 250px;
-        }
-    }
-
 }
 
 /* Small Devices, Tablets */
@@ -134,7 +121,14 @@
 
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
-
+    .b-tab{
+        &__tab-element{
+            width: 30%;
+        }
+        &__img {
+            height: 250px;
+        }
+    }
 }
 
 /* Large Devices, Wide Screens */

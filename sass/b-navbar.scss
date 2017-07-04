@@ -9,7 +9,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-flow: row-reverse nowrap;
+	flex-flow: row nowrap;
 	color: #0077b3;
 	margin: auto;
 	
@@ -23,6 +23,7 @@
 		background-size: 100% 100%;
 		width: 150px;
 		height: 40px;
+		order: 1;
 	}
 	&__icon {
 		display: inline-block;
@@ -109,6 +110,7 @@
 
     .b-navbar {
         width: 968px;
+		flex-direction: row-reverse;
         &__item{
             display: block;
         }

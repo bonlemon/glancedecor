@@ -1,61 +1,68 @@
-.b-fixtures {
-    box-sizing: border-box;
-    
-    text-align: center;
-    /*----- Content of Tabs -----*/
-    &__header {
-        margin-bottom: 20px;
-    }
-    &__content-title {
-        margin: 1% 10%;
-        text-align: center;
-        font-size: 16px;
-    }
-    &__tab-element {
+// @import 'common.scss';
+
+/*----- fixtures -----*/
+
+.b-fixture {
+
+    &__fixture-element {
         position: relative;
-        display: inline-block;
-        width: 26%;
-        // min-width: 280px;
-        height: 200px;
-        margin: 10px;
-        margin-right: 0px;
+        
         border-radius: 5px;
         box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2),
                     1px 1px 3px rgba(0, 0, 0, 0.2);
-        &:last-child {
-            margin-right: auto;
-        }
+
+        margin-bottom: 10px;
     }
     &__img {
-        width: 60%;
-        height: 95%;
-        border-radius: 3px;
+        width: 100%;
+        height: 200px;
         cursor: pointer;
-        float: left;
+        border-radius: 3px;
     }
     &__title {
-        position: absolute;
-        top: 12%;
-        right: 12%;
-        width: 40%;
         margin-left: 5%;
-        text-align: right;
+    }
+    &__wrapper {
+        margin: 0 10px;
+        padding: 5px;
     }
     &__cost {
-        position: absolute;
-        bottom: 12%;
-        right: 12%;
-        display: inline-block;
-        width: 20%;
-        padding-top: 5px;
-        border: 1px solid #ffd941;
+        float: left;
+        padding: 5px 15px;
+        min-width: 100px;
         border-radius: 5px;
-        &:hover {
-            background: #ffd941;
+        font-weight: 600;
+        font-size: 16px;
+        background: #ffd941;
+        color: #000;
+        &_sale {
+            background: #ff4141;
+            color: #fff;
+            span {
+                text-decoration: line-through;
+                vertical-align: super;
+                font-size: 12px;
+            }
+            &-top {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                opacity: 0.9;
+                background: #ff4141;
+                color: #fff;
+            }
         }
     }
-    &__button {
-        margin-top: 25px;
+    &__calculation {
+        margin: 0px;
+        float: right;
+        padding: 5px 10px;
+    }
+    &__fixture {
+        display: none;
+    }
+    &__fixture_active {
+        display: block;
     }
 }
 
@@ -64,7 +71,19 @@
 
 /* Custom, iPhone Retina */
 @media all and (min-width: 320px) {
-    
+
+    .b-fixture{
+        &__fixture-element{
+            display: block;
+            margin: auto;
+            float: none;
+            width:80%;
+        }
+        &__img {
+            height: 250px;
+        }
+    }
+
 }
 
 
@@ -73,18 +92,22 @@
 
 }
 
-
-/* Small Devices, Tablets */
+/* Small Devices, fixturelets */
 @media all and (min-width: 768px) {
 
 }
 
-
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
-
+    .b-fixture{
+        &__fixture-element{
+            width: 30%;
+        }
+        &__img {
+            height: 250px;
+        }
+    }
 }
-
 
 /* Large Devices, Wide Screens */
 @media all and (min-width: 1200px) {

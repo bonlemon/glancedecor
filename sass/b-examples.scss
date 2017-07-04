@@ -5,27 +5,27 @@
     text-align: center;
     background-color: #fafafa;
     &__title {
-        margin: -10px 0 20px 0;
+        margin: 20px 0 0 0;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
     &__blocks {
         overflow: hidden;
         position: relative;
-        float: left;
         width: 100%;
-        // min-width: 250px;
-        margin: 0 2% 20px 0;
-        padding: 20px;
         height: 330px;
         text-align: left;
         cursor: default;
     }
 
-    &__blocks:nth-child(2n){
-        margin-right: 0;
-    }
     &__button {
         margin-top: 25px;
     }
+
 }
 
 .b-example-block {
@@ -41,10 +41,10 @@
         text-transform: underline;
     }
     &__foto {
-        position: absolute;
+        position: relative;
         display: table;
         table-layout: fixed;
-        width: 90%;
+        width: 100%;
         z-index: 4;
         cursor: pointer;
         background-size: cover;
@@ -66,8 +66,11 @@
 @media all and (min-width: 320px) {
 
     .b-examples{
-        box-sizing: border-box;
         width: 100%;
+
+        &__blocks {
+            width: 100%;
+        }
     }
  
 }
@@ -76,7 +79,13 @@
 /* Extra Small Devices, Phones */
 
 @media all and (min-width: 480px) {
+    .b-examples{
+        width: 70%;
 
+        &__blocks {
+            width: 100%;
+        }
+    }
 }
 
 
@@ -86,12 +95,12 @@
 
     .b-examples {
         width: 700px;
+        &__content{
+            flex-flow: row wrap;
+        }
         
         &__blocks {
-            width: 49% !important;
-            border-radius: 5px;
-            box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2),
-                    1px 1px 3px rgba(0, 0, 0, 0.2);
+            width: 47%;
         }
     }
 }
