@@ -80,26 +80,29 @@ $(document).ready(function () {
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$(".b-call__call-form").on('submit', function() {
-		$.ajax({
-			type: "GET",
-			url: "/mail",
-			data: $(".b-call__call-form").serialize()
-		}).done(function() {
-			alert('Мы вам перезвоним! :)')
-			setTimeout(function() {
-				$('#callback input[type=text]').val('');
-				// $.fancybox.close();
-			}, 1000);
-		});
-		return false;
-	});
 
-	$('.b-sld').slick({
-		autoplay: true,
-		dots: true,
-		arrows: true,
-		autoplaySpeed: 2000,
-	});
+	// console.log('$(".b-call__call-form").', $(".b-call__call-form"))
+	// $(".b-call__call-form").on('submit', function() {
+	// 	alert($(".b-call__call-form").serialize());
+	// 	$.ajax({
+	// 		type: "GET",
+	// 		url: "/mail",
+	// 		data: $(".b-call__call-form").serialize()
+	// 	}).done(function() {
+	// 		alert('Мы вам перезвоним! :)')
+	// 		setTimeout(function() {
+	// 			$('#callback input[type=text]').val('');
+	// 			// $.fancybox.close();
+	// 		}, 1000);
+	// 	});
+	// 	return false;
+	// });
+
+	// $('.b-sld').slick({
+	// 	autoplay: true,
+	// 	dots: true,
+	// 	arrows: true,
+	// 	autoplaySpeed: 2000,
+	// });
 
 }); 
