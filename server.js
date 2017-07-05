@@ -26,34 +26,35 @@ xAdmin.init(config, function (err, admin) {
     });
     app.get('/mail', function (req, res) {
         console.log('******')
-        console.log('req', req)
+        console.log('req', req.query)
 
-    // // create reusable transporter object using the default SMTP transport
-    // let transporter = nodemailer.createTransport({
-    //     host: 'smtp.mail.ru',
-    //     port: 465,
-    //     secure: true, // secure:true for port 465, secure:false for port 587
-    //     auth: {
-    //         user: 'dimon009@list.ru',
-    //         pass: 's4qtm8652'
-    //     }
-    // });
+        // create reusable transporter object using the default SMTP transport
+        let transporter = nodemailer.createTransport( {
+            host: 'smtp.mail.ru',
+            port: 587,
+            secure: false, // upgrade later with STARTTLS
+            auth: {
+                user: 'dimon009@list.ru',
+                pass: 's4qtm8652'
+            }
+        });
 
-    // // setup email data with unicode symbols
-    // let mailOptions = {
-    //     from: '"dimon009@list.ru', // sender address
-    //     to: 'dimon009@list.ru', // list of receivers
-    //     subject: 'Hello ✔', // Subject line
-    //     text: 'Call', // plain text body
-    // };
+        // setup email data with unicode symbols
+        let mailOptions = {
+            from: '"dimon009@list.ru', // sender address
+            to: 'dimon009@list.ru', // list of receivers
+            subject: 'Call me! ✔', // Subject line
+            text: req.query, // plain text body
+        };
 
-    // // send mail with defined transport object
-    // transporter.sendMail(mailOptions, (error, info) => {
-    //     if (error) {
-    //         return console.log(error);
-    //     }
-    //     console.log('Message %s sent: %s', info.messageId, info.response);
-    // });
+        // send mail with defined transport object
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                return console.log(error);
+            } else{
+                console.log('Message %s sent: %s', info.message);
+            }
+        });
     });
     // site server
     app.listen(PORT, function () {
