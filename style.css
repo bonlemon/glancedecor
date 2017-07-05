@@ -498,9 +498,9 @@ body {
   /* Блок навигации(правая часть) */
   /********************************/ }
   .b-navbar .fa {
-    font-size: 32px; }
+    font-size: 36px; }
   .b-navbar .fa.fa-whatsapp {
-    color: #17ac41; }
+    color: #0077b3; }
   .b-navbar__logo {
     display: inline-block;
     background: url("img/main/logo.png") no-repeat;
@@ -732,7 +732,7 @@ body {
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
   .b-tab__tab-element {
-    width: 30%; }
+    width: 31%; }
   .b-tab__img {
     height: 250px; } }
 /* Large Devices, Wide Screens */
@@ -823,9 +823,6 @@ body {
   .b-footer__contant {
     margin: auto;
     padding: 5%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     text-align: center; }
     .b-footer__contant div {
       padding-bottom: 10px;
@@ -839,6 +836,8 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; }
+    .b-footer__social a {
+      color: #fff; }
     .b-footer__social .fa {
       font-size: 27px; }
   .b-footer__adress {
@@ -853,7 +852,11 @@ body {
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
   .b-footer__contant {
-    width: 700px; } }
+    width: 700px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center; } }
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
   .b-footer__contant {
@@ -934,7 +937,7 @@ body {
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
   .b-fixture__fixture-element {
-    width: 30%; }
+    width: 31%; }
   .b-fixture__img {
     height: 250px; } }
 /* Large Devices, Wide Screens */

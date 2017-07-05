@@ -21,9 +21,6 @@
         margin: auto;
         padding: 5%;
 
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
         text-align: center;
 
         div{
@@ -42,6 +39,10 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+
+        a {
+            color: #fff;
+        }
 
         .fa {
             font-size: 27px;
@@ -71,9 +72,17 @@
 
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
-    .b-footer__contant{
-        width: 700px;
+    .b-footer{
+        &__contant{
+            width: 700px;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
+    
 }
 
 
