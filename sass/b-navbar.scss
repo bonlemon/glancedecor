@@ -9,12 +9,15 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-flow: row nowrap;
+	flex-flow: row-reverse nowrap;
 	color: #0077b3;
 	margin: auto;
 	
-	.fa-bars{
-		font-size: 18px;
+	.fa{
+		font-size: 27px;
+	}
+	.fa.fa-whatsapp {
+		color: rgb(23,172,65);
 	}
 
 	&__logo {
@@ -90,6 +93,11 @@
 /* Extra Small Devices, Phones */
 
 @media all and (min-width: 480px) {
+	.b-navbar{
+		.fa{
+			display: none;
+		}
+    }
 
 }
 

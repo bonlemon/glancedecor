@@ -491,14 +491,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-flow: row nowrap;
+  flex-flow: row-reverse nowrap;
   color: #0077b3;
   margin: auto;
   /********************************/
   /* Блок навигации(правая часть) */
   /********************************/ }
-  .b-navbar .fa-bars {
-    font-size: 18px; }
+  .b-navbar .fa {
+    font-size: 27px; }
+  .b-navbar .fa.fa-whatsapp {
+    color: #17ac41; }
   .b-navbar__logo {
     display: inline-block;
     background: url("img/main/logo.png") no-repeat;
@@ -547,6 +549,9 @@ body {
     .b-navbar__item {
       display: none; } }
 /* Extra Small Devices, Phones */
+@media all and (min-width: 480px) {
+  .b-navbar .fa {
+    display: none; } }
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
   .b-navbar {
