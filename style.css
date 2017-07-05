@@ -225,10 +225,18 @@ body {
     margin-top: 25px; }
 
 .b-example-block__title {
+  padding: 10px;
   color: #333;
   text-decoration: none;
   display: block;
   text-align: center; }
+  .b-example-block__title div {
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    background: #ffd941;
+    color: #000; }
 .b-example-block__title:hover {
   cursor: auto;
   color: #2387b5;
@@ -259,7 +267,10 @@ body {
   .b-examples {
     width: 70%; }
     .b-examples__blocks {
-      width: 100%; } }
+      width: 100%; }
+
+  .b-example-block__title {
+    margin: 5px; } }
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
   .b-examples {
