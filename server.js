@@ -35,7 +35,7 @@ xAdmin.init(config, function (err, admin) {
             secure: false, // upgrade later with STARTTLS
             auth: {
                 user: 'dimon009@list.ru',
-                pass: 's4qtm8652'
+                pass: '123'
             }
         });
 
