@@ -498,9 +498,9 @@ body {
   /* Блок навигации(правая часть) */
   /********************************/ }
   .b-navbar .fa {
-    font-size: 36px; }
-  .b-navbar .fa.fa-whatsapp {
-    color: #0077b3; }
+    font-size: 35px;
+    color: #0077b3;
+    padding: 0 10px; }
   .b-navbar__logo {
     display: inline-block;
     background: url("img/main/logo.png") no-repeat;
