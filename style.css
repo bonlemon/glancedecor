@@ -68,7 +68,7 @@ body {
   color: #333;
   font-size: 35px;
   line-height: 40px;
-  letter-spacing: -1px; }
+  letter-spacing: 1px; }
 
 .submit {
   display: inline-block;
@@ -405,7 +405,7 @@ body {
   color: #333;
   font-size: 35px;
   line-height: 40px;
-  letter-spacing: -1px; }
+  letter-spacing: 1px; }
 
 .submit {
   display: inline-block;
@@ -798,52 +798,43 @@ body {
 .b-footer {
   position: absolute;
   left: 0;
-  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-self: stretch;
   background: #6e767d;
   color: #fff;
-  font-weight: 300; }
+  font-weight: 300;
+  box-sizing: border-box; }
   .b-footer__contant {
-    display: inline-block;
     margin: auto;
-    min-height: 200px;
-    padding: 5%; }
+    padding: 5%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; }
+    .b-footer__contant div {
+      padding-bottom: 10px;
+      padding-top: 10px; }
   .b-footer__contact span {
-    font-size: 25px;
-    display: block; }
+    display: block;
+    font-size: 18px;
+    letter-spacing: 1.2px; }
   .b-footer__social {
     flex: 1;
     display: flex;
-    flex-wrap: wrap; }
+    flex-flow: row wrap;
+    justify-content: space-between; }
     .b-footer__social .fa {
-      font-size: 25px;
-      flex: 1; }
-  .b-footer__rb {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+      font-size: 30px; }
+  .b-footer__adress {
+    flex: 3; }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 @media all and (min-width: 320px) {
   .b-footer {
-    box-sizing: border-box;
-    width: 100%; }
-    .b-footer__contant {
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      text-align: center; }
-      .b-footer__contant div {
-        padding-bottom: 10px;
-        padding-top: 10px; }
-    .b-footer__rb {
-      flex-direction: row; }
-    .b-footer__adress {
-      flex: 2; } }
+    width: 100%; } }
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
@@ -857,53 +848,55 @@ body {
 @media all and (min-width: 1200px) {
   .b-footer__contant {
     width: 1100px; } }
-/*----- fixtures -----*/
-.b-fixture__fixture-element {
-  position: relative;
-  border-radius: 5px;
-  box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2), 1px 1px 3px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px; }
-.b-fixture__img {
-  width: 100%;
-  height: 200px;
-  cursor: pointer;
-  border-radius: 3px; }
-.b-fixture__title {
-  margin-left: 5%; }
-.b-fixture__wrapper {
-  margin: 0 10px;
-  padding: 5px; }
-.b-fixture__cost {
-  float: left;
-  padding: 5px 15px;
-  min-width: 100px;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 16px;
-  background: #ffd941;
-  color: #000; }
-  .b-fixture__cost_sale {
-    background: #ff4141;
-    color: #fff; }
-    .b-fixture__cost_sale span {
-      text-decoration: line-through;
-      vertical-align: super;
-      font-size: 12px; }
-    .b-fixture__cost_sale-top {
-      position: absolute;
-      top: 30px;
-      left: 30px;
-      opacity: 0.9;
+/*----- fixture -----*/
+.b-fixture {
+  text-align: center; }
+  .b-fixture__fixture-element {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2), 1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px; }
+  .b-fixture__img {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 3px; }
+  .b-fixture__title {
+    margin-left: 5%; }
+  .b-fixture__wrapper {
+    margin: 0 10px;
+    padding: 5px; }
+  .b-fixture__cost {
+    float: left;
+    padding: 5px 15px;
+    min-width: 100px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    background: #ffd941;
+    color: #000; }
+    .b-fixture__cost_sale {
       background: #ff4141;
       color: #fff; }
-.b-fixture__calculation {
-  margin: 0px;
-  float: right;
-  padding: 5px 10px; }
-.b-fixture__fixture {
-  display: none; }
-.b-fixture__fixture_active {
-  display: block; }
+      .b-fixture__cost_sale span {
+        text-decoration: line-through;
+        vertical-align: super;
+        font-size: 12px; }
+      .b-fixture__cost_sale-top {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        opacity: 0.9;
+        background: #ff4141;
+        color: #fff; }
+  .b-fixture__calculation {
+    margin: 0px;
+    float: right;
+    padding: 5px 10px; }
+  .b-fixture__fixture {
+    display: none; }
+  .b-fixture__fixture_active {
+    display: block; }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */

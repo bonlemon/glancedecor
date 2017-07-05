@@ -5,7 +5,6 @@
 .b-footer {
     position: absolute;
     left: 0;
-    width: 100%;
 
     display: flex;
     flex-flow: row wrap;
@@ -16,31 +15,40 @@
     color: #fff;
     font-weight: 300;
 
+    box-sizing: border-box;
+
     &__contant{
-        display: inline-block;
         margin: auto;
-        min-height: 200px;
         padding: 5%;
+
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+        div{
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
     }
     &__contact span {
-        font-size: 25px;
         display: block;
+        font-size: 18px;
+        letter-spacing: 1.2px; 
     }
     &__social {
         flex: 1;
 
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
+        justify-content: space-between;
 
         .fa {
-            font-size: 25px;
-            flex: 1;
+            font-size: 30px;
         }
     }
-    &__rb{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    &__adress{
+        flex: 3;
     }
 }
 
@@ -50,25 +58,7 @@
 /* Custom, iPhone Retina */
 @media all and (min-width: 320px) {
     .b-footer{
-        box-sizing: border-box;
-        width: 100%;
-
-        &__contant {
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            div{
-                padding-bottom: 10px;
-                padding-top: 10px;
-            }
-        }
-        &__rb{
-            flex-direction: row;
-        }
-        &__adress{
-            flex: 2;
-        }
+        width: 100%;        
     }
 }
 
