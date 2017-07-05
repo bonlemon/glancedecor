@@ -5,6 +5,9 @@
 .b-tab {
     
     /*----- Tab Links -----*/
+    &__content{
+        text-align: center;
+    }
     &__links li {
         margin: 0px 5px;
         display: inline-block;
@@ -111,7 +114,16 @@
 
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
-
+    .b-tab{
+        &__tab-element{
+            float: left;
+            width:45%;
+            margin: 1%;
+        }
+        &__img {
+            height: 250px;
+        }
+    }
 }
 
 /* Small Devices, Tablets */

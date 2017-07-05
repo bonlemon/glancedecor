@@ -92,11 +92,20 @@
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
 
+    .b-fixture{
+        &__fixture-element{
+            float: left;
+            width: 45%;
+            margin: 1%;
+        }
+        &__img {
+            height: 250px;
+        }
+    }
 }
 
 /* Small Devices, fixturelets */
 @media all and (min-width: 768px) {
-
 }
 
 /* Medium Devices, Desktops */
