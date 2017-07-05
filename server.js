@@ -44,7 +44,7 @@ xAdmin.init(config, function (err, admin) {
             from: '"dimon009@list.ru', // sender address
             to: 'dimon009@list.ru', // list of receivers
             subject: 'Call me! ✔', // Subject line
-            text: req.query, // plain text body
+            text: req.query.phone, // plain text body
         };
 
         // send mail with defined transport object
