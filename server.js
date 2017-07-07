@@ -25,8 +25,6 @@ xAdmin.init(config, function (err, admin) {
         res.send('Hello World');
     });
     app.get('/mail', function (req, res) {
-        console.log('******')
-        console.log('req', req.query)
 
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport( {
