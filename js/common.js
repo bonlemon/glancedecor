@@ -107,3 +107,18 @@ $(document).ready(function () {
 	});
 
 }); 
+
+var modal = document.querySelector("#modal");
+var modalOverlay = document.querySelector("#modal-overlay");
+var closeButton = document.querySelector(".b-modal__close");
+var openButton = document.querySelector(".open-modal");
+
+closeButton.addEventListener("click", function() {
+	modal.classList.toggle("b-modal--closed");
+  	modalOverlay.classList.toggle("b-modal__overlay--closed");
+});
+
+openButton.addEventListener("click", function() {
+	modal.classList.toggle("b-modal--closed");
+  	modalOverlay.classList.toggle("b-modal__overlay--closed");
+});
