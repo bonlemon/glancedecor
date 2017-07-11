@@ -551,6 +551,7 @@ body {
 /* Custom, iPhone Retina */
 @media all and (min-width: 320px) {
   .b-navbar {
+    position: relative;
     box-sizing: border-box;
     width: 100%;
     padding-right: 20px;
@@ -558,7 +559,9 @@ body {
     .b-navbar__text {
       font-size: 13px; }
     .b-navbar__item {
-      display: none; } }
+      display: none; }
+      .b-navbar__item .b-navbar__info {
+        display: none; } }
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
   .b-navbar .fa {
@@ -573,7 +576,9 @@ body {
     width: 968px;
     flex-direction: row-reverse; }
     .b-navbar__item {
-      display: block; } }
+      display: block; }
+      .b-navbar__item .fa-info:hover .b-navbar__info {
+        display: block; } }
 /* Large Devices, Wide Screens */
 @media all and (min-width: 1200px) {
   .b-navbar {

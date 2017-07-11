@@ -73,6 +73,8 @@
 @media all and (min-width: 320px) {
 
     .b-navbar {
+		position: relative;
+
         box-sizing: border-box;
         width: 100%;
         padding-right: 20px;
@@ -83,6 +85,10 @@
 
         &__item{
             display: none;
+
+			.b-navbar__info{
+				display: none;
+			}
         }
     }
 
@@ -120,7 +126,12 @@
 		flex-direction: row-reverse;
         &__item{
             display: block;
+			
+			.fa-info:hover .b-navbar__info{
+				display: block;
+			}
         }
+
     }
 
 }

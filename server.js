@@ -27,7 +27,7 @@ xAdmin.init(config, function (err, admin) {
     app.get('/mail', function (req, res) {
 
         // create reusable transporter object using the default SMTP transport
-        let transporter = nodemailer.createTransport( {
+        let transporter = nodemailer.createTransport({
             host: 'smtp.mail.ru',
             port: 587,
             secure: false, // upgrade later with STARTTLS
