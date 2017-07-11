@@ -1,0 +1,79 @@
+/*----- Modals -----*/
+
+.b-modal {
+    z-index: 1001;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex; 
+    width: 600px;
+    max-width: 100%;
+
+    height: 400px;
+    max-height: 100%;
+
+    &__close{
+        position: absolute;
+        top:0;
+        right:0;
+
+        width: 50%;
+    }
+
+    &__overlay{
+        z-index: 1000;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        &--closed{
+            display:none;
+        }
+    }
+
+    &--closed{
+        display:none;
+    }
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media all and (min-width: 320px) {
+
+    .b-modal{
+
+    }
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media all and (min-width: 480px) {
+    .b-modal{
+
+    }
+}
+
+/* Small Devices, modallets */
+@media all and (min-width: 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media all and (min-width: 992px) {
+    .b-modal{
+
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media all and (min-width: 1200px) {
+
+}
