@@ -577,6 +577,8 @@ body {
     flex-direction: row-reverse; }
     .b-navbar__item {
       display: block; }
+      .b-navbar__item .fa-info {
+        display: inline-block; }
       .b-navbar__item .fa-info:hover .b-navbar__info {
         display: block; } }
 /* Large Devices, Wide Screens */

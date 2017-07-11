@@ -126,6 +126,10 @@
 		flex-direction: row-reverse;
         &__item{
             display: block;
+
+			.fa-info{
+				display: inline-block;
+			}
 			
 			.fa-info:hover .b-navbar__info{
 				display: block;
