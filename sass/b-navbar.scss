@@ -12,59 +12,27 @@
 	flex-flow: row-reverse nowrap;
 	color: #0077b3;
 	margin: auto;
+
+	font-size: 20px;
 	
 	.fa{	
 		font-size: 30px;
 		color: #0077b3;
 		padding: 0 10px;
-
 		cursor: pointer;
 	}
 
 	&__logo {
 		display: inline-block;
 		background: url('img/main/logo.png') no-repeat;
-		background-size: 100% 100%;
+		background-size: 90% 90%;
 		width: 150px;
 		height: 40px;
+		order: 2;
+	}
+
+	&__title{
 		order: 1;
-	}
-	&__icon {
-		display: inline-block;
-		background: url('img/icon/main_sprite.png') no-repeat;
-	}
-	&__icity {
-		background-position: -25px 0px;
-		width: 14px;
-		height: 16px;
-	}
-	&__idown {
-		background-position: -11px -7px;
-		width: 9px;
-		height: 6px;
-	}
-	&__imail {
-		background-position: -128px -87px;
-		width: 26px;
-		height: 20px;
-		margin: 0 30px 5px 0;
-	}
-	/********************************/
-	/* Блок навигации(правая часть) */
-	/********************************/
-	&__list_right {
-		float: right;
-		margin-right: 20px;
-	}
-	&__icon-phone {
-		width: 12px;
-		height: 17px;
-		background-position: -61px -23px;
-	}
-	&__icon-clock {
-		width: 16px;
-		height: 16px;
-		background-position: -125px -51px;
 	}
 }
 
@@ -129,7 +97,8 @@
         &__item{
             display: block;
 
-			.fa-info{
+			.fa-info,
+			.fa-envelope-o{
 				display: inline-block;
 			}
 			
@@ -137,6 +106,9 @@
 				display: block;
 			}
         }
+		&__call{
+			display: none;
+		}
 
     }
 

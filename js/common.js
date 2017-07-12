@@ -21,10 +21,10 @@ $(document).ready(function () {
 	});
 
 	$(".b-modal__open").on("click", function(event) {
-		console.log(event.target)
-		if( event.target.hasClass('mail') ) {
-			alert('mail.')
-		}
+		// console.log(event.target)
+		// if( event.target.hasClass('mail') ) {
+		// 	alert('mail.')
+		// }
 		modal.toggleClass("b-modal--closed");
 		modalOverlay.toggleClass("b-modal__overlay--closed");
 		$('body').addClass('overflowhide');

@@ -511,9 +511,7 @@ body {
   flex-flow: row-reverse nowrap;
   color: #0077b3;
   margin: auto;
-  /********************************/
-  /* Блок навигации(правая часть) */
-  /********************************/ }
+  font-size: 20px; }
   .b-navbar .fa {
     font-size: 30px;
     color: #0077b3;
@@ -522,37 +520,12 @@ body {
   .b-navbar__logo {
     display: inline-block;
     background: url("img/main/logo.png") no-repeat;
-    background-size: 100% 100%;
+    background-size: 90% 90%;
     width: 150px;
     height: 40px;
+    order: 2; }
+  .b-navbar__title {
     order: 1; }
-  .b-navbar__icon {
-    display: inline-block;
-    background: url("img/icon/main_sprite.png") no-repeat; }
-  .b-navbar__icity {
-    background-position: -25px 0px;
-    width: 14px;
-    height: 16px; }
-  .b-navbar__idown {
-    background-position: -11px -7px;
-    width: 9px;
-    height: 6px; }
-  .b-navbar__imail {
-    background-position: -128px -87px;
-    width: 26px;
-    height: 20px;
-    margin: 0 30px 5px 0; }
-  .b-navbar__list_right {
-    float: right;
-    margin-right: 20px; }
-  .b-navbar__icon-phone {
-    width: 12px;
-    height: 17px;
-    background-position: -61px -23px; }
-  .b-navbar__icon-clock {
-    width: 16px;
-    height: 16px;
-    background-position: -125px -51px; }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
@@ -584,10 +557,13 @@ body {
     flex-direction: row-reverse; }
     .b-navbar__item {
       display: block; }
-      .b-navbar__item .fa-info {
+      .b-navbar__item .fa-info,
+      .b-navbar__item .fa-envelope-o {
         display: inline-block; }
       .b-navbar__item .fa-info:hover .b-navbar__info {
-        display: block; } }
+        display: block; }
+    .b-navbar__call {
+      display: none; } }
 /* Large Devices, Wide Screens */
 @media all and (min-width: 1200px) {
   .b-navbar {
