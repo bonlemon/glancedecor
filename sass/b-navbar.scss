@@ -79,9 +79,7 @@
 			display: none;
 		}
 
-		&__title {
-            display: flex;
-        }
+		
 
         &__item{
             display: block;
@@ -110,6 +108,10 @@
 @media all and (min-width: 768px) {
     .b-navbar{
         width: 700px;
+		
+		&__title {
+            display: flex;
+        }
     }
 }
 
