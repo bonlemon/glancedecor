@@ -53,6 +53,8 @@
             font-size: $mblFontSize;
         }
 
+		
+
         &__item{
             display: none;
 
@@ -69,31 +71,18 @@
 
 @media all and (min-width: 480px) {
 	.b-navbar{
+
+		flex-direction: row-reverse;
+		align-items: baseline;
+		
 		.fa{
 			display: none;
 		}
-    }
 
-}
+		&__title {
+            display: flex;
+        }
 
-
-/* Small Devices, Tablets */
-
-@media all and (min-width: 768px) {
-    .b-navbar{
-        width: 700px;
-    }
-
-}
-
-
-/* Medium Devices, Desktops */
-
-@media all and (min-width: 992px) {
-
-    .b-navbar {
-        width: 968px;
-		flex-direction: row-reverse;
         &__item{
             display: block;
 
@@ -110,6 +99,27 @@
 			display: none;
 		}
 
+		
+    }
+
+}
+
+
+/* Small Devices, Tablets */
+
+@media all and (min-width: 768px) {
+    .b-navbar{
+        width: 700px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media all and (min-width: 992px) {
+
+    .b-navbar {
+        width: 968px;
     }
 
 }
