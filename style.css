@@ -32,6 +32,9 @@ body {
   width: 100%;
   background-color: #fafafa; }
 
+.overflowhide {
+  overflow: hidden !important; }
+
 .b-pg {
   margin: auto;
   line-height: 25px;
@@ -380,6 +383,9 @@ body {
   width: 100%;
   background-color: #fafafa; }
 
+.overflowhide {
+  overflow: hidden !important; }
+
 .b-pg {
   margin: auto;
   line-height: 25px;
@@ -509,9 +515,10 @@ body {
   /* Блок навигации(правая часть) */
   /********************************/ }
   .b-navbar .fa {
-    font-size: 35px;
+    font-size: 30px;
     color: #0077b3;
-    padding: 0 10px; }
+    padding: 0 10px;
+    cursor: pointer; }
   .b-navbar__logo {
     display: inline-block;
     background: url("img/main/logo.png") no-repeat;
@@ -962,6 +969,9 @@ body {
 /*----- Modals -----*/
 .b-modal {
   z-index: 1001;
+  background: #fff;
+  border-radius: 10px;
+  overflow-y: auto;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -971,13 +981,19 @@ body {
   max-width: 100%;
   height: 400px;
   max-height: 100%; }
+  .b-modal--closed {
+    display: none; }
   .b-modal__close {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%; }
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+    color: #0077b3;
+    cursor: pointer; }
   .b-modal__overlay {
     z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -985,8 +1001,6 @@ body {
     height: 100%; }
     .b-modal__overlay--closed {
       display: none; }
-  .b-modal--closed {
-    display: none; }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */

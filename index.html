@@ -38,7 +38,7 @@
         <nav class="b-pg__navbar">
             <div class="b-navbar">
                 <!--<i class="fa fa-bars" aria-hidden="true"></i>-->
-                <div class="b-navbar__logo"></div>
+                <div class="b-navbar__logo b-modal__open"></div>
                 <div class="b-navbar__call">
                     <a href="tel:89096707929" ><i class="fa fa-phone" aria-hidden="true"></i></a>
                     <a href="https://api.whatsapp.com/send?phone=79258248816"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
@@ -48,7 +48,7 @@
                     <span>Натяжные потолки</span>
                 </div>
                 <div class="b-navbar__item">
-                    <i class="fa fa-info open-modal" aria-hidden="true"></i>
+                    <i class="fa fa-info b-modal__open mail" aria-hidden="true"></i>
                     <i class="fa fa-envelope-o " aria-hidden="true"></i>
                     <div class="b-navbar__info">
                         <div>Москва и Московская область</div>
@@ -564,17 +564,19 @@
     <!-- Slick carousel -->
     <script type="text/javascript" src="libs/slick/slick.min.js"></script>
 
-    <!-- Custom JS -->
+   
+
+    <!-- Connent -->   
+    <div class="b-modal b-modal--closed" id="modal">
+        <i class="fa fa-times b-modal__close" aria-hidden="true"></i>
+    </div>
+    <!-- Overlay -->   
+    <div class="b-modal__overlay b-modal__overlay--closed" id="modal-overlay"></div>
+
+     <!-- Custom JS -->
     <script src="js/b-examples.js"></script>
     <script src="js/b-tab.js"></script>
     <script src="js/common.js"></script>
-
-    <!-- Connent -->   
-    <div class="b-modal" id="modal">
-        <div class="b-modal__close"><i class="fa fa-times" aria-hidden="true"></i></div>
-    </div>
-    <!-- Overlay -->   
-    <div class="b-modal__overlay" id="modal-overlay"></div>
 
 </body>
 

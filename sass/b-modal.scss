@@ -2,6 +2,9 @@
 
 .b-modal {
     z-index: 1001;
+    background: #fff;
+    border-radius: 10px;    
+    overflow-y: auto;
 
     position: fixed;
     top: 50%;
@@ -15,29 +18,34 @@
     height: 400px;
     max-height: 100%;
 
+    &--closed{
+        display:none;
+    }
+
     &__close{
         position: absolute;
-        top:0;
-        right:0;
+        top:5px;
+        right:10px;
 
-        width: 50%;
+        font-size: 30px;
+		color: #0077b3;
+        cursor: pointer;
     }
 
     &__overlay{
         z-index: 1000;
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
 
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+        
         &--closed{
             display:none;
         }
-    }
-
-    &--closed{
-        display:none;
     }
 }
 
@@ -47,18 +55,12 @@
 /* Custom, iPhone Retina */
 @media all and (min-width: 320px) {
 
-    .b-modal{
-
-    }
-
 }
 
 
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
-    .b-modal{
 
-    }
 }
 
 /* Small Devices, modallets */
@@ -68,9 +70,7 @@
 
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
-    .b-modal{
 
-    }
 }
 
 /* Large Devices, Wide Screens */

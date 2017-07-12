@@ -1,103 +1,5 @@
 $(document).ready(function () {
 
-	// $('.auth_buttons').click(function(){
-	// 	$(this).next().slideToggle();  
-	// })
-	// $('.main_menu_button').click(function(){
-	// 	$(".main_menu ul").slideToggle();  
-	// })
-
-	// //Таймер обратного отсчета
-	// //Документация: http://keith-wood.name/countdown.html
-	// //<div class="countdown" date-time="2015-01-07"></div>
-	// var austDay = new Date($(".countdown").attr("date-time"));
-	// $(".countdown").countdown({until: austDay, format: 'yowdHMS'});
-
-	// //Попап менеджер FancyBox
-	// //Документация: http://fancybox.net/howto
-	// //<a class="fancybox"><img src="image.jpg" /></a>
-	// //<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
-	// $(".fancybox").fancybox();
-
-	// //Навигация по Landing Page
-	// //$(".top_mnu") - это верхняя панель со ссылками.
-	// //Ссылки вида <a href="#contacts">Контакты</a>
-	// $(".top_mnu").navigation();
-
-	// //Добавляет классы дочерним блокам .block для анимации
-	// //Документация: http://imakewebthings.com/jquery-waypoints/
-	// $(".block").waypoint(function(direction) {
-	// 	if (direction === "down") {
-	// 		$(".class").addClass("active");
-	// 	} else if (direction === "up") {
-	// 		$(".class").removeClass("deactive");
-	// 	};
-	// }, {offset: 100});
-
-	// //Плавный скролл до блока .div по клику на .scroll
-	// //Документация: https://github.com/flesler/jquery.scrollTo
-	// $("a.scroll").click(function() {
-	// 	$.scrollTo($(".div"), 800, {
-	// 		offset: -90
-	// 	});
-	// });
-
-	// //Каруселька
-	// //Документация: http://owlgraphic.com/owlcarousel/
-	// var owl = $(".carousel");
-	// owl.owlCarousel({
-	// 	items : 1,
-	// 	autoPlay: true,
-	// 	autoPlayTimeout: 1000,
-	// 	center: true
-
-	// });
-	// owl.on("mousewheel", ".owl-wrapper", function (e) {
-	// 	if (e.deltaY > 0) {
-	// 		owl.trigger("owl.prev");
-	// 	} else {
-	// 		owl.trigger("owl.next");
-	// 	}
-	// 	e.preventDefault();
-	// });
-	// $(".next_button").click(function(){
-	// 	owl.trigger("owl.next");
-	// });
-	// $(".prev_button").click(function(){
-	// 	owl.trigger("owl.prev");
-	// });
-
-	// //Кнопка "Наверх"
-	// //Документация:
-	// //http://api.jquery.com/scrolltop/
-	// //http://api.jquery.com/animate/
-	// $("#top").click(function () {
-	// 	$("body, html").animate({
-	// 		scrollTop: 0
-	// 	}, 800);
-	// 	return false;
-	// });
-
-	//Аякс отправка форм
-	//Документация: http://api.jquery.com/jquery.ajax/
-
-	// console.log('$(".b-call__call-form").', $(".b-call__call-form"))
-	// $(".b-call__call-form").on('submit', function() {
-	// 	console.log($(".b-call__call-form"));
-	// 	$.ajax({
-	// 		type: "GET",
-	// 		url: "/mail"+$(".b-call__call-form").serialize(),
-	// 	}).done(function() {
-	// 		alert('Мы вам перезвоним! :)')
-	// 		setTimeout(function() {
-	// 			$('#callback input[type=text]').val('');
-	// 			// $.fancybox.close();
-	// 		}, 1000);
-	// 	});
-	// 	return false;
-	// });
-
-
 	// Slider
 	$('.b-sld').slick({
 		autoplay: true,
@@ -106,19 +8,26 @@ $(document).ready(function () {
 		autoplaySpeed: 2000,
 	});
 
-}); 
 
-var modal = document.querySelector("#modal");
-var modalOverlay = document.querySelector("#modal-overlay");
-var closeButton = document.querySelector(".b-modal__close");
-var openButton = document.querySelector(".open-modal");
+	// Modal
+	var modal = $("#modal");
+	var modalOverlay = $("#modal-overlay");
 
-closeButton.addEventListener("click", function() {
-	modal.classList.toggle("b-modal--closed");
-  	modalOverlay.classList.toggle("b-modal__overlay--closed");
-});
+	$(".b-modal__close").on("click", function() {
 
-openButton.addEventListener("click", function() {
-	modal.classList.toggle("b-modal--closed");
-  	modalOverlay.classList.toggle("b-modal__overlay--closed");
+		modal.toggleClass("b-modal--closed");
+		modalOverlay.toggleClass("b-modal__overlay--closed");
+		$('body').removeClass('overflowhide');
+	});
+
+	$(".b-modal__open").on("click", function(event) {
+		console.log(event.target)
+		if( event.target.hasClass('mail') ) {
+			alert('mail.')
+		}
+		modal.toggleClass("b-modal--closed");
+		modalOverlay.toggleClass("b-modal__overlay--closed");
+		$('body').addClass('overflowhide');
+	});
+	
 });
