@@ -83,6 +83,7 @@
 
         &__item{
             display: block;
+			position: relative;
 
 			.fa-info,
 			.fa-envelope-o{
@@ -91,6 +92,20 @@
 			
 			.fa-info:hover .b-navbar__info{
 				display: block;
+				position: absolute;
+				top: 25px;
+				background: #fff;
+				border-radius: 5px;
+			}
+        }
+
+		&__item{
+			.fa-info:hover .b-navbar__info{
+				display: block;
+				position: absolute;
+				top: 25px;
+				background: #fff;
+				border-radius: 5px;
 			}
         }
 		&__call{

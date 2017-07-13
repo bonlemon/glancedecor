@@ -549,21 +549,32 @@ body {
     align-items: baseline; }
     .b-navbar .fa {
       display: none; }
-    .b-navbar__title {
-      display: flex; }
     .b-navbar__item {
-      display: block; }
+      display: block;
+      position: relative; }
       .b-navbar__item .fa-info,
       .b-navbar__item .fa-envelope-o {
         display: inline-block; }
       .b-navbar__item .fa-info:hover .b-navbar__info {
-        display: block; }
+        display: block;
+        position: absolute;
+        top: 25px;
+        background: #fff;
+        border-radius: 5px; }
+    .b-navbar__item .fa-info:hover .b-navbar__info {
+      display: block;
+      position: absolute;
+      top: 25px;
+      background: #fff;
+      border-radius: 5px; }
     .b-navbar__call {
       display: none; } }
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
   .b-navbar {
-    width: 700px; } }
+    width: 700px; }
+    .b-navbar__title {
+      display: flex; } }
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
   .b-navbar {
