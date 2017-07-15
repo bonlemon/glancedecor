@@ -43,8 +43,8 @@ body {
 
     &__navbar {
         display: flex;
-        width:100%;
-        height: 70px;
+        width: 100%;
+        height: 80px;
         // Позиционирование
         position: fixed;
         top: 0px; // Выравнивание по середине фиксированного блока
@@ -121,8 +121,14 @@ body {
     
     .b-pg,
     .b-slider {
+        margin-top: 70px;
         box-sizing: border-box;
         width: 100%;
+
+        .slick-next,
+        .slick-prev{
+            display: none !important;
+        }
     }
 
     /* Slider*/
@@ -140,15 +146,24 @@ body {
 
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
-
+    .b-slider{
+        margin-top: 0;
+    }
 }
 
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
 
-    .b-pg,
-    .b-slider {
+    .b-pg{
         width: 700px;
+    }
+    .b-slider {
+        width: 670px;
+
+        .slick-next,
+        .slick-prev{
+            display: block !important;
+        }
     }
     /* Slider */
     .b-sld-dsc {
@@ -166,17 +181,21 @@ body {
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
     
-    .b-pg,
-    .b-slider {
+    .b-pg{
         width: 968px;
+    }
+    .b-slider {
+        width: 900px;
     }
 }
 
 /* Large Devices, Wide Screens */
 @media all and (min-width: 1200px) {
 
-    .b-pg,
-    .b-slider {
+    .b-pg{
         width: 1100px;
+    }
+    .b-slider {
+        width: 1000px;
     }
 }
