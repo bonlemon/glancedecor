@@ -59,3 +59,4 @@ typings/
 
 # sass
 .sass-cache
+.sass-cache/
