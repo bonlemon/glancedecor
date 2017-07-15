@@ -587,18 +587,22 @@ body {
       .b-navbar__item .b-navbar__info {
         display: none; } }
 /* Extra Small Devices, Phones */
-@media all and (min-width: 480px) {
+@media all and (min-width: 550px) {
   .b-navbar {
     flex-direction: row-reverse;
-    align-items: center;
-    font-size: 25px; }
+    align-items: baseline; }
+    .b-navbar__title {
+      position: static;
+      background: none;
+      order: 1;
+      width: auto;
+      height: auto;
+      line-height: initial; }
     .b-navbar .fa {
       display: none;
       color: #0077b3;
       padding: 0;
       padding-left: 20px; }
-    .b-navbar__logo {
-      background-size: 100% 100%; }
     .b-navbar__item {
       display: block;
       position: relative; }
@@ -616,10 +620,10 @@ body {
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
   .b-navbar {
-    width: 700px; }
-    .b-navbar__title {
-      display: flex;
-      order: 1; } }
+    width: 700px;
+    font-size: 25px; }
+    .b-navbar__logo {
+      background-size: 100% 100%; } }
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
   .b-navbar {

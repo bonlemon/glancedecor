@@ -59,10 +59,7 @@
         padding-left: 20px;
         &__text {
             font-size: $mblFontSize;
-        }
-
-		
-
+		}
         &__item{
             display: none;
 
@@ -77,22 +74,26 @@
 
 /* Extra Small Devices, Phones */
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 550px) {
 	.b-navbar{
 
 		flex-direction: row-reverse;
-		align-items: center;
-		font-size: 25px;
+		align-items: baseline;
+
+		&__title {
+			position: static;
+			background: none;
+			order: 1;
+			width: auto;
+			height: auto;
+			line-height: initial;
+        }
 		
 		.fa{
 			display: none;
 			color: #0077b3;
 			padding: 0;
 			padding-left: 20px;
-		}
-
-		&__logo {
-			background-size: 100% 100%;
 		}
 
         &__item{
@@ -124,12 +125,12 @@
 
 @media all and (min-width: 768px) {
     .b-navbar{
-        width: 700px;
-		
-		&__title {
-			display: flex;
-			order: 1;
-        }
+		width: 700px;
+		font-size: 25px;
+
+		&__logo {
+			background-size: 100% 100%;
+		}
     }
 }
 
