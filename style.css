@@ -97,22 +97,19 @@ body {
   line-height: 38px;
   vertical-align: top;
   transition: all 0.2s;
-  color: #01314A;
+  color: #f1f1f1;
   border-radius: 4px; }
 
 .b-button {
   box-sizing: border-box;
   padding: 10px 20px;
-  border: solid 1px #01314A;
+  border: solid 1px #f1f1f1;
   font-size: 16px;
   background: #fff;
   border-radius: 5px;
   text-align: center;
-  color: #01314A;
+  color: #f1f1f1;
   cursor: pointer; }
-  .b-button:hover {
-    background: #01314A;
-    color: #fff; }
 
 /* Clearfix block */
 .b-clearfix {
@@ -211,7 +208,8 @@ body {
   .b-call__call-submit {
     background-color: #0077b3;
     padding: 0 35px;
-    margin: 10px 10px 0; }
+    margin: 10px 10px 0;
+    color: #f9f9f9; }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
@@ -484,22 +482,19 @@ body {
   line-height: 38px;
   vertical-align: top;
   transition: all 0.2s;
-  color: #01314A;
+  color: #f1f1f1;
   border-radius: 4px; }
 
 .b-button {
   box-sizing: border-box;
   padding: 10px 20px;
-  border: solid 1px #01314A;
+  border: solid 1px #f1f1f1;
   font-size: 16px;
   background: #fff;
   border-radius: 5px;
   text-align: center;
-  color: #01314A;
+  color: #f1f1f1;
   cursor: pointer; }
-  .b-button:hover {
-    background: #01314A;
-    color: #fff; }
 
 /* Clearfix block */
 .b-clearfix {

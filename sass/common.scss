@@ -3,7 +3,7 @@ $dscFontSize: 16px;
 $mblFontSize: 13px;
 $headerFontSize: 35px;
 // Colors
-$buttonColor: #01314A;
+$buttonColor: #f1f1f1;
 $buttonBorderColor: #116A96;
 
 /*****************/
@@ -111,10 +111,6 @@ body {
     text-align: center;
     color: $buttonColor;
     cursor: pointer;
-    &:hover {
-        background: $buttonColor;
-        color: #fff;
-    }
 }
 
 
