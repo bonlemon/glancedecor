@@ -1033,7 +1033,7 @@ body {
 /*----- Modals -----*/
 .b-modal {
   z-index: 1001;
-  background: #fff;
+  background-color: #f1f1f1;
   border-radius: 5px;
   overflow-y: auto;
   position: fixed;
@@ -1084,61 +1084,47 @@ body {
 /* Large Devices, Wide Screens */
 .b-mail {
   position: relative;
-  padding: 20px 0px;
+  width: 100%;
   text-align: center;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-  background-color: #f1f1f1;
-  min-height: 260px; }
-  .b-mail__title, .b-mail__mail-form {
-    line-height: 60px;
-    vertical-align: middle; }
-    .b-mail__title div, .b-mail__mail-form div {
-      line-height: 30px; }
-  .b-mail__title, .b-mail__phone {
-    font-size: 30px; }
-  .b-mail__get-phone, .b-mail__submit {
-    width: 30%;
-    display: inline-block; }
-  .b-mail__get-phone {
-    border-radius: 5px;
-    padding-left: 10px;
-    padding-top: 5px;
-    line-height: 30px;
-    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15); }
+  font-family: "RobotoRegular";
+  font-size: 20px;
+  color: #696969; }
+  .b-mail__title {
+    font-size: 25px; }
+  .b-mail__item {
+    width: 95%;
+    min-height: 40px; }
+    .b-mail__item label {
+      flex: 1; }
+    .b-mail__item input {
+      flex: 1;
+      min-height: 25px; }
   .b-mail__submit {
+    width: 40%;
     background-color: #0077b3;
     padding: 0 35px;
-    margin: 10px 10px 0;
-    color: #f9f9f9; }
+    margin: 10px 10px 0; }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 @media all and (min-width: 320px) {
-  .b-mail {
-    box-sizing: border-box;
-    width: 100%; }
-    .b-mail__get-phone, .b-mail__submit {
-      width: 70%;
-      display: block;
-      margin: 10px auto; } }
+  .b-mail__item {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; } }
 /* Extra Small Devices, Phones */
+@media all and (min-width: 480px) {
+  .b-mail__item {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+    .b-mail__item label {
+      flex: 1; }
+    .b-mail__item input {
+      flex: 3;
+      min-height: 25px; } }
 /* Small Devices, Tablets */
-@media all and (min-width: 768px) {
-  .b-mail {
-    width: 700px;
-    min-height: 200px; }
-    .b-mail__get-phone, .b-mail__submit {
-      width: 30%;
-      display: inline-block;
-      margin: 10px; } }
 /* Medium Devices, Desktops */
-@media all and (min-width: 992px) {
-  .b-mail {
-    width: 968px; } }
 /* Large Devices, Wide Screens */
-@media all and (min-width: 1200px) {
-  .b-mail {
-    width: 1100px;
-    min-height: 190px; } }
 
 /*# sourceMappingURL=style.css.map */
