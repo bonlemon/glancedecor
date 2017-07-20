@@ -12,9 +12,9 @@
     transform: translate(-50%, -50%);
 
     display: flex; 
-    width: 600px;
-    max-width: 100%;
-
+    justify-content: center;
+    align-items: center;
+    
     height: 400px;
     max-height: 100%;
 
@@ -54,18 +54,25 @@
 
 /* Custom, iPhone Retina */
 @media all and (min-width: 320px) {
-
+    .b-modal {
+        width: 100%;
+    }
 }
 
 
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
-
+    .b-modal {
+        width: 400px;
+        max-width: 100%;
+    }
 }
 
 /* Small Devices, modallets */
 @media all and (min-width: 768px) {
-
+    .b-modal {
+        width: 600px;
+    }
 }
 
 /* Medium Devices, Desktops */

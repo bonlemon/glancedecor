@@ -1,0 +1,102 @@
+.b-mail {
+    position: relative;
+
+    padding: 20px 0px;
+    text-align: center;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    background-color: #f1f1f1;
+    min-height: 260px;
+    &__title,
+    &__mail-form {
+        line-height: 60px;
+        vertical-align: middle;
+        div {
+            line-height: 30px;
+        }
+    }
+    &__title,
+    &__phone {
+        font-size: 30px;
+    }
+    &__get-phone,
+    &__submit {
+        width: 30%;
+        display: inline-block;
+    }
+    &__get-phone {
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-top: 5px;
+        line-height: 30px;
+        box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+    }
+    &__submit {
+        background-color: #0077b3;
+        padding: 0 35px;
+        margin: 10px 10px 0;
+        color: #f9f9f9;
+    }
+}
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media all and (min-width: 320px) {
+
+    .b-mail{
+        box-sizing: border-box;
+        width: 100%;
+        &__get-phone,
+        &__submit {
+            width: 70%;
+            display: block;
+            margin: 10px auto;
+        }
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media all and (min-width: 480px) {
+
+}
+
+
+/* Small Devices, Tablets */
+
+@media all and (min-width: 768px) {
+
+    .b-mail {
+        width: 700px;
+        min-height: 200px;
+        &__get-phone,
+        &__submit {
+            width: 30%;
+            display: inline-block;
+            margin: 10px;
+        }
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media all and (min-width: 992px) {
+
+    .b-mail{
+        width: 968px;
+    }
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media all and (min-width: 1200px) {
+    .b-mail,{
+        width: 1100px;
+        min-height: 190px;
+    }
+}

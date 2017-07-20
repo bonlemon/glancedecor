@@ -14,14 +14,14 @@ $(document).ready(function () {
 	var modalOverlay = $("#modal-overlay");
 
 	$(".b-modal__close").on("click", function() {
-
+		console.log('close')
 		modal.toggleClass("b-modal--closed");
 		modalOverlay.toggleClass("b-modal__overlay--closed");
 		$('body').removeClass('overflowhide');
 	});
 
 	$(".b-modal__open").on("click", function(event) {
-		// console.log(event.target)
+		console.log('open')
 		// if( event.target.hasClass('mail') ) {
 		// 	alert('mail.')
 		// }

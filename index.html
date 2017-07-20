@@ -42,12 +42,12 @@
                 <div class="b-navbar__call">
                     <a href="tel:89096707929" ><i class="fa fa-phone" aria-hidden="true"></i></a>
                     <a href="https://api.whatsapp.com/send?phone=79258248816"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-envelope-o b-modal__open" aria-hidden="true"></i></a>
                 </div>
                 <div class="b-navbar__title">Натяжные потолки</div>
                 <div class="b-navbar__item">
                     <i class="fa fa-info" aria-hidden="true"></i>
-                    <i class="fa fa-envelope-o b-modal__open mail" aria-hidden="true"></i>
+                    <i class="fa fa-envelope-o b-modal__open" aria-hidden="true"></i>
                     <div class="b-navbar__info">
                         <div>Москва и Московская область</div>
                         <div>+7 (495)142-63-32</div>
@@ -564,8 +564,29 @@
     <!-- Connent -->   
     <div class="b-modal b-modal--closed" id="modal">
         <i class="fa fa-times b-modal__close" aria-hidden="true"></i>
+
+        <div class="b-mail">
+            <span class="b-mail__title">
+                Форма обратной связи  
+            </span>
+            <form class="b-mail__call-form" action="/mail">
+                <div class="b-mail__item">
+                    <label for="name">Ваше имя: </label>
+                    <input required type="text"id="name" name="name" class="b-mail__name" placeholder="Введите ваше имя">
+                </div>
+                <div class="b-mail__item">
+                    <label for="email">Ваш e-mail: </label>
+                    <input required type="email" id="email" name="email" class="b-mail__email" placeholder="Введите ваш email">
+                </div>
+                <div class="b-mail__item">
+                    <label for="phone">Ваш телефон: </label>
+                    <input required type="tel" id="phone" name="phone" class="b-mail__phone" placeholder="Введите ваш телефон">
+                </div>
+                <input type="submit" value="Отправить" class="submit b-mail__submit">
+            </form>
+        </div>
     </div>
-    <!-- Overlay -->   
+    <!-- Overlay of modal -->   
     <div class="b-modal__overlay b-modal__overlay--closed" id="modal-overlay"></div>
 
      <!-- Custom JS -->
