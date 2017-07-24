@@ -1085,12 +1085,15 @@ body {
 .b-mail {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   font-family: "RobotoRegular";
   font-size: 20px;
   color: #696969; }
   .b-mail__title {
-    font-size: 25px; }
+    font-size: 25px;
+    margin: 20px; }
   .b-mail__item {
     width: 95%;
     min-height: 40px; }
@@ -1098,7 +1101,9 @@ body {
       flex: 1; }
     .b-mail__item input {
       flex: 1;
-      min-height: 25px; }
+      min-height: 25px;
+      border-radius: 5px;
+      padding: 2px 10px; }
   .b-mail__submit {
     width: 40%;
     background-color: #0077b3;

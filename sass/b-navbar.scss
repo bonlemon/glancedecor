@@ -1,9 +1,12 @@
 @import 'common.scss';
 
 /******************/
-/* Блок навигации */
-/******************/
 
+
+/* Блок навигации */
+
+
+/******************/
 
 .b-navbar {
 	display: flex;
@@ -12,16 +15,13 @@
 	flex-flow: row-reverse nowrap;
 	color: #0077b3;
 	margin: auto;
-
 	font-size: 20px;
-	
-	.fa{	
+	.fa {
 		font-size: 30px;
 		color: #0077b3;
 		padding: 0 10px;
 		cursor: pointer;
 	}
-
 	&__logo {
 		display: inline-block;
 		background: url('img/main/logo.png') no-repeat;
@@ -30,8 +30,7 @@
 		height: 40px;
 		order: 2;
 	}
-
-	&__title{
+	&__title {
 		display: none;
 	}
 }
@@ -39,39 +38,35 @@
 
 /*==========  Mobile First Method  ==========*/
 
+
 /* Custom, iPhone Retina */
+
 @media all and (min-width: 320px) {
-
-    .b-navbar {
+	.b-navbar {
 		position: relative;
-
-        box-sizing: border-box;
-        width: 100%;
-        padding-right: 20px;
-        padding-left: 20px;
-        &__text {
-            font-size: $mblFontSize;
+		box-sizing: border-box;
+		width: 100%;
+		padding-right: 20px;
+		padding-left: 20px;
+		&__text {
+			font-size: $mblFontSize;
 		}
-        &__item{
-            display: none;
-
-			.b-navbar__info{
+		&__item {
+			display: none;
+			.b-navbar__info {
 				display: none;
 			}
-        }
-    }
-
+		}
+	}
 }
 
 
 /* Extra Small Devices, Phones */
 
 @media all and (min-width: 550px) {
-	.b-navbar{
-
+	.b-navbar {
 		flex-direction: row-reverse;
 		align-items: baseline;
-
 		&__title {
 			display: flex;
 			position: static;
@@ -80,71 +75,61 @@
 			width: auto;
 			height: auto;
 			line-height: initial;
-        }
-		
-		.fa{
+		}
+		.fa {
 			display: none;
 			color: #0077b3;
 			padding: 0;
 			padding-left: 20px;
 		}
-
-        &__item{
-            display: block;
+		&__item {
+			display: block;
 			position: relative;
-
 			.fa-info,
-			.fa-envelope-o{
+			.fa-envelope-o {
 				display: inline-block;
 			}
-			
-			.fa-info:hover .b-navbar__info{
+			.fa-info:hover .b-navbar__info {
 				display: block;
 				position: absolute;
 				top: 25px;
 				background: #fff;
 				border-radius: 5px;
 			}
-        }
-		&__call{
+		}
+		&__call {
 			display: none;
 		}
-		
-    }
+	}
 }
 
 
 /* Small Devices, Tablets */
 
 @media all and (min-width: 768px) {
-    .b-navbar{
+	.b-navbar {
 		width: 700px;
 		font-size: 25px;
-
 		&__logo {
 			background-size: 100% 100%;
 		}
-    }
+	}
 }
 
 
 /* Medium Devices, Desktops */
 
 @media all and (min-width: 992px) {
-
-    .b-navbar {
-        width: 968px;
-    }
-
+	.b-navbar {
+		width: 968px;
+	}
 }
 
 
 /* Large Devices, Wide Screens */
 
 @media all and (min-width: 1200px) {
-
-    .b-navbar{
-        width: 1100px;
-    }
-
+	.b-navbar {
+		width: 1100px;
+	}
 }

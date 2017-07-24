@@ -1,13 +1,12 @@
 // @import 'common.scss';
 .b-examples {
     box-sizing: border-box;
-    
     text-align: center;
     background-color: #fafafa;
     &__title {
         margin: 20px 0 0 0;
     }
-    &__content{
+    &__content {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -21,11 +20,9 @@
         text-align: left;
         cursor: default;
     }
-
     &__button {
         margin-top: 25px;
     }
-
 }
 
 .b-example-block {
@@ -35,7 +32,6 @@
         text-decoration: none;
         display: block;
         text-align: center;
-
         div {
             padding: 5px 15px;
             border-radius: 5px;
@@ -74,24 +70,20 @@
 /* Custom, iPhone Retina */
 
 @media all and (min-width: 320px) {
-
-    .b-examples{
+    .b-examples {
         width: 100%;
-
         &__blocks {
             width: 100%;
         }
     }
- 
 }
 
 
 /* Extra Small Devices, Phones */
 
 @media all and (min-width: 480px) {
-    .b-examples{
+    .b-examples {
         width: 70%;
-
         &__blocks {
             width: 100%;
         }
@@ -107,13 +99,11 @@
 /* Small Devices, Tablets */
 
 @media all and (min-width: 768px) {
-
     .b-examples {
         width: 700px;
-        &__content{
+        &__content {
             flex-flow: row wrap;
         }
-        
         &__blocks {
             width: 47%;
         }
@@ -124,7 +114,6 @@
 /* Medium Devices, Desktops */
 
 @media all and (min-width: 992px) {
-
     .b-examples {
         width: 968px;
     }
@@ -134,7 +123,7 @@
 /* Large Devices, Wide Screens */
 
 @media all and (min-width: 1200px) {
-    .b-examples{
+    .b-examples {
         width: 1100px;
     }
 }
