@@ -29,6 +29,19 @@
     }
     /*----- Content of Tabs -----*/
 
+    &__detail{
+        position:  absolute;
+        left: 0;
+        top: 0;
+
+        
+
+        width: 100%;
+        height: 200px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
     &__tab-element {
         position: relative;
         
@@ -39,10 +52,15 @@
         margin-bottom: 10px;
     }
     &__img {
+        position:  relative;
+        left: 0;
+        top: 0;
+
         width: 100%;
         height: 200px;
         cursor: pointer;
         border-radius: 3px;
+        z-index: 1;
     }
     &__title {
         margin-left: 5%;
@@ -82,6 +100,7 @@
         margin: 0px;
         float: right;
         padding: 5px 10px;
+        color: #696969;
     }
     &__tab {
         display: none;

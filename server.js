@@ -13,20 +13,8 @@ var express = require("express"),
 
 const PORT = process.env.PORT || 5001;
 
-xAdmin.init(config, function (err, admin) {
-    if (err) return console.log(err);
-    // web site
-    var app = express();
-
-    app.use('/admin', admin);
-    app.use('/', express.static(__dirname));
-    // site routes
-    app.get('/', function (req, res) {
-        res.send('Hello World');
-    });
-    app.get('/mail', function (req, res) {
-
-        // create reusable transporter object using the default SMTP transport
+function sendMail(subject, text){
+    // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
             host: 'smtp.mail.ru',
             port: 587,
@@ -41,8 +29,8 @@ xAdmin.init(config, function (err, admin) {
         let mailOptions = {
             from: '"dimon009@list.ru', // sender address
             to: 'dimon009@list.ru', // list of receivers
-            subject: 'Call me! ✔', // Subject line
-            text: req.query.phone, // plain text body
+            subject: subject, // Subject line
+            text: text, // plain text body
         };
 
         // send mail with defined transport object
@@ -53,6 +41,27 @@ xAdmin.init(config, function (err, admin) {
                 console.log('Message %s sent: %s', info.message);
             }
         });
+}
+
+xAdmin.init(config, function (err, admin) {
+    if (err) return console.log(err);
+    // web site
+    var app = express();
+
+    app.use('/admin', admin);
+    app.use('/', express.static(__dirname));
+    // site routes
+    app.get('/', function (req, res) {
+        res.send('Hello World');
+    });
+    app.get('/mail', function (req, res) {
+        sendMail('Call me! ✔', req.query.phone)
+    });
+
+    app.get('/feedback', function (req, res) {
+        // generate body of message
+        var textForMail = `Имя: ${req.query.name} \ne-mail: ${req.query.email} \nтелефон: ${req.query.phone} \nСообщение: ${req.query.text}`
+        sendMail('Feedback! ✔',textForMail)
     });
     // site server
     app.listen(PORT, function () {

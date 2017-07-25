@@ -29,5 +29,16 @@ $(document).ready(function () {
 		modalOverlay.toggleClass("b-modal__overlay--closed");
 		$('body').addClass('overflowhide');
 	});
+
+	$(".b-tab__calculation").on("click", function(event) {
+		console.log('this', $(this))
+		console.log('this', $(this).parent().parent().find(".b-tab__img"))
+		// if( event.target.hasClass('mail') ) {
+		// 	alert('mail.')
+		// }
+		// modal.toggleClass("b-modal--closed");
+		// $('body').addClass('overflowhide');
+		$(this).parent().parent().find(".b-tab__img").hide();
+	});
 	
 });
