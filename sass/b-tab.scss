@@ -3,9 +3,8 @@
 /*----- Tabs -----*/
 
 .b-tab {
-    
     /*----- Tab Links -----*/
-    &__content{
+    &__content {
         text-align: center;
     }
     &__links li {
@@ -28,22 +27,16 @@
         font-weight: 600;
     }
     /*----- Content of Tabs -----*/
-
-
     &__tab-element {
         position: relative;
-        
         border-radius: 5px;
-        box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2),
-                    1px 1px 3px rgba(0, 0, 0, 0.2);
-
+        box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2), 1px 1px 3px rgba(0, 0, 0, 0.2);
         margin-bottom: 10px;
     }
     &__detail,
     &__img {
         left: 0;
-        top: 0;        
-
+        top: 0;
         width: 100%;
         height: 250px;
         cursor: pointer;
@@ -56,11 +49,23 @@
         align-items: center;
     }
     &__img {
-        z-index: 1;
         position: absolute;
-    }
-    &__img--hidden {
-        display: none;
+        z-index: 1;
+        &--hidden {
+            display: none;
+        }
+        &--pongs {
+            position: absolute;
+            z-index: 2;
+            right: 10px;
+            top: 10px;
+
+            width: 65px;
+            height: 30px;
+            background: url('img/main/amount/pongs.jpg') no-repeat;
+            background-size: 100% 100%;
+            border-radius: 3px;
+        }
     }
     &__title {
         margin-left: 5%;
@@ -113,46 +118,50 @@
 
 /*==========  Mobile First Method  ==========*/
 
-/* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
 
-    .b-tab{
-        &__tab-element{
+/* Custom, iPhone Retina */
+
+@media all and (min-width: 320px) {
+    .b-tab {
+        &__tab-element {
             display: block;
             margin: auto;
             float: none;
-            width:80%;
+            width: 80%;
         }
     }
 }
 
 
 /* Extra Small Devices, Phones */
+
 @media all and (min-width: 480px) {
-    .b-tab{
-        &__tab-element{
+    .b-tab {
+        &__tab-element {
             float: left;
-            width:45%;
+            width: 45%;
             margin: 1%;
         }
     }
 }
 
-/* Small Devices, Tablets */
-@media all and (min-width: 768px) {
 
-}
+/* Small Devices, Tablets */
+
+@media all and (min-width: 768px) {}
+
 
 /* Medium Devices, Desktops */
+
 @media all and (min-width: 992px) {
-    .b-tab{
-        &__tab-element{
+    .b-tab {
+        &__tab-element {
             width: 31%;
         }
     }
 }
 
-/* Large Devices, Wide Screens */
-@media all and (min-width: 1200px) {
 
-}
+/* Large Devices, Wide Screens */
+
+@media all and (min-width: 1200px) {}
