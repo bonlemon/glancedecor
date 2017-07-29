@@ -4,6 +4,7 @@ $mblFontSize: 13px;
 $headerFontSize: 35px;
 // Colors
 $buttonColor: #f1f1f1;
+$buttonSize: 16px;
 $buttonBorderColor: #116A96;
 
 /*****************/
@@ -17,6 +18,8 @@ body {
     width:100%;
 
     background-color: #fafafa;
+
+    font-family: sans-serif !important;
 }
 
 .overflowhide {overflow: hidden !important;}
@@ -24,7 +27,7 @@ body {
 .b-pg {
     margin: auto;
     line-height: 25px;
-    font-family: "RobotoCRobotoRegularondensedRegular";
+    // font-family: "RobotoCRobotoRegularondensedRegular";
     font-size: $dscFontSize;
     color: #333;
 
@@ -54,7 +57,7 @@ body {
         // Оформление
         background-color: #fff;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-        font-family: "RobotoRegular";
+        // font-family: sans-serif;
     }
     &__navbar-title {
         position: absolute;
@@ -70,7 +73,7 @@ body {
         color: #0077b3;
         margin: auto;
         font-size: 20px;
-        font-family: "RobotoRegular";
+        // font-family: "RobotoRegular";
     }
 }
 
@@ -90,27 +93,29 @@ body {
 
 .submit {
     display: inline-block;
-    padding: 0px 50px;
-    border: solid 1px $buttonBorderColor;
-    height: 38px;
+    padding: 11px 50px;
+    border: solid 1px #116A96;
     cursor: pointer;
-    line-height: 38px;
     vertical-align: top;
     transition: all 0.2s;
-    color: $buttonColor;
+    color: #f1f1f1;
     border-radius: 4px;
+    font-family: sans-serif !important;
+    font-size: 16px;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 .b-button {
     box-sizing: border-box;
     padding: 10px 20px;
     border: solid 1px $buttonColor;
-    font-size: 16px;
+    font-size: $buttonSize;
     background: #fff;
     border-radius: 5px;
     text-align: center;
     color: $buttonColor;
     cursor: pointer;
+    font-family: sans-serif !important;
 }
 
 

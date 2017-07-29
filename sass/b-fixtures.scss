@@ -3,16 +3,11 @@
 /*----- fixture -----*/
 
 .b-fixture {
-
     text-align: center;
-
     &__fixture-element {
         position: relative;
-        
         border-radius: 5px;
-        box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2),
-                    1px 1px 3px rgba(0, 0, 0, 0.2);
-
+        box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2), 1px 1px 3px rgba(0, 0, 0, 0.2);
         margin-bottom: 10px;
     }
     &__img {
@@ -21,17 +16,14 @@
         cursor: pointer;
         border-radius: 3px;
     }
-    &__title {
-        margin-left: 5%;
-    }
     &__wrapper {
-        margin: 0 10px;
-        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
     &__cost {
-        float: left;
-        padding: 5px 15px;
-        min-width: 100px;
+        min-width: 50px;
+        padding: 5px 10px;
         border-radius: 5px;
         font-weight: 600;
         font-size: 16px;
@@ -71,29 +63,33 @@
 
 /*==========  Mobile First Method  ==========*/
 
-/* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
 
-    .b-fixture{
-        &__fixture-element{
+/* Custom, iPhone Retina */
+
+@media all and (min-width: 320px) {
+    .b-fixture {
+        &__fixture-element {
             display: block;
             margin: auto;
             float: none;
-            width:80%;
+            width: 80%;
         }
         &__img {
             height: 250px;
         }
+        &__wrapper {
+            min-height: 70px;
+            padding: 5px;
+        }
     }
-
 }
 
 
 /* Extra Small Devices, Phones */
-@media all and (min-width: 480px) {
 
-    .b-fixture{
-        &__fixture-element{
+@media all and (min-width: 480px) {
+    .b-fixture {
+        &__fixture-element {
             float: left;
             width: 45%;
             margin: 1%;
@@ -104,14 +100,17 @@
     }
 }
 
+
 /* Small Devices, fixturelets */
-@media all and (min-width: 768px) {
-}
+
+@media all and (min-width: 768px) {}
+
 
 /* Medium Devices, Desktops */
+
 @media all and (min-width: 992px) {
-    .b-fixture{
-        &__fixture-element{
+    .b-fixture {
+        &__fixture-element {
             width: 31%;
         }
         &__img {
@@ -120,7 +119,7 @@
     }
 }
 
-/* Large Devices, Wide Screens */
-@media all and (min-width: 1200px) {
 
-}
+/* Large Devices, Wide Screens */
+
+@media all and (min-width: 1200px) {}

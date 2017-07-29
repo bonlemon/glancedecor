@@ -51,9 +51,6 @@ xAdmin.init(config, function (err, admin) {
     app.use('/admin', admin);
     app.use('/', express.static(__dirname));
     // site routes
-    app.get('/', function (req, res) {
-        res.send('Hello World');
-    });
     app.get('/mail', function (req, res) {
         sendMail('Call me! ✔', req.query.phone)
     });

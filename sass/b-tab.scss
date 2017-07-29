@@ -47,6 +47,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
     &__img {
         position: absolute;
@@ -59,34 +60,28 @@
             z-index: 2;
             right: 10px;
             top: 10px;
-
             width: 65px;
             height: 30px;
             background: url('img/main/amount/pongs.jpg') no-repeat;
             background-size: 100% 100%;
             border-radius: 3px;
-
             &--hidden {
                 display: none;
             }
         }
     }
-    &__title {
-        margin-left: 5%;
-    }
     &__wrapper {
-        margin: 0 10px;
-        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
     &__cost {
-        float: left;
-        padding: 5px 15px;
-        min-width: 100px;
         border-radius: 5px;
         font-weight: 600;
         font-size: 16px;
         background: #ffd941;
         color: #000;
+        border: 1px solid #696969;
         &_sale {
             background: #ff4141;
             color: #fff;
@@ -106,10 +101,9 @@
         }
     }
     &__calculation {
-        margin: 0px;
-        float: right;
         padding: 5px 10px;
-        color: #696969;
+        color: black;
+        border: 1px solid #696969;
     }
     &__tab {
         display: none;
@@ -133,6 +127,14 @@
             float: none;
             width: 80%;
         }
+        &__cost {
+            min-width: 60px;
+            padding: 5px 15px;
+        }
+        &__wrapper {
+            min-height: 50px;
+            padding: 5px;
+        }
     }
 }
 
@@ -152,7 +154,13 @@
 
 /* Small Devices, Tablets */
 
-@media all and (min-width: 768px) {}
+@media all and (min-width: 768px) {
+    .b-tab {
+        &__cost {
+            min-width: 100px;
+        }
+    }
+}
 
 
 /* Medium Devices, Desktops */

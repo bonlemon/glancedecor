@@ -20,17 +20,18 @@
     &__call-submit {
         width: 30%;
         display: inline-block;
+        font-family: sans-serif;
+        font-size: 16px;
+        
     }
     &__get-phone {
         border-radius: 5px;
-        padding-left: 10px;
-        padding-top: 5px;
-        line-height: 30px;
+        padding: 10px 15px;
         box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
     }
     &__call-submit {
         background-color: #0077b3;
-        padding: 0 35px;
+        padding: 10px 35px;
         margin: 10px 10px 0;
         color: #f9f9f9;
     }

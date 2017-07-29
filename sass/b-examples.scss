@@ -16,7 +16,7 @@
         overflow: hidden;
         position: relative;
         width: 100%;
-        height: 330px;
+        min-height: 350px;
         text-align: left;
         cursor: default;
     }
@@ -87,11 +87,6 @@
         width: 70%;
         &__blocks {
             width: 100%;
-        }
-    }
-    .b-example-block {
-        &__title {
-            margin: 5px;
         }
     }
 }
