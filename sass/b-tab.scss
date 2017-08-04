@@ -130,6 +130,9 @@
         &__cost {
             min-width: 60px;
             padding: 5px 15px;
+            &_sale{
+                padding: 2.8px 10px;
+            }
         }
         &__wrapper {
             min-height: 50px;

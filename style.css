@@ -874,6 +874,8 @@ body {
   .b-tab__cost {
     min-width: 60px;
     padding: 5px 15px; }
+    .b-tab__cost_sale {
+      padding: 2.8px 10px; }
   .b-tab__wrapper {
     min-height: 50px;
     padding: 5px; } }
