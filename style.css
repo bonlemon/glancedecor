@@ -118,6 +118,8 @@ body {
     text-align: center; }
   .b-price__image {
     border-radius: 5px; }
+    .b-price__image img {
+      width: 100%; }
 
 /* Clearfix block */
 .b-clearfix {
@@ -509,6 +511,8 @@ body {
     text-align: center; }
   .b-price__image {
     border-radius: 5px; }
+    .b-price__image img {
+      width: 100%; }
 
 /* Clearfix block */
 .b-clearfix {
