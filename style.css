@@ -88,7 +88,7 @@ body {
 
 .submit {
   display: inline-block;
-  padding: 11px 50px;
+  padding: 11px 50px !important;
   border: solid 1px #116A96;
   cursor: pointer;
   vertical-align: top;
@@ -479,7 +479,7 @@ body {
 
 .submit {
   display: inline-block;
-  padding: 11px 50px;
+  padding: 11px 50px !important;
   border: solid 1px #116A96;
   cursor: pointer;
   vertical-align: top;
