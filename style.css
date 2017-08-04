@@ -111,6 +111,14 @@ body {
   cursor: pointer;
   font-family: sans-serif !important; }
 
+.b-price {
+  display: flex;
+  justify-content: center; }
+  .b-price__header, .b-price__title {
+    text-align: center; }
+  .b-price__image {
+    border-radius: 5px; }
+
 /* Clearfix block */
 .b-clearfix {
   zoom: 1.0; }
@@ -493,6 +501,14 @@ body {
   color: #f1f1f1;
   cursor: pointer;
   font-family: sans-serif !important; }
+
+.b-price {
+  display: flex;
+  justify-content: center; }
+  .b-price__header, .b-price__title {
+    text-align: center; }
+  .b-price__image {
+    border-radius: 5px; }
 
 /* Clearfix block */
 .b-clearfix {
