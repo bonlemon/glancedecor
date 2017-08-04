@@ -626,8 +626,8 @@ body {
     display: inline-block;
     background: url("img/main/logo.png") no-repeat;
     background-size: 90% 90%;
-    width: 150px;
-    height: 40px;
+    width: 170px;
+    height: 50px;
     order: 2; }
   .b-navbar__title {
     display: none; }
@@ -660,6 +660,8 @@ body {
       width: auto;
       height: auto;
       line-height: initial; }
+    .b-navbar__title {
+      display: none; }
     .b-navbar .fa {
       display: none;
       color: #0077b3;
@@ -683,9 +685,11 @@ body {
 @media all and (min-width: 768px) {
   .b-navbar {
     width: 700px;
-    font-size: 25px; }
+    font-size: 20px; }
     .b-navbar__logo {
-      background-size: 100% 100%; } }
+      background-size: 100% 100%;
+      width: 180px;
+      height: 50px; } }
 /* Medium Devices, Desktops */
 @media all and (min-width: 992px) {
   .b-navbar {
@@ -1157,6 +1161,11 @@ body {
   .b-mail__title {
     font-size: 25px;
     margin: 20px; }
+  .b-mail__mail-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
   .b-mail__item {
     display: flex;
     width: 95%;

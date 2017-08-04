@@ -26,8 +26,8 @@
 		display: inline-block;
 		background: url('img/main/logo.png') no-repeat;
 		background-size: 90% 90%;
-		width: 150px;
-		height: 40px;
+		width: 170px;
+		height: 50px;
 		order: 2;
 	}
 	&__title {
@@ -76,6 +76,9 @@
 			height: auto;
 			line-height: initial;
 		}
+		&__title {
+			display: none;
+		}
 		.fa {
 			display: none;
 			color: #0077b3;
@@ -109,9 +112,12 @@
 @media all and (min-width: 768px) {
 	.b-navbar {
 		width: 700px;
-		font-size: 25px;
+		font-size: 20px;
+		
 		&__logo {
 			background-size: 100% 100%;
+			width: 180px;
+			height: 50px;
 		}
 	}
 }

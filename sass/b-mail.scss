@@ -10,6 +10,12 @@
         font-size: 25px;
         margin: 20px;
     }
+    &__mail-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__item {
         display: flex;
         width: 95%;
