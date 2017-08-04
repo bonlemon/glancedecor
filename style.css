@@ -114,11 +114,11 @@ body {
 .b-price {
   display: flex;
   justify-content: center; }
-  .b-price__header, .b-price__title {
+  .b-price__header {
     text-align: center; }
-  .b-price__image {
+  .b-price__image, .b-price__image-mbl {
     border-radius: 5px; }
-    .b-price__image img {
+    .b-price__image img, .b-price__image-mbl img {
       width: 100%; }
 
 /* Clearfix block */
@@ -151,14 +151,24 @@ body {
     display: block; }
     .b-sld-mbl img {
       width: 100%;
-      max-height: 30em; } }
+      max-height: 30em; }
+
+  .b-price__image {
+    display: none; }
+  .b-price__image-mbl {
+    display: block; } }
 /* Extra Small Devices, Phones */
 @media all and (min-width: 550px) {
   .b-pg__navbar-title {
     display: none; }
 
   .b-slider {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+
+  .b-price__image {
+    display: block; }
+  .b-price__image-mbl {
+    display: none; } }
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
   .b-pg {
@@ -507,11 +517,11 @@ body {
 .b-price {
   display: flex;
   justify-content: center; }
-  .b-price__header, .b-price__title {
+  .b-price__header {
     text-align: center; }
-  .b-price__image {
+  .b-price__image, .b-price__image-mbl {
     border-radius: 5px; }
-    .b-price__image img {
+    .b-price__image img, .b-price__image-mbl img {
       width: 100%; }
 
 /* Clearfix block */
@@ -544,14 +554,24 @@ body {
     display: block; }
     .b-sld-mbl img {
       width: 100%;
-      max-height: 30em; } }
+      max-height: 30em; }
+
+  .b-price__image {
+    display: none; }
+  .b-price__image-mbl {
+    display: block; } }
 /* Extra Small Devices, Phones */
 @media all and (min-width: 550px) {
   .b-pg__navbar-title {
     display: none; }
 
   .b-slider {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+
+  .b-price__image {
+    display: block; }
+  .b-price__image-mbl {
+    display: none; } }
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
   .b-pg {

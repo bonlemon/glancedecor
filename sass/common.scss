@@ -124,12 +124,12 @@ body {
     display: flex;
     justify-content: center;   
 
-    &__header, 
-    &__title{
+    &__header{
         text-align: center; 
     }
 
-    &__image{
+    &__image,
+    &__image-mbl{
         border-radius: 5px;
         img{
             width: 100%;
@@ -178,6 +178,15 @@ body {
             max-height: 30em;
         }
     }
+
+    .b-price{
+        &__image{
+            display: none;
+        }
+        &__image-mbl{
+            display: block;
+        }
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -189,6 +198,14 @@ body {
     }
     .b-slider{
         margin-top: 10px;
+    }
+    .b-price{
+        &__image{
+            display: block;
+        }
+        &__image-mbl{
+            display: none;
+        }
     }
 }
 
