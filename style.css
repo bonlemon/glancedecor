@@ -854,6 +854,8 @@ body {
         opacity: 0.9;
         background: #ff4141;
         color: #fff; }
+  .b-tab__break {
+    display: inline; }
   .b-tab__calculation {
     padding: 5px 10px;
     color: black;
@@ -884,7 +886,9 @@ body {
   .b-tab__tab-element {
     float: left;
     width: 45%;
-    margin: 1%; } }
+    margin: 1%; }
+  .b-tab__break {
+    display: none; } }
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
   .b-tab__cost {
