@@ -3,8 +3,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    // font-family: "RobotoRegular";
+    text-align: center; // font-family: "RobotoRegular";
     font-size: 20px;
     color: #696969;
     &__title {
@@ -20,6 +19,7 @@
             padding-left: 15px;
             flex: 1;
         }
+        textarea,
         input {
             flex: 1.4;
             min-height: 25px;
@@ -28,10 +28,12 @@
             font-family: sans-serif !important;
             font-size: 14px;
             padding: 5px 15px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3)
         }
-    }
-    &__mail-form{
-
+        textarea {
+            resize: none;
+        }
     }
     &__submit {
         width: 40%;
@@ -70,7 +72,8 @@
                 flex: 1;
                 padding-left: 20px;
             }
-            input {
+            input,
+            textarea {
                 flex: 1.4;
                 min-height: 20px;
             }

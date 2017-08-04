@@ -20,15 +20,15 @@ function sendMail(subject, text){
             port: 587,
             secure: false, // upgrade later with STARTTLS
             auth: {
-                user: 'dimon009@list.ru',
-                pass: '123'
+                user: 'glancedecor@mail.ru',
+                pass: 'wow1050525'
             }
         });
 
         // setup email data with unicode symbols
         let mailOptions = {
-            from: '"dimon009@list.ru', // sender address
-            to: 'dimon009@list.ru', // list of receivers
+            from: 'glancedecor@mail.ru', // sender address
+            to: 'glancedecor@mail.ru', // list of receivers
             subject: subject, // Subject line
             text: text, // plain text body
         };
@@ -58,7 +58,7 @@ xAdmin.init(config, function (err, admin) {
     app.get('/feedback', function (req, res) {
         // generate body of message
         var textForMail = `Имя: ${req.query.name} \ne-mail: ${req.query.email} \nтелефон: ${req.query.phone} \nСообщение: ${req.query.text}`
-        sendMail('Feedback! ✔',textForMail)
+        sendMail('Feedback! ✔', textForMail)
     });
     // site server
     app.listen(PORT, function () {
