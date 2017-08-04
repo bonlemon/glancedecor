@@ -21,17 +21,12 @@ $(document).ready(function () {
 	});
 
 	$(".b-modal__open").on("click", function(event) {
-		console.log('open')
-		// if( event.target.hasClass('mail') ) {
-		// 	alert('mail.')
-		// }
 		modal.toggleClass("b-modal--closed");
 		modalOverlay.toggleClass("b-modal__overlay--closed");
 		$('body').addClass('overflowhide');
 	});
 
 	$(".b-tab__calculation").on("click", function(event) {
-
 		var imgBlock = $(this).parent().parent().find(".b-tab__img");
 		var imgBlockPongs = $(this).parent().parent().find(".b-tab__img-pongs");
 
@@ -43,5 +38,12 @@ $(document).ready(function () {
 			imgBlockPongs.addClass('b-tab__img-pongs--hidden');
 		}
 	});
-	
+
+	$("#confirm").on('change', function(){
+		if ( $("#confirm").prop("checked") ){
+			$('.b-mail__submit').prop('disabled',false);
+		}else{
+			$('.b-mail__submit').prop('disabled',true);
+		}	
+	})
 });
