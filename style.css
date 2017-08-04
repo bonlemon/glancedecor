@@ -1201,7 +1201,9 @@ body {
   .b-mail__item {
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  .b-mail__submit {
+    padding: 0 20px; } }
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
   .b-mail__item {
@@ -1214,7 +1216,9 @@ body {
     .b-mail__item input,
     .b-mail__item textarea {
       flex: 1.4;
-      min-height: 20px; } }
+      min-height: 20px; }
+  .b-mail__submit {
+    padding: 0 35px; } }
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
