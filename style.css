@@ -866,7 +866,9 @@ body {
   .b-tab__tab {
     display: none; }
   .b-tab__tab_active {
-    display: block; }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
   .b-tab__break {
     display: none; }
 

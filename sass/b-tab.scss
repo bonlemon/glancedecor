@@ -8,7 +8,7 @@
         text-align: center;
     }
     &__links {
-            padding: 0px;
+        padding: 0px;
         li {
             margin: 0px 5px;
             display: inline-block;
@@ -113,7 +113,9 @@
         display: none;
     }
     &__tab_active {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     &__break {
         display: none;
