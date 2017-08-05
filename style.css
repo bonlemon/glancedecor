@@ -624,11 +624,7 @@ body {
     cursor: pointer; }
   .b-navbar__logo {
     display: inline-block;
-    background: url("img/main/logo.png") no-repeat;
-    background-size: 90% 90%;
-    width: 170px;
-    height: 50px;
-    order: 2; }
+    background: url("img/main/logo.png") no-repeat; }
   .b-navbar__title {
     display: none; }
   .b-navbar__call {
@@ -643,6 +639,11 @@ body {
     width: 100%;
     padding-right: 20px;
     padding-left: 20px; }
+    .b-navbar__logo {
+      background-size: 90% 90%;
+      width: 140px;
+      height: 50px;
+      order: 2; }
     .b-navbar__text {
       font-size: 13px; }
     .b-navbar__item {

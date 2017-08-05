@@ -25,10 +25,6 @@
 	&__logo {
 		display: inline-block;
 		background: url('img/main/logo.png') no-repeat;
-		background-size: 90% 90%;
-		width: 170px;
-		height: 50px;
-		order: 2;
 	}
 	&__title {
 		display: none;
@@ -46,6 +42,12 @@
 
 @media all and (min-width: 300px) {
 	.b-navbar {
+		&__logo {
+			background-size: 90% 90%;
+			width: 140px;
+			height: 50px;
+			order: 2;
+		}	
 		position: relative;
 		box-sizing: border-box;
 		width: 100%;
