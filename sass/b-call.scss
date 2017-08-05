@@ -18,6 +18,7 @@
     }
     &__get-phone,
     &__call-submit {
+        box-sizing: border-box;
         width: 30%;
         display: inline-block;
         font-family: sans-serif;

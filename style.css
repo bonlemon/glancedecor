@@ -217,6 +217,7 @@ body {
   .b-call__title, .b-call__phone {
     font-size: 30px; }
   .b-call__get-phone, .b-call__call-submit {
+    box-sizing: border-box;
     width: 30%;
     display: inline-block;
     font-family: sans-serif;
