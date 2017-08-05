@@ -131,7 +131,7 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
+@media all and (min-width: 300px) {
   .b-pg,
   .b-slider {
     margin-top: 71px;
@@ -233,7 +233,7 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
+@media all and (min-width: 300px) {
   .b-call {
     box-sizing: border-box;
     width: 100%; }
@@ -314,7 +314,7 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
+@media all and (min-width: 300px) {
   .b-examples {
     width: 100%; }
     .b-examples__blocks {
@@ -534,7 +534,7 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
+@media all and (min-width: 300px) {
   .b-pg,
   .b-slider {
     margin-top: 71px;
@@ -634,7 +634,7 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
+@media all and (min-width: 300px) {
   .b-navbar {
     position: relative;
     box-sizing: border-box;
@@ -725,7 +725,7 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
+@media all and (min-width: 300px) {
   .b-block-img {
     box-sizing: border-box;
     width: 100%; }
@@ -865,7 +865,7 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
+@media all and (min-width: 300px) {
   .b-tab__tab-element {
     display: block;
     margin: auto;
@@ -954,7 +954,7 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
+@media all and (min-width: 300px) {
   .b-review {
     box-sizing: border-box;
     width: 100%; }
@@ -1027,7 +1027,7 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
+@media all and (min-width: 300px) {
   .b-footer {
     width: 100%; } }
 /* Extra Small Devices, Phones */
@@ -1097,7 +1097,7 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
+@media all and (min-width: 300px) {
   .b-fixture__fixture-element {
     display: block;
     margin: auto;
@@ -1162,7 +1162,7 @@ body {
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
+@media all and (min-width: 300px) {
   .b-modal {
     width: 100%; } }
 /* Extra Small Devices, Phones */
@@ -1216,18 +1216,17 @@ body {
   .b-mail__submit {
     width: 40%;
     background-color: #0077b3;
-    padding: 0 35px;
     margin: 10px 10px 0; }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
-@media all and (min-width: 320px) {
+@media all and (min-width: 300px) {
   .b-mail__item {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center; }
   .b-mail__submit {
-    padding: 0 20px; } }
+    padding: 10px 25px !important; } }
 /* Extra Small Devices, Phones */
 @media all and (min-width: 480px) {
   .b-mail__item {
@@ -1242,7 +1241,7 @@ body {
       flex: 1.4;
       min-height: 20px; }
   .b-mail__submit {
-    padding: 0 35px; } }
+    padding: 10px 35px !important; } }
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
