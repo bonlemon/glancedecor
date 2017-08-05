@@ -782,17 +782,19 @@ body {
   /*----- Content of Tabs -----*/ }
   .b-tab__content {
     text-align: center; }
-  .b-tab__links li {
-    margin: 0px 5px;
-    display: inline-block;
-    list-style: none; }
-  .b-tab__links a {
-    padding: 9px 15px;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 600;
-    color: #4c4c4c;
-    text-decoration: none !important; }
+  .b-tab__links {
+    padding: 0px; }
+    .b-tab__links li {
+      margin: 0px 5px;
+      display: inline-block;
+      list-style: none; }
+    .b-tab__links a {
+      padding: 9px 15px;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
+      color: #4c4c4c;
+      text-decoration: none !important; }
   .b-tab__link_active a, .b-tab__links a:hover {
     color: #0077b3 !important;
     cursor: default;
@@ -858,13 +860,15 @@ body {
   .b-tab__break {
     display: inline; }
   .b-tab__calculation {
-    padding: 5px 10px;
+    padding: 5px;
     color: black;
     border: 1px solid #696969; }
   .b-tab__tab {
     display: none; }
   .b-tab__tab_active {
     display: block; }
+  .b-tab__break {
+    display: none; }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
@@ -873,7 +877,7 @@ body {
     display: block;
     margin: auto;
     float: none;
-    width: 80%; }
+    width: 100%; }
   .b-tab__cost {
     min-width: 60px;
     padding: 5px 15px;
@@ -891,9 +895,7 @@ body {
   .b-tab__tab-element {
     float: left;
     width: 45%;
-    margin: 1%; }
-  .b-tab__break {
-    display: none; } }
+    margin: 1%; } }
 /* Small Devices, Tablets */
 @media all and (min-width: 768px) {
   .b-tab__cost {
