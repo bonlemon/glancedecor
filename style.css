@@ -631,6 +631,8 @@ body {
     order: 2; }
   .b-navbar__title {
     display: none; }
+  .b-navbar__call {
+    display: flex; }
 
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
