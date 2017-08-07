@@ -3,5 +3,5 @@ PassengerStartupFile server.js
 PassengerResolveSymlinksInDocumentRoot on
 Require all granted
 PassengerAppType node
-PassengerAppRoot /home/login/domains/glancedecor.ru/public_html
+PassengerAppRoot /home/a0152593/domains/glancedecor.ru/public_html/
 Options -MultiViews
