@@ -1,15 +1,15 @@
 // подключаем express
 var express = require("express"),
-    nodemailer = require('nodemailer'),
-    xAdmin = require("express-admin"),
-    nodemailer = require('nodemailer'),
-    config = {
-        dpath: './admin',
-        config: require('./admin/config.json'),
-        settings: require('./admin/settings.json'),
-        custom: require('./admin/custom.json'),
-        users: require('./admin/users.json')
-    };
+    nodemailer = require('nodemailer');
+    // xAdmin = require("express-admin"),
+    // nodemailer = require('nodemailer'),
+    // config = {
+    //     dpath: './admin',
+    //     config: require('./admin/config.json'),
+    //     settings: require('./admin/settings.json'),
+    //     custom: require('./admin/custom.json'),
+    //     users: require('./admin/users.json')
+    // };
 
 const PORT = process.env.PORT || 5001;
 
@@ -43,25 +43,25 @@ function sendMail(subject, text){
         });
 }
 
-xAdmin.init(config, function (err, admin) {
-    if (err) return console.log(err);
+/*xAdmin.init(config, function (err, admin) {
+    if (err) return console.log(err);*/
     // web site
-    var app = express();
+var app = express();
 
-    app.use('/admin', admin);
-    app.use('/', express.static(__dirname));
-    // site routes
-    app.get('/mail', function (req, res) {
-        sendMail('Call me! ✔', req.query.phone)
-    });
-
-    app.get('/feedback', function (req, res) {
-        // generate body of message
-        var textForMail = `Имя: ${req.query.name} \ne-mail: ${req.query.email} \nтелефон: ${req.query.phone} \nСообщение: ${req.query.text}`
-        sendMail('Feedback! ✔', textForMail)
-    });
-    // site server
-    app.listen(PORT, function () {
-        console.log(`Start - OK! Listening port ${PORT}! %s mode`, app.settings.env)
-    });
+// app.use('/admin', admin);
+app.use('/', express.static(__dirname));
+// site routes
+app.get('/mail', function (req, res) {
+    sendMail('Call me! ✔', req.query.phone)
 });
+
+app.get('/feedback', function (req, res) {
+    // generate body of message
+    var textForMail = `Имя: ${req.query.name} \ne-mail: ${req.query.email} \nтелефон: ${req.query.phone} \nСообщение: ${req.query.text}`
+    sendMail('Feedback! ✔', textForMail)
+});
+// site server
+app.listen(PORT, function () {
+    console.log(`Start - OK! Listening port ${PORT}! %s mode`, app.settings.env)
+});
+// });
